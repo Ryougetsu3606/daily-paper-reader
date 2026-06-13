@@ -25,3 +25,60 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: mm-agent-mem
+      description: 请帮我找多模态大模型个性化理解，和多模态（多）智能体训练，以及多模态（特别是视频）agent memory的相关文章
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: personalized multimodal understanding
+          keyword_cn: 个性化多模态理解
+          query: personalized multimodal understanding for large models
+        - keyword: multimodal multi-agent training
+          keyword_cn: 多模态多智能体训练
+          query: training methods for multimodal multi-agent systems
+        - keyword: multimodal agent memory
+          keyword_cn: 多模态智能体记忆
+          query: memory mechanisms for multimodal agents
+        - keyword: video agent memory
+          keyword_cn: 视频智能体记忆
+          query: video-based agent memory and retrieval
+        - keyword: multimodal personalization
+          keyword_cn: 多模态个性化
+          query: multimodal personalization for user modeling
+        - keyword: multimodal reinforcement learning
+          keyword_cn: 多模态强化学习
+          query: reinforcement learning for multimodal agent training
+      intent_queries:
+        - query: How to personalize multimodal large language models for understanding
+          query_cn: 如何个性化多模态大语言模型以增强理解
+          enabled: true
+          source: manual
+          note: ''
+        - query: Training methods for multimodal multi agent systems
+          query_cn: 多模态多智能体系统的训练方法
+          enabled: true
+          source: manual
+          note: ''
+        - query: Memory mechanisms for multimodal agents with video input
+          query_cn: 基于视频输入的多模态智能体记忆机制
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-06-13T08:35:02.342Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
