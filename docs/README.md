@@ -6,89 +6,71 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-13
-- 运行时间：2026-06-13 20:31:35 UTC
+- 最新运行日期：2026-06-14
+- 运行时间：2026-06-14 21:03:19 UTC
 - 运行状态：成功
-- 本次总论文数：23
-- 精读区：12
+- 本次总论文数：17
+- 精读区：6
 - 速读区：11
 
 ### 今日简报（AI）
-今日精选12篇精读与11篇速读，重点聚焦智能体记忆机制与多模态交互基准的突破。最值得关注的是《AdMem》与《M3Exam》两篇9分工作，分别提出了面向任务求解的先进记忆架构和用户-智能体多模态记忆评估基准。建议优先精读这两篇，并关注Rosetta Memory的跨LLM自适应记忆设计，为构建长期记忆系统提供启发。
-- 详情：[/202606/13/README](/202606/13/README)
+今天精读了两篇9分论文，聚焦视觉推理多智能体框架与人类交互多模态记忆基准。最值得关注的是Visual Para-Thinker++的单一策略多智能体设计和H2HMem的交互记忆评估。建议下一步重点探索多智能体视觉推理在实际交互场景中的应用。
+- 详情：[/202606/14/README](/202606/14/README)
 
 ### 精读区论文标签
-1. [AdMem: Advanced Memory for Task-solving Agents](/202606/13/2606.06787v1-admem-advanced-memory-for-task-solving-agents)  
+1. [Visual Para-Thinker++: A Single-Policy Multi-Agent Framework for Visual Reasoning](/202606/14/2606.09290v1-visual-para-thinker-a-single-policy-multi-agent-framework-for-visual-reasoning)  
    标签：评分：9.0/10、query:mm-agent-mem
-   evidence：面向任务求解智能体的统一记忆框架与多智能体架构
-2. [M$^3$Exam: Benchmarking Multimodal Memory for Realistic User-Agent Interactions](/202606/13/2606.07402v1-m3exam-benchmarking-multimodal-memory-for-realistic-user-agent-interactions)  
+   evidence：单策略多智能体框架，包含角色特定优化，直接对应多模态智能体训练方法
+2. [H2HMem: A Multimodal Memory Benchmark for Agents in Human-Human Interactions](/202606/14/2606.09461v1-h2hmem-a-multimodal-memory-benchmark-for-agents-in-human-human-interactions)  
    标签：评分：9.0/10、query:mm-agent-mem
-   evidence：多模态记忆基准测试，用于用户-智能体交互
-3. [MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism](/202606/13/2606.07512v1-memdreamer-decoupling-perception-and-reasoning-for-long-video-understanding-via-hierarchical-graph-memory-and-agentic-retrieval-mechanism)  
+   evidence：多模态智能体记忆基准；人机交互记忆评估
+3. [Infini Memory: Maintainable Topic Documents for Long-Term LLM Agent Memory](/202606/14/2606.10677v1-infini-memory-maintainable-topic-documents-for-long-term-llm-agent-memory)  
    标签：评分：9.0/10、query:mm-agent-mem
-   evidence：分层图记忆与智能体检索机制用于长视频理解
-4. [ConMem: Structured Memory-Guided Adaptation in Training-Free Multi-Agent Systems](/202606/13/2606.08702v1-conmem-structured-memory-guided-adaptation-in-training-free-multi-agent-systems)  
+   evidence：基于主题文档的长时期LLM智能体记忆架构；可维护持久记忆
+4. [AllDayNav: Lifelong Navigation via Real-World Reinforcement Learning](/202606/14/2606.10927v1-alldaynav-lifelong-navigation-via-real-world-reinforcement-learning)  
    标签：评分：9.0/10、query:mm-agent-mem
-   evidence：面向多智能体系统的结构化记忆引导自适应框架
-5. [Baichuan-M4: A Clinical-Grade Medical Agent System for Continuous Care](/202606/13/2606.08982v1-baichuan-m4-a-clinical-grade-medical-agent-system-for-continuous-care)  
+   evidence：通过真实世界强化学习和自进化多模态记忆实现终身导航
+5. [Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents](/202606/14/2606.11680v1-organize-then-retrieve-hierarchical-memory-navigation-for-efficient-agents)  
    标签：评分：9.0/10、query:mm-agent-mem
-   evidence：医疗多智能体系统，包含强化学习训练、长期记忆和多智能体协调
-6. [Claw-R1: A Step-Level Data Middleware System for Agentic Reinforcement Learning](/202606/13/2606.09138v1-claw-r1-a-step-level-data-middleware-system-for-agentic-reinforcement-learning)  
-   标签：评分：9.0/10、query:mm-agent-mem
-   evidence：智能体强化学习的步骤级数据中间件
-7. [Memory Beyond Recall: A Dual-Process Cognitive Memory System for Self-Evolving LLM Agents](/202606/13/2606.09483v1-memory-beyond-recall-a-dual-process-cognitive-memory-system-for-self-evolving-llm-agents)  
-   标签：评分：9.0/10、query:mm-agent-mem
-   evidence：面向LLM智能体隐式个性化的双过程认知记忆系统
-8. [Echo-Memory: A Controlled Study of Memory in Action World Models](/202606/13/2606.09803v1-echo-memory-a-controlled-study-of-memory-in-action-world-models)  
-   标签：评分：9.0/10、query:mm-agent-mem
-   evidence：动作条件世界模型中记忆机制的受控研究（视频生成）
-9. [Deployment-Time Memorization in Foundation-Model Agents](/202606/13/2606.10062v1-deployment-time-memorization-in-foundation-model-agents)  
-   标签：评分：9.0/10、query:mm-agent-mem
-   evidence：智能体记忆设计权衡个性化效用与隐私风险
-10. [Divide and Cooperate: Role-Decomposed Multi-Agent LLM Training with Cross-Agent Learning Signals](/202606/13/2606.10684v1-divide-and-cooperate-role-decomposed-multi-agent-llm-training-with-cross-agent-learning-signals)  
-   标签：评分：9.0/10、query:mm-agent-mem
-   evidence：角色分解的多智能体训练框架，使用跨智能体学习信号
-11. [IAPO: Input Attribution-Aware Policy Optimization for Tool Use in Small Multimodal Agents](/202606/13/2606.11652v1-iapo-input-attribution-aware-policy-optimization-for-tool-use-in-small-multimodal-agents)  
-   标签：评分：9.0/10、query:mm-agent-mem
-   evidence：面向多模态小语言模型智能体工具调用的强化学习方法
-12. [InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning](/202606/13/2606.12195v1-internvideo3-agentify-foundation-models-with-multimodal-contextual-reasoning)  
-   标签：评分：9.0/10、query:mm-agent-mem
-   evidence：InternVideo3通过多模态上下文推理增强视频智能体记忆能力
+   evidence：基于视频的智能体记忆与检索
+6. [CapRL++: Unified Reinforcement Learning with Verifiable Rewards for Dense Image and Video Captioning](/202606/14/2606.09393v1-caprl-unified-reinforcement-learning-with-verifiable-rewards-for-dense-image-and-video-captioning)  
+   标签：评分：8.0/10、query:mm-agent-mem
+   evidence：用于多模态字幕的可验证奖励强化学习
 
 ### 速读区论文标签
-1. [Teaching the Way, Not the Answer: Privileged Tutoring Distillation for Multimodal Policy Optimization](/202606/13/2606.07000v1-teaching-the-way-not-the-answer-privileged-tutoring-distillation-for-multimodal-policy-optimization)  
+1. [Teach Multimodal Recommendation Model to See via Personalized Visual Extraction and Adaptive Learning](/202606/14/2606.09082v1-teach-multimodal-recommendation-model-to-see-via-personalized-visual-extraction-and-adaptive-learning)  
    标签：评分：8.0/10、query:mm-agent-mem
-   evidence：面向大视觉语言模型多模态策略优化的特权教学蒸馏
-2. [Rosetta Memory: Adaptive Memory for Cross-LLM Agents](/202606/13/2606.07711v1-rosetta-memory-adaptive-memory-for-cross-llm-agents)  
+   evidence：个性化视觉提取和自适应学习用于多模态推荐，涉及多模态个性化理解
+2. [MAVIS: Multi-Agent Video Retrieval via Structured Video Understanding](/202606/14/2606.09641v1-mavis-multi-agent-video-retrieval-via-structured-video-understanding)  
    标签：评分：8.0/10、query:mm-agent-mem
-   evidence：跨LLM智能体的自适应记忆系统，允许记忆跨模型复用
-3. [DyCo-RL: Dynamic Cross-Modal Coordination for Visual Reasoning](/202606/13/2606.08035v1-dyco-rl-dynamic-cross-modal-coordination-for-visual-reasoning)  
+   evidence：基于结构化视频理解的多代理视频检索
+3. [Kwai Keye-VL-2.0 Technical Report](/202606/14/2606.10651v1-kwai-keye-vl-20-technical-report)  
    标签：评分：8.0/10、query:mm-agent-mem
-   evidence：结合动态跨模态协调的强化学习用于多模态大语言模型视觉推理
-4. [Remember with Confidence: Uncertainty Quantification for Spatio-temporal Memory with Probabilistic Guarantees](/202606/13/2606.08277v1-remember-with-confidence-uncertainty-quantification-for-spatio-temporal-memory-with-probabilistic-guarantees)  
+   evidence：面向长视频理解和智能体智能的多模态基础模型，涉及基于视频的智能体记忆与理解
+4. [FadeMem: Distance-Aware Memory Consolidation for Autoregressive Video Diffusion](/202606/14/2606.10671v1-fademem-distance-aware-memory-consolidation-for-autoregressive-video-diffusion)  
    标签：评分：8.0/10、query:mm-agent-mem
-   evidence：具有不确定性量化的时空记忆，适用于多模态智能体
-5. [Dreaming when Necessary: Advancing World Action Models with Adaptive Multi-Modal Reasoning](/202606/13/2606.07089v1-dreaming-when-necessary-advancing-world-action-models-with-adaptive-multi-modal-reasoning)  
+   evidence：用于自回归视频扩散的基于距离的KV记忆巩固
+5. [Benchmarking Open-Ended Multi-Agent Coordination in Language Agents](/202606/14/2606.08340v1-benchmarking-open-ended-multi-agent-coordination-in-language-agents)  
    标签：评分：7.0/10、query:mm-agent-mem
-   evidence：使用自适应多模态推理的世界动作模型，基于视频预测
-6. [MemToolAgent overview with a simple restaurant booking scenario where the agent retrieves similar memories, receives feedback on an invalid time format, and generates a reflection to update its memory](/202606/13/2606.07909v1-memtoolagent-overview-with-a-simple-restaurant-booking-scenario-where-the-agent-retrieves-similar-memories-receives-feedback-on-an-invalid-time-format-and-generates-a-reflection-to-update-its-memory)  
+   evidence：评估多智能体协调，与多智能体系统训练方法相关
+6. [From Player to Master: Enhancing Test-Time Learning of LLM Agents via Reinforcement Learning over Memory](/202606/14/2606.08656v1-from-player-to-master-enhancing-test-time-learning-of-llm-agents-via-reinforcement-learning-over-memory)  
    标签：评分：7.0/10、query:mm-agent-mem
-   evidence：面向LLM智能体的记忆管理框架，改善工具使用
-7. [MemToolAgent: Leveraging Memory for Tool Using Agents Based on Environment and User Feedback](/202606/13/2606.07909v2-memtoolagent-leveraging-memory-for-tool-using-agents-based-on-environment-and-user-feedback)  
+   evidence：基于记忆的强化学习以增强LLM智能体测试时学习
+7. [PRPO: Perception-Reinforced Policy Optimization via Token-Level Dynamic Advantage Reshaping](/202606/14/2606.08708v1-prpo-perception-reinforced-policy-optimization-via-token-level-dynamic-advantage-reshaping)  
    标签：评分：7.0/10、query:mm-agent-mem
-   evidence：面向工具使用智能体的记忆管理，包括提取和检索
-8. [Aligned but Not Partner-Specific: Distinguishing How Multimodal LLM Agents Succeed in Reference Games Without Human-Like Conventions](/202606/13/2606.08081v1-aligned-but-not-partner-specific-distinguishing-how-multimodal-llm-agents-succeed-in-reference-games-without-human-like-conventions)  
+   evidence：令牌级强化学习用于多模态视觉语言模型，可直接用于智能体训练
+8. [CoCoSI: Collaborative Cognitive Map Construction for Spatial Intelligence](/202606/14/2606.10401v2-cocosi-collaborative-cognitive-map-construction-for-spatial-intelligence)  
    标签：评分：7.0/10、query:mm-agent-mem
-   evidence：研究多模态LLM智能体的伙伴特定记忆与对齐
-9. [Self-evolving LLM agents with in-distribution Optimization](/202606/13/2606.07367v1-self-evolving-llm-agents-with-in-distribution-optimization)  
+   evidence：用于MLLM空间推理的轻量级外部记忆
+9. [DICE: Entropy-Regularized Equilibrium Selection for Stable Multi-Agent LLM Coordination](/202606/14/2606.08068v1-dice-entropy-regularized-equilibrium-selection-for-stable-multi-agent-llm-coordination)  
    标签：评分：6.0/10、query:mm-agent-mem
-   evidence：使用强化学习的自进化大模型智能体框架，解决信用分配
-10. [Skill-3D: Evolving Scene-Aware Skills for Agentic 3D Spatial Reasoning](/202606/13/2606.07436v1-skill-3d-evolving-scene-aware-skills-for-agentic-3d-spatial-reasoning)  
+   evidence：多代理LLM协调中的均衡选择方法
+10. [Prisma-World: Camera-Controllable Multi-Agent Video World Model](/202606/14/2606.09507v1-prisma-world-camera-controllable-multi-agent-video-world-model)  
    标签：评分：6.0/10、query:mm-agent-mem
-   evidence：用于智能体3D空间推理的场景记忆
-11. [ZIPP:Zero-shot Image Personalization from Personas](/202606/13/2606.08841v1-zippzero-shot-image-personalization-from-personas)  
+   evidence：多智能体视频世界模型，支持相机控制，涉及多智能体训练与生成
+11. [CoCoSI: Collaborative Cognitive Map Construction for Spatial Intelligence](/202606/14/2606.10401v1-cocosi-collaborative-cognitive-map-construction-for-spatial-intelligence)  
    标签：评分：6.0/10、query:mm-agent-mem
-   evidence：基于自然语言画像的零样本图像个性化
+   evidence：多模态智能体记忆机制
 
 
 <div class="dpr-home-promo-card">

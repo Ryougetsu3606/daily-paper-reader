@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-13T20:15:15.934333+00:00",
-  "updated_date": "20260613",
+  "generated_at": "2026-06-14T20:49:40.848542+00:00",
+  "updated_date": "20260614",
   "carryover_days": 9,
   "tag_states": {
     "mm-agent-mem": {
-      "updated_date": "20260613",
+      "updated_date": "20260614",
       "carryover_days": 9,
       "items": [
         {
@@ -49,87 +49,7 @@
           "matched_requirement_id": "req-2",
           "selection_source": "carryover_cache",
           "paper_id": "2606.12018v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2606.09082v1",
-          "source": "arxiv",
-          "title": "Teach Multimodal Recommendation Model to See via Personalized Visual Extraction and Adaptive Learning",
-          "abstract": "Multimodal sequential recommendation (MSR) incorporates textual and visual information to improve recommendation quality. However, recent studies and our empirical analysis show that visual features are often underutilized, thereby contributing far less than textual signals. We attribute this issue to two factors: insufficient visual representation learning (pretrained encoders fail to capture preference-relevant cues) and unbalanced visual-text optimization (textual features dominate the learning process). To address these issues, we propose Teach Multimodal Recommendation Model to See via Personalized Visual Extraction and Adaptive Learning (REVEAL), a plug-and-play framework that enhances visual representation learning and cross-modal optimization without modifying the original recommendation backbone. REVEAL consists of Feedback-Guided Visual Extraction (FVE), which refines prompt-guided visual extraction through task-level feedback, and Adaptive Visual Learning (AVL), which dynamically reweights visual learning to alleviate modality imbalance. Experiments on multiple real-world datasets and MSR backbones demonstrate that REVEAL consistently improves recommendation performance. Further analysis shows that these gains arise from more effective attention to preference-relevant visual regions and better visual utilization during training. The code is available at https://github.com/YutongLi2024/REVEAL.",
-          "authors": [
-            "Yutong Li",
-            "Xinyi Zhang",
-            "Ziyi Ye",
-            "Daoguo Dong",
-            "Yu-gang Jiang"
-          ],
-          "primary_category": "cs.IR",
-          "categories": [
-            "cs.IR"
-          ],
-          "published": "2026-06-08T06:28:25+00:00",
-          "link": "https://arxiv.org/pdf/2606.09082v1",
-          "tags": [
-            "keyword:mm-agent-mem",
-            "query:mm-agent-mem"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "Personalized visual extraction and adaptive learning for multimodal recommendation",
-          "llm_evidence_cn": "个性化视觉提取和自适应学习用于多模态推荐，涉及多模态个性化理解",
-          "llm_evidence": "个性化视觉提取和自适应学习用于多模态推荐，涉及多模态个性化理解",
-          "canonical_evidence": "个性化视觉提取和自适应学习用于多模态推荐，涉及多模态个性化理解",
-          "llm_tldr_en": "REVEAL enhances visual representation learning in multimodal sequential recommendation via personalized extraction and adaptive learning.",
-          "llm_tldr_cn": "多模态顺序推荐中视觉特征常被低估，原因包括预训练编码器无法捕捉偏好相关线索以及文本主导优化。REVEAL作为即插即用框架，通过个性化视觉提取（突出用户关注区域）和自适应学习（平衡视觉与文本梯度），显著提升视觉贡献，在多个推荐数据集上取得更优结果。",
-          "llm_tldr": "多模态顺序推荐中视觉特征常被低估，原因包括预训练编码器无法捕捉偏好相关线索以及文本主导优化。REVEAL作为即插即用框架，通过个性化视觉提取（突出用户关注区域）和自适应学习（平衡视觉与文本梯度），显著提升视觉贡献，在多个推荐数据集上取得更优结果。",
-          "llm_tags": [
-            "query:mm-agent-mem"
-          ],
-          "matched_query_tag": "query:mm-agent-mem",
-          "matched_query_text": "personalized multimodal understanding for large models",
-          "matched_requirement_id": "req-1",
-          "selection_source": "carryover_cache",
-          "paper_id": "2606.09082v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2606.09641v1",
-          "source": "arxiv",
-          "title": "MAVIS: Multi-Agent Video Retrieval via Structured Video Understanding",
-          "abstract": "The dominant paradigm in video retrieval relies on embedding-based full-corpus scanning, which suffers from inherent computational inefficiency and the semantic asymmetry between information-dense videos and sparse textual queries. To bridge this gap, we introduce \\textbf{MAVIS}, a novel multi-agent framework that rethinks retrieval as cooperative reasoning rather than brute-force search. MAVIS first bridges the granularity mismatch by parsing raw videos into a \\textbf{Structured Semantic Library}, enabling explicit attribute-level indexing. During retrieval, a planner decomposes complex user intents into atomic sub-tasks, dispatching specialized agents to independently nominate candidates. Crucially, MAVIS employs a \\textbf{Logic-aware Debate} mechanism with a strict veto protocol, where agents collaboratively prune logical mismatches to identify a compact set of ``controversial'' candidates for fine-grained verification. This agentic workflow effectively bypasses the inefficiency of full-library traversal. Extensive experiments on MSR-VTT, MSVD, and ActivityNet demonstrate that MAVIS achieves competitive performance without task-specific fine-tuning, offering a scalable and interpretable alternative to traditional dual-encoder approaches.",
-          "authors": [
-            "Jie Zhang",
-            "Qilang Ye",
-            "Hao Zhou",
-            "Haochen Liang",
-            "Fei Luo"
-          ],
-          "primary_category": "cs.CV",
-          "categories": [
-            "cs.CV"
-          ],
-          "published": "2026-06-08T15:36:15+00:00",
-          "link": "https://arxiv.org/pdf/2606.09641v1",
-          "tags": [
-            "keyword:mm-agent-mem",
-            "query:mm-agent-mem"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "multi-agent video retrieval with structured video understanding and cooperative reasoning",
-          "llm_evidence_cn": "多智能体视频检索，通过结构化视频理解与协作推理",
-          "llm_evidence": "多智能体视频检索，通过结构化视频理解与协作推理",
-          "canonical_evidence": "多智能体视频检索，通过结构化视频理解与协作推理",
-          "llm_tldr_en": "MAVIS rethinks video retrieval as cooperative reasoning among agents, using a structured semantic library and logic-aware debate to improve efficiency and accuracy.",
-          "llm_tldr_cn": "传统视频检索依赖嵌入扫描，效率低且存在语义不对称。MAVIS提出多智能体协作框架：先将视频解析为结构化语义库，实现属性级索引；检索时规划器分解用户意图，分派专业智能体独立提名，并通过逻辑感知辩论机制达成一致。在多个基准上显著提升检索准确率和效率，展示了多智能体在视频理解中的潜力。",
-          "llm_tldr": "传统视频检索依赖嵌入扫描，效率低且存在语义不对称。MAVIS提出多智能体协作框架：先将视频解析为结构化语义库，实现属性级索引；检索时规划器分解用户意图，分派专业智能体独立提名，并通过逻辑感知辩论机制达成一致。在多个基准上显著提升检索准确率和效率，展示了多智能体在视频理解中的潜力。",
-          "llm_tags": [
-            "query:mm-agent-mem"
-          ],
-          "matched_query_tag": "query:mm-agent-mem",
-          "matched_query_text": "video-based agent memory and retrieval",
-          "matched_requirement_id": "req-4",
-          "selection_source": "carryover_cache",
-          "paper_id": "2606.09641v1",
-          "carry_days": 1
+          "carry_days": 2
         },
         {
           "id": "2606.11853v1",
@@ -153,13 +73,13 @@
             "query:mm-agent-mem"
           ],
           "llm_score": 8.0,
-          "llm_evidence_en": "task-aware structured memory for multimodal in-context learning",
-          "llm_evidence_cn": "任务感知的结构化多模态内存",
-          "llm_evidence": "任务感知的结构化多模态内存",
-          "canonical_evidence": "任务感知的结构化多模态内存",
-          "llm_tldr_en": "TASM introduces a training-free, task-aware structured memory for MLLMs, enabling dynamic memory construction that adapts to new queries while preserving visual semantics.",
-          "llm_tldr_cn": "针对多模态大语言模型上下文学习中有限上下文窗口和存储效率问题，提出TASM（任务感知结构化内存）框架，无需训练即可构建任务感知、结构保持且动态可访问的内存，通过任务向量引导压缩保留视觉语义结构，实验证明其在不同多模态任务上有效提升内存效率与任务适应能力。",
-          "llm_tldr": "针对多模态大语言模型上下文学习中有限上下文窗口和存储效率问题，提出TASM（任务感知结构化内存）框架，无需训练即可构建任务感知、结构保持且动态可访问的内存，通过任务向量引导压缩保留视觉语义结构，实验证明其在不同多模态任务上有效提升内存效率与任务适应能力。",
+          "llm_evidence_en": "task-aware structured memory for multimodal ICL, directly addresses memory mechanisms for multimodal agents",
+          "llm_evidence_cn": "为多模态上下文学习提供任务感知结构化记忆，直接对应多模态智能体记忆机制",
+          "llm_evidence": "为多模态上下文学习提供任务感知结构化记忆，直接对应多模态智能体记忆机制",
+          "canonical_evidence": "为多模态上下文学习提供任务感知结构化记忆，直接对应多模态智能体记忆机制",
+          "llm_tldr_en": "Introduces TASM, a training-free framework for task-aware, structure-preserving, and dynamic memory in multimodal ICL. Uses task-vector guided compression to adapt to queries.",
+          "llm_tldr_cn": "本文提出TASM，一种训练无关的多模态上下文学习记忆压缩框架。通过任务向量引导压缩，保留语义结构并动态适应新查询，解决了现有记忆压缩方法的偏置和静态问题。实验表明TASM在长序列多模态任务中显著提升了效率和效果。",
+          "llm_tldr": "本文提出TASM，一种训练无关的多模态上下文学习记忆压缩框架。通过任务向量引导压缩，保留语义结构并动态适应新查询，解决了现有记忆压缩方法的偏置和静态问题。实验表明TASM在长序列多模态任务中显著提升了效率和效果。",
           "llm_tags": [
             "query:mm-agent-mem"
           ],
@@ -168,48 +88,6 @@
           "matched_requirement_id": "req-3",
           "selection_source": "carryover_cache",
           "paper_id": "2606.11853v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2606.10927v1",
-          "source": "arxiv",
-          "title": "AllDayNav: Lifelong Navigation via Real-World Reinforcement Learning",
-          "abstract": "Lifelong embodied navigation in dynamic environments requires robots to form persistent scene understanding from fragmentary observations, which remains difficult for existing methods that rely on explicit maps or scene graphs and struggle to generalize beyond structured settings. We propose AllDayNav, a lifelong self-learning navigation framework that implicitly encodes scene dynamics into the billion-scale parameters of a large model via reinforcement learning, powered by a self-evolving multimodal memory that maintains and updates visual keyframes, semantic descriptions, and temporal context while autonomously generating open-vocabulary instructions, image goals, and structured rewards. Experiments in both synthetic and real-world environments across cross-room, cross-episode, and cross-task scenarios show that AllDayNav achieves success rates approaching $100\\%$ and consistently surpasses strong map-based, VLM, and RL baselines in path efficiency and robustness, demonstrating implicit, memory-driven reinforcement learning as a scalable alternative to explicit mapping for reliable lifelong navigation.",
-          "authors": [
-            "Hang Yin",
-            "Yinan Liang",
-            "Jiazhao Zhang",
-            "Jiahang Liu",
-            "Minghan Li",
-            "Zhizheng Zhang",
-            "He Wang"
-          ],
-          "primary_category": "cs.RO",
-          "categories": [
-            "cs.RO"
-          ],
-          "published": "2026-06-09T14:35:53+00:00",
-          "link": "https://arxiv.org/pdf/2606.10927v1",
-          "tags": [
-            "keyword:mm-agent-mem",
-            "query:mm-agent-mem"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "lifelong navigation with RL and self-evolving multimodal memory",
-          "llm_evidence_cn": "利用强化学习和自进化多模态记忆的终身导航",
-          "llm_evidence": "利用强化学习和自进化多模态记忆的终身导航",
-          "canonical_evidence": "利用强化学习和自进化多模态记忆的终身导航",
-          "llm_tldr_en": "AllDayNav uses RL to encode scene dynamics into large model parameters, with a self-evolving multimodal memory that maintains visual keyframes and temporal context for lifelong navigation.",
-          "llm_tldr_cn": "针对动态环境中机器人终身导航难题，提出AllDayNav框架，利用强化学习将场景动态隐式编码到大模型参数中，并配备自进化多模态记忆模块（维护视觉关键帧、语义描述和时间上下文），在合成和真实环境中验证了其持续学习与泛化能力。",
-          "llm_tldr": "针对动态环境中机器人终身导航难题，提出AllDayNav框架，利用强化学习将场景动态隐式编码到大模型参数中，并配备自进化多模态记忆模块（维护视觉关键帧、语义描述和时间上下文），在合成和真实环境中验证了其持续学习与泛化能力。",
-          "llm_tags": [
-            "query:mm-agent-mem"
-          ],
-          "matched_query_tag": "query:mm-agent-mem",
-          "matched_query_text": "reinforcement learning for multimodal agent training",
-          "matched_requirement_id": "req-6",
-          "selection_source": "carryover_cache",
-          "paper_id": "2606.10927v1",
           "carry_days": 1
         },
         {
@@ -239,13 +117,13 @@
             "query:mm-agent-mem"
           ],
           "llm_score": 8.0,
-          "llm_evidence_en": "RL for agentic tool-use training, credit assignment",
-          "llm_evidence_cn": "面向智能体工具使用的强化学习训练与信用分配",
-          "llm_evidence": "面向智能体工具使用的强化学习训练与信用分配",
-          "canonical_evidence": "面向智能体工具使用的强化学习训练与信用分配",
-          "llm_tldr_en": "Proposes APPO, a procedural policy optimization method for agentic RL that identifies influential decision points and assigns credit more precisely, improving multi-turn tool-use capabilities of LLM agents.",
-          "llm_tldr_cn": "现有智能体强化学习方法在粗粒度信用分配上存在局限，难以识别中间决策对最终结果的影响。本文提出APPO，一种程序化策略优化方法，通过分析决策分支点和优化信用分配，显著提升了LLM智能体在多轮工具使用中的性能。实验表明，该方法在多个基准上优于现有方法，为智能体训练提供了更精细的优化手段。",
-          "llm_tldr": "现有智能体强化学习方法在粗粒度信用分配上存在局限，难以识别中间决策对最终结果的影响。本文提出APPO，一种程序化策略优化方法，通过分析决策分支点和优化信用分配，显著提升了LLM智能体在多轮工具使用中的性能。实验表明，该方法在多个基准上优于现有方法，为智能体训练提供了更精细的优化手段。",
+          "llm_evidence_en": "agentic reinforcement learning for sequential decision-making",
+          "llm_evidence_cn": "用于序列决策的智能体强化学习",
+          "llm_evidence": "用于序列决策的智能体强化学习",
+          "canonical_evidence": "用于序列决策的智能体强化学习",
+          "llm_tldr_en": "APPO proposes agentic procedural policy optimization for credit assignment over distributed decision points in multi-turn tool-use, improving agent training.",
+          "llm_tldr_cn": "针对现有智能体强化学习基于粗粒度单元进行信用分配的问题，该论文提出Agentic Procedural Policy Optimization（APPO），从分支位置和信用分配两个角度优化。实验表明其能有效识别广泛分布的决策点并分配信用，显著提升多轮工具使用任务的训练效果。",
+          "llm_tldr": "针对现有智能体强化学习基于粗粒度单元进行信用分配的问题，该论文提出Agentic Procedural Policy Optimization（APPO），从分支位置和信用分配两个角度优化。实验表明其能有效识别广泛分布的决策点并分配信用，显著提升多轮工具使用任务的训练效果。",
           "llm_tags": [
             "query:mm-agent-mem"
           ],
@@ -254,94 +132,6 @@
           "matched_requirement_id": "req-6",
           "selection_source": "carryover_cache",
           "paper_id": "2606.12384v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2606.08656v1",
-          "source": "arxiv",
-          "title": "From Player to Master: Enhancing Test-Time Learning of LLM Agents via Reinforcement Learning over Memory",
-          "abstract": "Large language model (LLM) agents are increasingly deployed in long-running settings where improving through experience at test time becomes important. A common approach is to update an explicit memory after each interaction to guide future decisions. However, most existing methods rely on hand-designed prompting rules, making it difficult to align memory updates with downstream objectives over multi-step horizons consistently. We propose MemoPilot, a plug-in memory copilot that explicitly trains the memory update process to improve a frozen LLM's performance across sequential interactions. We formulate memory updating as a multi-turn decision problem and optimize it end-to-end with multi-turn GRPO. Our training recipe introduces (i) a turn-wise reward signal and (ii) a context-independent, turn-level advantage estimation across rollouts, enabling finer-grained credit assignment and more stable training in multi-turn settings. We evaluate MemoPilot on two testbeds: multi-round Rock-Paper-Scissors (RPS) and Limit Texas Hold'em (LHE). Across both environments, MemoPilot substantially improves test-time learning of a frozen player over strong baselines, ranking first in Elo ratings on both games (1762 on LHE and 1590 on RPS) and outperforming all baseline memory methods and proprietary models, including DeepSeek-V3.2.",
-          "authors": [
-            "Yishuo Cai",
-            "Xingyu Guo",
-            "Xuancheng Huang",
-            "Jinhua Du",
-            "Can Huang",
-            "Wenxuan Huang",
-            "Wenhan Ma",
-            "Yuyang Hu",
-            "Aohan Zeng",
-            "Jie Tang",
-            "Xu Sun"
-          ],
-          "primary_category": "cs.CL",
-          "categories": [
-            "cs.CL"
-          ],
-          "published": "2026-06-07T14:53:19+00:00",
-          "link": "https://arxiv.org/pdf/2606.08656v1",
-          "tags": [
-            "keyword:mm-agent-mem",
-            "query:mm-agent-mem"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "RL over memory to train LLM agent's memory updates",
-          "llm_evidence_cn": "通过强化学习优化LLM智能体记忆更新过程",
-          "llm_evidence": "通过强化学习优化LLM智能体记忆更新过程",
-          "canonical_evidence": "通过强化学习优化LLM智能体记忆更新过程",
-          "llm_tldr_en": "Proposes MemoPilot, a plug-in copilot that trains memory updates using multi-turn GRPO, enabling frozen LLMs to improve performance across sequential interactions via learned memory management.",
-          "llm_tldr_cn": "LLM智能体在长期运行中需要从经验中学习，但现有方法依赖手工设计的提示规则来更新记忆。本文提出MemoPilot，将记忆更新建模为多轮决策问题，使用多轮GRPO端到端优化。实验证明，该方法能够持续提升冻结LLM在序列交互中的表现，为智能体记忆训练提供了通用框架。",
-          "llm_tldr": "LLM智能体在长期运行中需要从经验中学习，但现有方法依赖手工设计的提示规则来更新记忆。本文提出MemoPilot，将记忆更新建模为多轮决策问题，使用多轮GRPO端到端优化。实验证明，该方法能够持续提升冻结LLM在序列交互中的表现，为智能体记忆训练提供了通用框架。",
-          "llm_tags": [
-            "query:mm-agent-mem"
-          ],
-          "matched_query_tag": "query:mm-agent-mem",
-          "matched_query_text": "memory mechanisms for multimodal agents",
-          "matched_requirement_id": "req-3",
-          "selection_source": "carryover_cache",
-          "paper_id": "2606.08656v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2606.09290v1",
-          "source": "arxiv",
-          "title": "Visual Para-Thinker++: A Single-Policy Multi-Agent Framework for Visual Reasoning",
-          "abstract": "Visual reasoning requires integrating evidence distributed across regions, attributes, and relations, making single-chain reasoning prone to early perceptual commitment and hallucination. We propose Visual Para-Thinker++, a single-policy multi-agent framework in which one shared MLLM policy is instantiated as role-conditioned Main, Worker, and Summary Agents. The Main Agent decomposes the task with fixed allocation patterns; Worker Agents reason in parallel under context isolation; and the Summary Agent reconciles full Worker reasoning traces rather than majority-voting on final labels. The shared policy is trained by Multi-Agent Capability Injection and Role-Decoupled Multi-Agent Optimization, which assign role-specific rewards and advantages to corresponding token segments to reduce gradient conflict among collaborative roles. A native inference engine enables efficient multi-agent rollout through shared visual prefix and KV cache reuse. Across V*, CountBench, the RefCOCO family, and HallusionBench, Visual Para-Thinker++ consistently outperforms single-trajectory and inference-time parallel baselines, with especially strong gains on hallucination-sensitive visual reasoning.",
-          "authors": [
-            "Haoran Xu",
-            "Hongyu Wang",
-            "Yifei Gao",
-            "Jiaze Li",
-            "Zizhao Tong",
-            "Xiaofeng Zhang",
-            "Xiaosong Yuan"
-          ],
-          "primary_category": "cs.CV",
-          "categories": [
-            "cs.CV"
-          ],
-          "published": "2026-06-08T09:57:48+00:00",
-          "link": "https://arxiv.org/pdf/2606.09290v1",
-          "tags": [
-            "keyword:mm-agent-mem",
-            "query:mm-agent-mem"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "multi-agent framework for visual reasoning with training via role-specific rewards",
-          "llm_evidence_cn": "针对视觉推理的多智能体框架，通过角色特定奖励进行训练",
-          "llm_evidence": "针对视觉推理的多智能体框架，通过角色特定奖励进行训练",
-          "canonical_evidence": "针对视觉推理的多智能体框架，通过角色特定奖励进行训练",
-          "llm_tldr_en": "Proposes Visual Para-Thinker++, a single-policy multi-agent framework for visual reasoning where shared MLLM policy is instantiated as role-conditioned agents, trained with multi-agent capability injection and role-decoupled optimization.",
-          "llm_tldr_cn": "视觉推理中单链推理易出现早期感官承诺和幻觉。本文提出Visual Para-Thinker++，用一个共享MLLM策略实例化为不同角色的智能体（主、工人、总结），通过多智能体能力注入和角色解耦优化进行训练。实验表明，该方法在视觉推理基准上显著优于单链方法，并展示了多智能体协作的优势。",
-          "llm_tldr": "视觉推理中单链推理易出现早期感官承诺和幻觉。本文提出Visual Para-Thinker++，用一个共享MLLM策略实例化为不同角色的智能体（主、工人、总结），通过多智能体能力注入和角色解耦优化进行训练。实验表明，该方法在视觉推理基准上显著优于单链方法，并展示了多智能体协作的优势。",
-          "llm_tags": [
-            "query:mm-agent-mem"
-          ],
-          "matched_query_tag": "query:mm-agent-mem",
-          "matched_query_text": "training methods for multimodal multi-agent systems",
-          "matched_requirement_id": "req-2",
-          "selection_source": "carryover_cache",
-          "paper_id": "2606.09290v1",
           "carry_days": 1
         },
         {
@@ -369,19 +159,19 @@
             "query:mm-agent-mem"
           ],
           "llm_score": 8.0,
-          "llm_evidence_en": "long-video understanding with neural knowledge representations and agentic distillation",
-          "llm_evidence_cn": "长视频理解采用神经知识表示和智能体知识蒸馏",
-          "llm_evidence": "长视频理解采用神经知识表示和智能体知识蒸馏",
-          "canonical_evidence": "长视频理解采用神经知识表示和智能体知识蒸馏",
-          "llm_tldr_en": "Proposes a new paradigm for long video understanding: Neural Knowledge Representation (NKR) as lightweight weights attached to VLM, optimized via Agentic Knowledge Distillation (AKD) for efficient video encoding and reuse.",
-          "llm_tldr_cn": "长视频理解面临计算成本高、知识重用困难的问题。本文提出神经知识表示（NKR）新范式，将视频内容编码为附着在VLM骨干网络上的轻量权重，通过智能体知识蒸馏（AKD）过程自动合成描述和问答对来优化NKR。该表示可便携复用，推理时无需重新处理整个视频。实验表明，该方法在长视频理解任务上大幅提升效率且保持高准确性。",
-          "llm_tldr": "长视频理解面临计算成本高、知识重用困难的问题。本文提出神经知识表示（NKR）新范式，将视频内容编码为附着在VLM骨干网络上的轻量权重，通过智能体知识蒸馏（AKD）过程自动合成描述和问答对来优化NKR。该表示可便携复用，推理时无需重新处理整个视频。实验表明，该方法在长视频理解任务上大幅提升效率且保持高准确性。",
+          "llm_evidence_en": "neural knowledge representation as memory for long-video understanding",
+          "llm_evidence_cn": "将神经知识表示作为视频记忆用于长视频理解",
+          "llm_evidence": "将神经知识表示作为视频记忆用于长视频理解",
+          "canonical_evidence": "将神经知识表示作为视频记忆用于长视频理解",
+          "llm_tldr_en": "The paper proposes Neural Knowledge Representation (NKR) for long-video understanding, where video content is encoded into network weights via agentic knowledge distillation, enabling efficient inference.",
+          "llm_tldr_cn": "长视频理解面临计算和存储挑战。本文提出神经知识表示（NKR）新范式，将视频内容作为附加到VLM骨干网络的小型权重，通过代理知识蒸馏过程自动合成描述和问答对进行记忆编码。推理时仅需轻量NKR即可快速回答，实现了高效的长视频理解，且NKR可作为可复用资产。",
+          "llm_tldr": "长视频理解面临计算和存储挑战。本文提出神经知识表示（NKR）新范式，将视频内容作为附加到VLM骨干网络的小型权重，通过代理知识蒸馏过程自动合成描述和问答对进行记忆编码。推理时仅需轻量NKR即可快速回答，实现了高效的长视频理解，且NKR可作为可复用资产。",
           "llm_tags": [
             "query:mm-agent-mem"
           ],
           "matched_query_tag": "query:mm-agent-mem",
-          "matched_query_text": "video-based agent memory and retrieval",
-          "matched_requirement_id": "req-4",
+          "matched_query_text": "Memory mechanisms for multimodal agents with video input",
+          "matched_requirement_id": "req-9",
           "selection_source": "carryover_cache",
           "paper_id": "2606.11913v1",
           "carry_days": 1
@@ -426,39 +216,82 @@
           "matched_requirement_id": "req-1",
           "selection_source": "carryover_cache",
           "paper_id": "2606.11074v1",
-          "carry_days": 1
+          "carry_days": 2
         },
         {
-          "id": "2606.09461v1",
+          "id": "2606.13227v1",
           "source": "arxiv",
-          "title": "H2HMem: A Multimodal Memory Benchmark for Agents in Human-Human Interactions",
-          "abstract": "Large language model agents are increasingly deployed in human-human interaction settings, such as meeting assistants and clinical documentation systems, where they must observe conversations and retain information for downstream queries. Unlike traditional human-assistant settings, these environments are inherently multimodal, involve complex discourse phenomena such as anaphora and deixis, and contain asynchronous or conflicting information from multiple participants. However, existing memory benchmarks largely focus on single-user, text-only interactions, failing to capture these challenges. To address this gap, we introduce H2HMem, a Human-to-Human Multimodal Memory Benchmark for evaluating memory capabilities in complex human-human interactions. H2HMem includes both dyadic and multi-party conversations with multimodal information streams, and evaluates agents along three dimensions: memory recall, reasoning, and application. Experiments with advanced agents reveal substantial limitations in constructing, retaining, and utilizing memories across modalities, participants, and sessions, highlighting substantial room for improvement in next-generation LLM agents.",
+          "title": "PolyAlign: Conditional Human-Distribution Alignment",
+          "abstract": "Post-training methods such as supervised fine-tuning (SFT) and preference optimization typically align language models toward a single global assistant behavior. While effective for improving average helpfulness, this can suppress the natural variation of human responses across languages, tasks, and dialogue settings. We study this problem as conditional human-distribution alignment: models should match the human response distribution appropriate to the current interaction context, rather than a universal response style. We introduce PolyAlign, a distribution-aware alignment framework that organizes bilingual interaction data into bucket-specific human reference distributions defined by language, interaction track, response family, and length. PolyAlign combines Bucket-Aware SFT, which balances optimization across heterogeneous buckets, with Human-Distribution Preference Optimization (HDPO), which regularizes preference learning using critic-estimated distance to bucket-specific human support. Across a bilingual evaluation suite covering English and Chinese single- and multi-turn settings, PolyAlign improves conditional naturalness and distributional faithfulness while preserving competitive task utility. The results suggest that post-training should move beyond global alignment objectives toward interaction-aware alignment with human response distributions.",
           "authors": [
-            "Shiping Zhu",
-            "Yibo Yang",
-            "Zhengyang Wang",
-            "Tiancheng Shen",
-            "Dandan Guo",
-            "Ming-Hsuan Yang"
+            "L. D. M. S. Sai Teja",
+            "Ufaq Khan",
+            "Sathira Silva",
+            "Xiao Wu",
+            "Muhammad Haris Khan"
           ],
           "primary_category": "cs.CL",
           "categories": [
             "cs.CL"
           ],
-          "published": "2026-06-08T13:17:16+00:00",
-          "link": "https://arxiv.org/pdf/2606.09461v1",
+          "published": "2026-06-11T11:41:07+00:00",
+          "link": "https://arxiv.org/pdf/2606.13227v1",
           "tags": [
             "keyword:mm-agent-mem",
             "query:mm-agent-mem"
           ],
           "llm_score": 8.0,
-          "llm_evidence_en": "multimodal memory benchmark for agents in human-human interactions",
-          "llm_evidence_cn": "多模态人机交互记忆基准",
-          "llm_evidence": "多模态人机交互记忆基准",
-          "canonical_evidence": "多模态人机交互记忆基准",
-          "llm_tldr_en": "Introduces H2HMem, a multimodal memory benchmark for evaluating LLM agents in human-human interaction settings, covering complex discourse and multimodal inputs.",
-          "llm_tldr_cn": "现有记忆基准主要关注单用户纯文本交互，忽略了多模态和多人交互中的复杂现象。H2HMem是一个多模态记忆基准，专门用于评估智能体在多人对话场景中的记忆能力，涵盖多模态输入和复杂话语结构。该基准填补了现有评估的空白，为研究多模态智能体记忆提供了标准化测试平台。",
-          "llm_tldr": "现有记忆基准主要关注单用户纯文本交互，忽略了多模态和多人交互中的复杂现象。H2HMem是一个多模态记忆基准，专门用于评估智能体在多人对话场景中的记忆能力，涵盖多模态输入和复杂话语结构。该基准填补了现有评估的空白，为研究多模态智能体记忆提供了标准化测试平台。",
+          "llm_evidence_en": "multimodal personalization for user modeling",
+          "llm_evidence_cn": "多模态个性化用户建模",
+          "llm_evidence": "多模态个性化用户建模",
+          "canonical_evidence": "多模态个性化用户建模",
+          "llm_tldr_en": "PolyAlign addresses conditional human-distribution alignment for personalized response, directly relevant to multimodal personalization for user modeling.",
+          "llm_tldr_cn": "针对语言模型对齐单一行为导致个性化不足的问题，PolyAlign提出条件人类分布对齐框架，通过按语言、交互场景等维度划分数据并学习分布，实现上下文相关的个性化响应，适用于多模态用户建模。",
+          "llm_tldr": "针对语言模型对齐单一行为导致个性化不足的问题，PolyAlign提出条件人类分布对齐框架，通过按语言、交互场景等维度划分数据并学习分布，实现上下文相关的个性化响应，适用于多模态用户建模。",
+          "llm_tags": [
+            "query:mm-agent-mem"
+          ],
+          "matched_query_tag": "query:mm-agent-mem",
+          "matched_query_text": "multimodal personalization for user modeling",
+          "matched_requirement_id": "req-5",
+          "selection_source": "carryover_cache",
+          "paper_id": "2606.13227v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2606.12105v1",
+          "source": "arxiv",
+          "title": "DAM-VLA: Decoupled Asynchronous Multimodal Vision Language Action model",
+          "abstract": "Vision-language-action (VLA) models inherit a shared synchronous clock from vision-language pretraining, processing every input at one rate. This is misaligned with physical interaction, where a high-frequency modality changes at hundreds of hertz, vision evolves more slowly, and language stays constant across an episode. A synchronous VLA oversamples slow modalities, undersamples fast ones, and caps action generation at the lowest effective frequency. We hypothesize that decoupling temporal processing per modality, letting each update and retain information at its own sensor rate, yields stronger representations and more robust control. We present DAM-VLA, which maintains per-modality latent buffers refreshed at sensor rates and read continuously by the action head, integrating new high-frequency modalities through gated cross-attention that leaves the pretrained backbone intact. Across seven contact-rich real-world manipulation tasks, DAM-VLA more than doubles the average success rate of the strongest synchronous baseline (95.2\\% vs.\\ 40.95\\%) while sustaining smooth, reactive 100\\,Hz control. Project website: \\href{https://intuitive-robots.github.io/DAM-VLA/}{intuitive-robots.github.io/DAM-VLA/}",
+          "authors": [
+            "Pankhuri Vanjani",
+            "Zhuoyue Li",
+            "Jakub Suliga",
+            "Moritz Reuss",
+            "Gianluca Geraci",
+            "Xinkai Jiang",
+            "Rudolf Lioutikov"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO",
+            "cs.CV",
+            "cs.LG"
+          ],
+          "published": "2026-06-10T13:59:07+00:00",
+          "link": "https://arxiv.org/pdf/2606.12105v1",
+          "tags": [
+            "keyword:mm-agent-mem",
+            "query:mm-agent-mem"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "per-modality latent buffers act as memory for multimodal agents with video input",
+          "llm_evidence_cn": "每模态潜在缓冲区作为多模态智能体记忆，支持视频输入",
+          "llm_evidence": "每模态潜在缓冲区作为多模态智能体记忆，支持视频输入",
+          "canonical_evidence": "每模态潜在缓冲区作为多模态智能体记忆，支持视频输入",
+          "llm_tldr_en": "DAM-VLA decouples temporal processing per modality using latent buffers refreshed at sensor rates, enabling robust control and memory for multimodal agents.",
+          "llm_tldr_cn": "本文提出DAM-VLA，一种解耦异步多模态视觉语言动作模型。该模型为每种模态维护独立潜在缓冲区，以各自传感器频率更新并持续读取，有效处理高频、低频和静态模态的差异。实验表明该记忆机制在机器人控制任务中表现优越。核心贡献在于为多模态智能体提供了高效的感知记忆架构。",
+          "llm_tldr": "本文提出DAM-VLA，一种解耦异步多模态视觉语言动作模型。该模型为每种模态维护独立潜在缓冲区，以各自传感器频率更新并持续读取，有效处理高频、低频和静态模态的差异。实验表明该记忆机制在机器人控制任务中表现优越。核心贡献在于为多模态智能体提供了高效的感知记忆架构。",
           "llm_tags": [
             "query:mm-agent-mem"
           ],
@@ -466,48 +299,100 @@
           "matched_query_text": "memory mechanisms for multimodal agents",
           "matched_requirement_id": "req-3",
           "selection_source": "carryover_cache",
-          "paper_id": "2606.09461v1",
+          "paper_id": "2606.12105v1",
           "carry_days": 1
         },
         {
-          "id": "2606.11854v1",
+          "id": "2606.10742v1",
           "source": "arxiv",
-          "title": "Fine-tuning Multi-modal LLMs with ART: Art-based Reinforcement Training",
-          "abstract": "There are two main Parameter-Efficient Fine-Tuning (PEFT) techniques for Large Language Models (LLMs). While Low-Rank Adaptation (LoRA) introduces additional weights between the LLM layers, Soft Prompting introduces additional fine-tuning-specific raw tokens to an LLM input. However, both require modification to the computational graphs of precompiled, preoptimized LLMs. As a result, neither is fully supported in high-throughput engines like vLLM. We propose fine-tuning with ART (Art-based Reinforcement Training). The method injects information into a frozen Multimodal Large Language Model (MLLM) by optimizing only its raw visual input, thus enabling the soft-token approach on pre-compiled computational graphs. It relies on backpropagation of gradients back into a plain pixel array and thus supports any fine-tuning objective. Moreover, the optimized visual input can be stylized as task-relevant computational artworks. The approach's effectiveness is confirmed for different sizes of a popular open Qwen architecture and for several textual benchmarks. Specifically, ART reaches accuracy competitive with LoRA across mathematics and structured-tool-use benchmarks.",
+          "title": "MemVenom: Triggered Poisoning of Multimodal Memories in Web Agents",
+          "abstract": "External memory has become a core component of modern web agents, enabling long-horizon reasoning through the retrieval of past experiences. However, this paradigm introduces a critical vulnerability: malicious content injected into memory can be persistently recalled and repeatedly influence agent behavior. In this work, we identify and systematically study multimodal memory poisoning, an overlooked yet practical attack surface in web-agent systems. We propose MemVenom, a unified black-box attack framework that poisons graph-structured external memory with coordinated text-image evidence. Our method consists of a two-stage design: (1) a trigger-conditioned retrieval attack that ensures high-probability recall of malicious memory, and (2) a post-retrieval attack induction that leverages adversarial perturbations and stealthy OCR injection to override the original user objective. Unlike prior attacks that operate on prompts or text-only memory, our approach enables persistent, reusable, and goal-agnostic attacks without modifying model parameters or re-optimizing malicious tasks. Experiments across multiple web-agent frameworks and vision-language models demonstrate that MemVenom achieves strong end-to-end attack success with minimal impact on benign performance, reaching up to 99.15% on GPT-5-family web agents, while transferring effectively across architectures and model scales.",
           "authors": [
-            "Michal Chudoba",
-            "Sergey Alyaev",
-            "Petra Galuscakova",
-            "Tomasz Wiktorski"
+            "Yv Zhang",
+            "Hao Sun",
+            "Hao Fang",
+            "Kuofeng Gao",
+            "Fan Mo",
+            "Bin Chen",
+            "Shu-Tao Xia",
+            "Yaowei Wang"
           ],
-          "primary_category": "cs.LG",
+          "primary_category": "cs.CR",
           "categories": [
-            "cs.LG",
-            "cs.AI",
-            "cs.CL"
+            "cs.CR",
+            "cs.LG"
           ],
-          "published": "2026-06-10T09:30:37+00:00",
-          "link": "https://arxiv.org/pdf/2606.11854v1",
+          "published": "2026-06-09T11:53:25+00:00",
+          "link": "https://arxiv.org/pdf/2606.10742v1",
           "tags": [
             "keyword:mm-agent-mem",
             "query:mm-agent-mem"
           ],
           "llm_score": 8.0,
-          "llm_evidence_en": "reinforcement training for fine-tuning multimodal LLMs via visual input optimization",
-          "llm_evidence_cn": "通过视觉输入优化的多模态大模型强化微调方法",
-          "llm_evidence": "通过视觉输入优化的多模态大模型强化微调方法",
-          "canonical_evidence": "通过视觉输入优化的多模态大模型强化微调方法",
-          "llm_tldr_en": "Proposes ART, a reinforcement training method that fine-tunes MLLMs by optimizing raw visual input, compatible with high-throughput engines.",
-          "llm_tldr_cn": "现有参数高效微调方法如LoRA和Soft Prompting需要修改计算图，不适合vLLM等高吞吐引擎。本文提出ART（基于艺术的强化训练），通过仅优化原始视觉输入向冻结的多模态大模型注入信息，从而在预编译计算图上实现软提示。该方法依赖反向传播梯度更新视觉输入。实验证明ART在多个视觉语言任务上取得与全微调相当的性能，且兼容高性能推理引擎。",
-          "llm_tldr": "现有参数高效微调方法如LoRA和Soft Prompting需要修改计算图，不适合vLLM等高吞吐引擎。本文提出ART（基于艺术的强化训练），通过仅优化原始视觉输入向冻结的多模态大模型注入信息，从而在预编译计算图上实现软提示。该方法依赖反向传播梯度更新视觉输入。实验证明ART在多个视觉语言任务上取得与全微调相当的性能，且兼容高性能推理引擎。",
+          "llm_evidence_en": "multimodal memory poisoning for web agents, directly studies memory mechanisms in multimodal agents",
+          "llm_evidence_cn": "针对网络智能体的多模态记忆投毒，直接研究多模态智能体记忆机制",
+          "llm_evidence": "针对网络智能体的多模态记忆投毒，直接研究多模态智能体记忆机制",
+          "canonical_evidence": "针对网络智能体的多模态记忆投毒，直接研究多模态智能体记忆机制",
+          "llm_tldr_en": "MemVenom identifies and exploits vulnerabilities in graph-structured multimodal memories for web agents, proposing a trigger-conditioned retrieval attack to persistently influence agent behavior.",
+          "llm_tldr_cn": "MemVenom系统性地研究了多模态记忆投毒这一被忽视的安全漏洞。针对网络智能体中图结构的外部记忆，提出了一种统一黑盒攻击框架，通过触发条件检索攻击确保恶意记忆被高概率召回，并利用后检索阶段的多模态证据影响智能体行为。该工作揭示了多模态记忆系统面临的实际威胁。",
+          "llm_tldr": "MemVenom系统性地研究了多模态记忆投毒这一被忽视的安全漏洞。针对网络智能体中图结构的外部记忆，提出了一种统一黑盒攻击框架，通过触发条件检索攻击确保恶意记忆被高概率召回，并利用后检索阶段的多模态证据影响智能体行为。该工作揭示了多模态记忆系统面临的实际威胁。",
           "llm_tags": [
             "query:mm-agent-mem"
           ],
           "matched_query_tag": "query:mm-agent-mem",
-          "matched_query_text": "reinforcement learning for multimodal agent training",
-          "matched_requirement_id": "req-6",
+          "matched_query_text": "memory mechanisms for multimodal agents",
+          "matched_requirement_id": "req-3",
           "selection_source": "carryover_cache",
-          "paper_id": "2606.11854v1",
+          "paper_id": "2606.10742v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2606.13681v1",
+          "source": "arxiv",
+          "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+          "abstract": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually align their knowledge, skills, and behavior with changing environments and updated task conditions. To address this gap, we introduce EvoArena, a benchmark suite that models environment changes as sequences of progressive updates across terminal, software, and social domains. We further propose EvoMem, a patch-based memory paradigm that records memory evolution as structured update histories, enabling agents to reason about environmental evolution through changes in their memory. Experiments show that current agents struggle on EvoArena, achieving an average accuracy of 39.6% across evolving terminal, software, and social-preference domains. EvoMem consistently improves performance, yielding an average gain of 1.5% on EvoArena and also improving standard benchmarks such as GAIA and LoCoMo by 6.1% and 4.8%. Beyond individual tasks, EvoMem further improves chain-level accuracy by 3.7% on EvoArena, where success requires completing a consecutive sequence of related evolutionary subtasks. Mechanistic analysis shows that EvoMem improves evidence capture in the memory, indicating better preservation of complete evolving environment states. Our results highlight the importance of modeling evolution in both evaluation and memory for reliable agent deployment.",
+          "authors": [
+            "Jundong Xu",
+            "Qingchuan Li",
+            "Jiaying Wu",
+            "Yihuai Lan",
+            "Shuyue Stella Li",
+            "Huichi Zhou",
+            "Bowen Jiang",
+            "Lei Wang",
+            "Jun Wang",
+            "Anh Tuan Luu",
+            "Caiming Xiong",
+            "Hae Won Park",
+            "Bryan Hooi",
+            "Zhiyuan Hu"
+          ],
+          "primary_category": "cs.CL",
+          "categories": [
+            "cs.CL"
+          ],
+          "published": "2026-06-11T17:59:59+00:00",
+          "link": "https://arxiv.org/pdf/2606.13681v1",
+          "tags": [
+            "keyword:mm-agent-mem",
+            "query:mm-agent-mem"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "memory evolution tracking for LLM agents; patch-based memory paradigm for dynamic environments",
+          "llm_evidence_cn": "LLM智能体记忆演化跟踪；基于补丁的记忆范式用于动态环境",
+          "llm_evidence": "LLM智能体记忆演化跟踪；基于补丁的记忆范式用于动态环境",
+          "canonical_evidence": "LLM智能体记忆演化跟踪；基于补丁的记忆范式用于动态环境",
+          "llm_tldr_en": "Introduces EvoArena benchmark and EvoMem, a patch-based memory paradigm that records memory evolution as structured update histories for LLM agents.",
+          "llm_tldr_cn": "现有智能体评测多在静态环境，而真实场景动态变化。本文提出EvoArena基准，模拟终端、软件、社交领域的渐进变化；同时设计EvoMem记忆范式，将记忆存储为补丁式更新历史，使智能体能通过记忆变化推理环境演化。实验显示当前智能体在演化环境中表现不佳，EvoMem显著提升适应能力。该记忆机制可直接应用于多模态智能体，尤其是视频输入下的记忆维护。",
+          "llm_tldr": "现有智能体评测多在静态环境，而真实场景动态变化。本文提出EvoArena基准，模拟终端、软件、社交领域的渐进变化；同时设计EvoMem记忆范式，将记忆存储为补丁式更新历史，使智能体能通过记忆变化推理环境演化。实验显示当前智能体在演化环境中表现不佳，EvoMem显著提升适应能力。该记忆机制可直接应用于多模态智能体，尤其是视频输入下的记忆维护。",
+          "llm_tags": [
+            "query:mm-agent-mem"
+          ],
+          "matched_query_tag": "query:mm-agent-mem",
+          "matched_query_text": "memory mechanisms for multimodal agents",
+          "matched_requirement_id": "req-3",
+          "selection_source": "carryover_cache",
+          "paper_id": "2606.13681v1",
           "carry_days": 1
         }
       ]

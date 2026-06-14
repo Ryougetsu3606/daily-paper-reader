@@ -1,0 +1,765 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-14T20:49:40.846936+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 19,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 34,
+    "quick_skim_target": 11,
+    "quick_selected": 11
+  },
+  "deep_dive": [
+    {
+      "id": "2606.09290v1",
+      "source": "arxiv",
+      "title": "Visual Para-Thinker++: A Single-Policy Multi-Agent Framework for Visual Reasoning",
+      "abstract": "Visual reasoning requires integrating evidence distributed across regions, attributes, and relations, making single-chain reasoning prone to early perceptual commitment and hallucination. We propose Visual Para-Thinker++, a single-policy multi-agent framework in which one shared MLLM policy is instantiated as role-conditioned Main, Worker, and Summary Agents. The Main Agent decomposes the task with fixed allocation patterns; Worker Agents reason in parallel under context isolation; and the Summary Agent reconciles full Worker reasoning traces rather than majority-voting on final labels. The shared policy is trained by Multi-Agent Capability Injection and Role-Decoupled Multi-Agent Optimization, which assign role-specific rewards and advantages to corresponding token segments to reduce gradient conflict among collaborative roles. A native inference engine enables efficient multi-agent rollout through shared visual prefix and KV cache reuse. Across V*, CountBench, the RefCOCO family, and HallusionBench, Visual Para-Thinker++ consistently outperforms single-trajectory and inference-time parallel baselines, with especially strong gains on hallucination-sensitive visual reasoning.",
+      "authors": [
+        "Haoran Xu",
+        "Hongyu Wang",
+        "Yifei Gao",
+        "Jiaze Li",
+        "Zizhao Tong",
+        "Xiaofeng Zhang",
+        "Xiaosong Yuan"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-08T09:57:48+00:00",
+      "link": "https://arxiv.org/pdf/2606.09290v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "single-policy multi-agent framework with role-specific optimization, direct training method for multimodal agents",
+      "llm_evidence_cn": "单策略多智能体框架，包含角色特定优化，直接对应多模态智能体训练方法",
+      "llm_evidence": "单策略多智能体框架，包含角色特定优化，直接对应多模态智能体训练方法",
+      "canonical_evidence": "单策略多智能体框架，包含角色特定优化，直接对应多模态智能体训练方法",
+      "llm_tldr_en": "Proposes Visual Para-Thinker++, a single-policy multi-agent framework for visual reasoning using MLLMs. Trained with Multi-Agent Capability Injection and Role-Decoupled Optimization, achieving parallel reasoning and reconciliation.",
+      "llm_tldr_cn": "本文提出Visual Para-Thinker++，一个单策略多智能体视觉推理框架，利用共享MLLM策略实例化为不同角色智能体。通过多智能体能力注入和角色解耦多智能体优化进行训练，使多个智能体并行推理并由汇总智能体整合，有效避免了单链推理的早期提交错误。实验表明该方法显著提升了视觉推理性能。",
+      "llm_tldr": "本文提出Visual Para-Thinker++，一个单策略多智能体视觉推理框架，利用共享MLLM策略实例化为不同角色智能体。通过多智能体能力注入和角色解耦多智能体优化进行训练，使多个智能体并行推理并由汇总智能体整合，有效避免了单链推理的早期提交错误。实验表明该方法显著提升了视觉推理性能。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "training methods for multimodal multi-agent systems",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.09461v1",
+      "source": "arxiv",
+      "title": "H2HMem: A Multimodal Memory Benchmark for Agents in Human-Human Interactions",
+      "abstract": "Large language model agents are increasingly deployed in human-human interaction settings, such as meeting assistants and clinical documentation systems, where they must observe conversations and retain information for downstream queries. Unlike traditional human-assistant settings, these environments are inherently multimodal, involve complex discourse phenomena such as anaphora and deixis, and contain asynchronous or conflicting information from multiple participants. However, existing memory benchmarks largely focus on single-user, text-only interactions, failing to capture these challenges. To address this gap, we introduce H2HMem, a Human-to-Human Multimodal Memory Benchmark for evaluating memory capabilities in complex human-human interactions. H2HMem includes both dyadic and multi-party conversations with multimodal information streams, and evaluates agents along three dimensions: memory recall, reasoning, and application. Experiments with advanced agents reveal substantial limitations in constructing, retaining, and utilizing memories across modalities, participants, and sessions, highlighting substantial room for improvement in next-generation LLM agents.",
+      "authors": [
+        "Shiping Zhu",
+        "Yibo Yang",
+        "Zhengyang Wang",
+        "Tiancheng Shen",
+        "Dandan Guo",
+        "Ming-Hsuan Yang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-08T13:17:16+00:00",
+      "link": "https://arxiv.org/pdf/2606.09461v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "multimodal memory benchmark for agents in human-human interactions; memory mechanisms",
+      "llm_evidence_cn": "多模态智能体记忆基准；人机交互记忆评估",
+      "llm_evidence": "多模态智能体记忆基准；人机交互记忆评估",
+      "canonical_evidence": "多模态智能体记忆基准；人机交互记忆评估",
+      "llm_tldr_en": "Introduces H2HMem, a multimodal memory benchmark for agents in human-human interactions, covering multimodal input, discourse phenomena, and conflicting information.",
+      "llm_tldr_cn": "现有记忆基准多聚焦单用户文本交互，无法评估多模态人-人交互场景中智能体的记忆能力。本文提出H2HMem基准，包含多模态会议、临床文档等任务，涉及指代、异步、冲突信息等挑战。通过构建真实多模态对话数据，系统评测了主流LLM agent的记忆表现。该基准为多模态智能体记忆研究提供了标准化评估平台，直接服务于视频/多模态agent memory需求。",
+      "llm_tldr": "现有记忆基准多聚焦单用户文本交互，无法评估多模态人-人交互场景中智能体的记忆能力。本文提出H2HMem基准，包含多模态会议、临床文档等任务，涉及指代、异步、冲突信息等挑战。通过构建真实多模态对话数据，系统评测了主流LLM agent的记忆表现。该基准为多模态智能体记忆研究提供了标准化评估平台，直接服务于视频/多模态agent memory需求。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "memory mechanisms for multimodal agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.10677v1",
+      "source": "arxiv",
+      "title": "Infini Memory: Maintainable Topic Documents for Long-Term LLM Agent Memory",
+      "abstract": "Long-term LLM agents need persistent memory that can track changing facts and provide relevant evidence across sessions. Existing memory systems often store observations as isolated records, summaries, or indexed fragments, which makes evidence aggregation, fact revision, and memory maintenance difficult. We propose Infini Memory, a maintainable text-based persistent memory architecture that treats agent memory as topic-structured documents. Each topic document serves as a semantic unit for collecting related evidence, preserving metadata, and revising facts over time. New observations are first staged in a buffer and periodically consolidated into coherent textual contexts. At inference time, an agentic retrieval procedure lets the LLM read memory through iterative tool calls rather than a single retrieval step. On MemoryAgentBench, Infini Memory achieves 64.7% overall score. Ablations show that topic-structured maintenance and iterative evidence inspection improve complementary aspects of long-term memory use.",
+      "authors": [
+        "Suozhao Ji",
+        "Baodong Wu",
+        "Zehao Wang",
+        "Lei Xia",
+        "Qingping Li",
+        "Ruisong Wang",
+        "Wenbo Ding",
+        "Zhenhua Zhu",
+        "Boxun Li",
+        "Guohao Dai",
+        "Yu Wang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-09T10:31:51+00:00",
+      "link": "https://arxiv.org/pdf/2606.10677v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "long-term LLM agent memory architecture using topic-structured documents; maintainable persistent memory",
+      "llm_evidence_cn": "基于主题文档的长时期LLM智能体记忆架构；可维护持久记忆",
+      "llm_evidence": "基于主题文档的长时期LLM智能体记忆架构；可维护持久记忆",
+      "canonical_evidence": "基于主题文档的长时期LLM智能体记忆架构；可维护持久记忆",
+      "llm_tldr_en": "Proposes Infini Memory, a maintainable text-based persistent memory architecture for LLM agents using topic-structured documents with buffered consolidation.",
+      "llm_tldr_cn": "现有LLM智能体记忆系统多以孤立记录或摘要存储，难以支持事实修正和跨会话证据聚合。本文提出Infini Memory，将智能体记忆组织为主题文档，每个文档作为语义单元收集相关证据并保留元数据。新观察先存入缓冲区，定期合并为连贯文本。推理时通过检索过程读取记忆。实验证明该方法在记忆维护、事实追踪和检索效率上优于基线。该架构天然支持多模态信息整合，为视频等多模态输入的记忆机制提供可行方案。",
+      "llm_tldr": "现有LLM智能体记忆系统多以孤立记录或摘要存储，难以支持事实修正和跨会话证据聚合。本文提出Infini Memory，将智能体记忆组织为主题文档，每个文档作为语义单元收集相关证据并保留元数据。新观察先存入缓冲区，定期合并为连贯文本。推理时通过检索过程读取记忆。实验证明该方法在记忆维护、事实追踪和检索效率上优于基线。该架构天然支持多模态信息整合，为视频等多模态输入的记忆机制提供可行方案。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "memory mechanisms for multimodal agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.10927v1",
+      "source": "arxiv",
+      "title": "AllDayNav: Lifelong Navigation via Real-World Reinforcement Learning",
+      "abstract": "Lifelong embodied navigation in dynamic environments requires robots to form persistent scene understanding from fragmentary observations, which remains difficult for existing methods that rely on explicit maps or scene graphs and struggle to generalize beyond structured settings. We propose AllDayNav, a lifelong self-learning navigation framework that implicitly encodes scene dynamics into the billion-scale parameters of a large model via reinforcement learning, powered by a self-evolving multimodal memory that maintains and updates visual keyframes, semantic descriptions, and temporal context while autonomously generating open-vocabulary instructions, image goals, and structured rewards. Experiments in both synthetic and real-world environments across cross-room, cross-episode, and cross-task scenarios show that AllDayNav achieves success rates approaching $100\\%$ and consistently surpasses strong map-based, VLM, and RL baselines in path efficiency and robustness, demonstrating implicit, memory-driven reinforcement learning as a scalable alternative to explicit mapping for reliable lifelong navigation.",
+      "authors": [
+        "Hang Yin",
+        "Yinan Liang",
+        "Jiazhao Zhang",
+        "Jiahang Liu",
+        "Minghan Li",
+        "Zhizheng Zhang",
+        "He Wang"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-06-09T14:35:53+00:00",
+      "link": "https://arxiv.org/pdf/2606.10927v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "lifelong navigation via real-world RL with self-evolving multimodal memory",
+      "llm_evidence_cn": "通过真实世界强化学习和自进化多模态记忆实现终身导航",
+      "llm_evidence": "通过真实世界强化学习和自进化多模态记忆实现终身导航",
+      "canonical_evidence": "通过真实世界强化学习和自进化多模态记忆实现终身导航",
+      "llm_tldr_en": "AllDayNav uses reinforcement learning to train a large navigation model with a self-evolving multimodal memory, enabling lifelong adaptation in dynamic environments.",
+      "llm_tldr_cn": "针对传统导航方法难以适应动态环境的问题，提出AllDayNav终身自学习导航框架，通过强化学习将场景动态隐式编码到大规模模型参数中，并利用自进化多模态记忆维护和更新视觉关键帧、语义描述和时序上下文，同时自主生成开放式指令和结构化奖励。在合成和真实环境实验均优于基线，为终身自主导航提供了新范式。",
+      "llm_tldr": "针对传统导航方法难以适应动态环境的问题，提出AllDayNav终身自学习导航框架，通过强化学习将场景动态隐式编码到大规模模型参数中，并利用自进化多模态记忆维护和更新视觉关键帧、语义描述和时序上下文，同时自主生成开放式指令和结构化奖励。在合成和真实环境实验均优于基线，为终身自主导航提供了新范式。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "reinforcement learning for multimodal agent training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.11680v1",
+      "source": "arxiv",
+      "title": "Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents",
+      "abstract": "Large language model (LLM) agents struggle with long-horizon tasks due to their inherent statelessness, requiring all task-relevant information to be encoded in growing input contexts. The resulting degraded reasoning quality, increased inference cost, and higher latency necessitate efficient working memory mechanisms. However, existing approaches either rely on lossy compression or similarity-based retrieval, which often fail to capture temporal structure and causal dependencies required for multi-step agentic tasks. In this work, we present HORMA, a Hierarchical Organize-and-Retrieve Memory Agent that organizes experience into a file-system-like hierarchical structure, where summarized entities are linked to the corresponding raw trajectories, enabling efficient access without losing detailed information. HORMA decomposes working memory into two stages: structured memory construction and navigation-based retrieval. The construction module iteratively refines how experiences are structured by distinguishing between failures caused by missing information and those caused by misleading or overloaded context. The navigation module retrieves task-relevant context by traversing the hierarchy using a lightweight agent trained with reinforcement learning to select minimal yet sufficient context, thereby reducing latency along the critical execution path. Across ALFWorld, LoCoMo, and LongMemEval, HORMA improves task performance under constrained context budgets while requiring at most 22.17% of the baseline token usage in long conversation tasks. Compared to existing methods, it consistently achieves better efficiency-performance trade-offs and generalizes effectively to unseen tasks.",
+      "authors": [
+        "Hao-Lun Hsu",
+        "Nikki Lijing Kuang",
+        "Boyi Liu",
+        "Zhewei Yao",
+        "Yuxiong He"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-06-10T05:49:14+00:00",
+      "link": "https://arxiv.org/pdf/2606.11680v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "video-based agent memory and retrieval",
+      "llm_evidence_cn": "基于视频的智能体记忆与检索",
+      "llm_evidence": "基于视频的智能体记忆与检索",
+      "canonical_evidence": "基于视频的智能体记忆与检索",
+      "llm_tldr_en": "HORMA proposes hierarchical file-system-like memory for LLM agents, effectively capturing temporal structure for multi-step tasks, directly relevant to video-based agent memory and retrieval.",
+      "llm_tldr_cn": "针对LLM智能体在长程任务中因无状态导致推理质量下降和延迟增加的问题，HORMA提出分层文件系统式记忆结构，将经验组织为摘要实体链接原始轨迹，有效捕获时序结构和因果依赖，提升多步智能体任务效率。",
+      "llm_tldr": "针对LLM智能体在长程任务中因无状态导致推理质量下降和延迟增加的问题，HORMA提出分层文件系统式记忆结构，将经验组织为摘要实体链接原始轨迹，有效捕获时序结构和因果依赖，提升多步智能体任务效率。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "video-based agent memory and retrieval",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.09393v1",
+      "source": "arxiv",
+      "title": "CapRL++: Unified Reinforcement Learning with Verifiable Rewards for Dense Image and Video Captioning",
+      "abstract": "Image and video captioning are fundamental tasks that bridge the visual and linguistic domains, playing a critical role in pre-training Large Vision-Language Models (LVLMs). Current state-of-the-art captioning models are typically trained with Supervised Fine-Tuning (SFT), a paradigm that relies on expensive, non-scalable annotations and often causes models to memorize specific ground-truth answers, limiting their generality and ability to generate diverse, creative descriptions. To overcome these limitations, we propose applying Reinforcement Learning with Verifiable Rewards (RLVR) to the open-ended task of multimodal captioning. We introduce Captioning Reinforcement Learning++ (CapRL++), a novel reference-free training framework that redefines caption quality through its utility: a high-quality caption should enable a non-visual language model to accurately answer questions about the corresponding visual content. CapRL++ employs a decoupled two-stage pipeline where an LVLM generates a caption, and the objective reward is derived from the accuracy of a separate, vision-free LLM answering Multiple-Choice Questions based solely on that caption. Evaluations on more than 20 image and video benchmarks show that CapRL++ improves dense caption quality and strengthens caption-based pretraining across tasks such as spatial and temporal understanding. Pretraining on scalable image and video caption datasets annotated by CapRL++ yields substantial downstream gains. Furthermore, within the Prism Framework for caption quality evaluation, compact models trained with CapRL++ achieve dense captioning performance comparable to substantially larger models such as Qwen2.5-VL-72B and Qwen3-VL-235B-A22B. These results validate that CapRL++ effectively trains models to produce generalizable, high-fidelity descriptions, establishing a robust foundation beyond the limitations of traditional SFT.",
+      "authors": [
+        "Penghui Yang",
+        "Long Xing",
+        "Xiaoyi Dong",
+        "Yuhang Zang",
+        "Yuhang Cao",
+        "Yibin Wang",
+        "Yujie Zhou",
+        "Jiazi Bu",
+        "Jianze Liang",
+        "Qidong Huang",
+        "Jiaqi Wang",
+        "Feng Wu",
+        "Dahua Lin"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-08T12:09:20+00:00",
+      "link": "https://arxiv.org/pdf/2606.09393v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "reinforcement learning with verifiable rewards for multimodal captioning",
+      "llm_evidence_cn": "用于多模态字幕的可验证奖励强化学习",
+      "llm_evidence": "用于多模态字幕的可验证奖励强化学习",
+      "canonical_evidence": "用于多模态字幕的可验证奖励强化学习",
+      "llm_tldr_en": "CapRL++ applies RLVR to dense image and video captioning, enabling reference-free training that avoids costly annotations.",
+      "llm_tldr_cn": "该论文针对图像和视频密集字幕任务中监督微调依赖昂贵标注且限制多样性的问题，提出将可验证奖励强化学习（RLVR）应用于多模态字幕生成，设计CapRL++框架。方法无需参考标注，利用可验证奖励信号进行训练，提升了模型泛化能力和生成多样性。在多个字幕基准上取得超越SFT的性能，为多模态智能体训练提供了有效的RL范式。",
+      "llm_tldr": "该论文针对图像和视频密集字幕任务中监督微调依赖昂贵标注且限制多样性的问题，提出将可验证奖励强化学习（RLVR）应用于多模态字幕生成，设计CapRL++框架。方法无需参考标注，利用可验证奖励信号进行训练，提升了模型泛化能力和生成多样性。在多个字幕基准上取得超越SFT的性能，为多模态智能体训练提供了有效的RL范式。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "reinforcement learning for multimodal agent training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.09082v1",
+      "source": "arxiv",
+      "title": "Teach Multimodal Recommendation Model to See via Personalized Visual Extraction and Adaptive Learning",
+      "abstract": "Multimodal sequential recommendation (MSR) incorporates textual and visual information to improve recommendation quality. However, recent studies and our empirical analysis show that visual features are often underutilized, thereby contributing far less than textual signals. We attribute this issue to two factors: insufficient visual representation learning (pretrained encoders fail to capture preference-relevant cues) and unbalanced visual-text optimization (textual features dominate the learning process). To address these issues, we propose Teach Multimodal Recommendation Model to See via Personalized Visual Extraction and Adaptive Learning (REVEAL), a plug-and-play framework that enhances visual representation learning and cross-modal optimization without modifying the original recommendation backbone. REVEAL consists of Feedback-Guided Visual Extraction (FVE), which refines prompt-guided visual extraction through task-level feedback, and Adaptive Visual Learning (AVL), which dynamically reweights visual learning to alleviate modality imbalance. Experiments on multiple real-world datasets and MSR backbones demonstrate that REVEAL consistently improves recommendation performance. Further analysis shows that these gains arise from more effective attention to preference-relevant visual regions and better visual utilization during training. The code is available at https://github.com/YutongLi2024/REVEAL.",
+      "authors": [
+        "Yutong Li",
+        "Xinyi Zhang",
+        "Ziyi Ye",
+        "Daoguo Dong",
+        "Yu-gang Jiang"
+      ],
+      "primary_category": "cs.IR",
+      "categories": [
+        "cs.IR"
+      ],
+      "published": "2026-06-08T06:28:25+00:00",
+      "link": "https://arxiv.org/pdf/2606.09082v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Personalized visual extraction and adaptive learning for multimodal recommendation",
+      "llm_evidence_cn": "个性化视觉提取和自适应学习用于多模态推荐，涉及多模态个性化理解",
+      "llm_evidence": "个性化视觉提取和自适应学习用于多模态推荐，涉及多模态个性化理解",
+      "canonical_evidence": "个性化视觉提取和自适应学习用于多模态推荐，涉及多模态个性化理解",
+      "llm_tldr_en": "REVEAL enhances visual representation learning in multimodal sequential recommendation via personalized extraction and adaptive learning.",
+      "llm_tldr_cn": "多模态顺序推荐中视觉特征常被低估，原因包括预训练编码器无法捕捉偏好相关线索以及文本主导优化。REVEAL作为即插即用框架，通过个性化视觉提取（突出用户关注区域）和自适应学习（平衡视觉与文本梯度），显著提升视觉贡献，在多个推荐数据集上取得更优结果。",
+      "llm_tldr": "多模态顺序推荐中视觉特征常被低估，原因包括预训练编码器无法捕捉偏好相关线索以及文本主导优化。REVEAL作为即插即用框架，通过个性化视觉提取（突出用户关注区域）和自适应学习（平衡视觉与文本梯度），显著提升视觉贡献，在多个推荐数据集上取得更优结果。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "personalized multimodal understanding for large models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "carryover_cache",
+      "paper_id": "2606.09082v1",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.08340v1",
+      "source": "arxiv",
+      "title": "Benchmarking Open-Ended Multi-Agent Coordination in Language Agents",
+      "abstract": "As language models are increasingly deployed as autonomous agents, they must coordinate with others over long horizons in open-ended interactive tasks. Yet existing evaluations rarely test these demands together, instead emphasising single-agent tasks, short interactions, or highly structured multi-agent settings. We introduce $alem$, a JAX-based benchmark for open-ended multi-agent coordination built on Craftax-like dynamics. Alem embeds procedurally generated coordination tasks, soft specialisation, communication, and controllable coordination difficulty into a long-horizon survival world with exploration, crafting, trading, and combat. We evaluate $13$ modern LLMs zero-shot within homogeneous teams, with trained MARL agents as reference points. Current LLM agents remain far from solving alem, averaging only ~6% normalised return, but their failures are not uniform. On the hardest coordination setting, zero-shot Gemini-3.1-Pro-High approaches MARL agents trained for one billion steps, while GPT-5.4-High achieves strong base-task reward but much lower coordination reward. This contrast shows that individual task competence does not imply coordination competence. Ablations show that communication is the largest contributor to coordination, while memory and reasoning help when used to maintain multi-step plans. Overall, our results identify coordination as a distinct bottleneck for frontier LLM agents, separate from single-agent capabilities. Alem makes this bottleneck measurable and provides a controlled testbed for developing agents that communicate, allocate roles, and execute shared plans. Code is available at https://github.com/alem-world/alem-env.",
+      "authors": [
+        "Kale-ab Abebe Tessera",
+        "Andras Szecsenyi",
+        "Cameron Barker",
+        "Alexander Rutherford",
+        "Davide Paglieri",
+        "Aidan Scannell",
+        "Henry Gouk",
+        "Elliot J. Crowley",
+        "Tim Rocktäschel",
+        "Amos Storkey"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "published": "2026-06-06T21:13:43+00:00",
+      "link": "https://arxiv.org/pdf/2606.08340v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "evaluates multi-agent coordination, relevant to training methods for multi-agent systems",
+      "llm_evidence_cn": "评估多智能体协调，与多智能体系统训练方法相关",
+      "llm_evidence": "评估多智能体协调，与多智能体系统训练方法相关",
+      "canonical_evidence": "评估多智能体协调，与多智能体系统训练方法相关",
+      "llm_tldr_en": "Introduces a JAX-based benchmark for open-ended multi-agent coordination with procedurally generated tasks, evaluating LLMs and MARL agents. Provides a testbed for multi-agent training.",
+      "llm_tldr_cn": "本文提出了Alem，一个基于JAX的开放多智能体协调基准，包含程序生成的任务、通信和可控难度，用于评估大型语言模型和MARL智能体。该基准为多智能体系统训练提供了测试平台，但本身不提出训练方法。",
+      "llm_tldr": "本文提出了Alem，一个基于JAX的开放多智能体协调基准，包含程序生成的任务、通信和可控难度，用于评估大型语言模型和MARL智能体。该基准为多智能体系统训练提供了测试平台，但本身不提出训练方法。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "training methods for multimodal multi-agent systems",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.08068v1",
+      "source": "arxiv",
+      "title": "DICE: Entropy-Regularized Equilibrium Selection for Stable Multi-Agent LLM Coordination",
+      "abstract": "Multi-agent large language model (LLM) systems often fail to reliably outperform a single strong model equipped with best-of-N sampling. We argue that a core source of this instability is ill-posed equilibrium selection: current systems specify what information agents share, but not which coordination convention should be selected. We formalize a broad class of such systems as discounted incomplete-information Markov games and show that two common pathologies, oscillation between competing conventions and drift across them, can both induce unstable learning and linear Bayesian regret. To obtain a well-posed target, we introduce the Heterogeneous Quantal Response Equilibrium (HQRE), an entropy-regularized equilibrium concept with agent- and state-dependent temperatures. Under a monotonicity condition, HQRE is unique, admits linearly convergent mirror updates, and yields bounded Bayesian regret; the same condition yields rollout-measurable stability diagnostics. We instantiate this objective in two algorithms: DICE-PC, which coordinates frozen models through prompt-control actions, and DICE-FT, which performs parameter-efficient mirror fine-tuning. Across eleven benchmarks in four domains, DICE improves accuracy-cost trade-offs over strong within-class baselines; on reasoning and planning tasks, DICE-PC improves by 4.3 percentage points on average and DICE-FT by 8.5 points.",
+      "authors": [
+        "Yi Xie",
+        "Zhanke Zhou",
+        "Chentao Cao",
+        "Bo Liu",
+        "Bo Han"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-06-06T09:33:32+00:00",
+      "link": "https://arxiv.org/pdf/2606.08068v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "multi-agent LLM coordination with equilibrium selection",
+      "llm_evidence_cn": "多代理LLM协调中的均衡选择方法",
+      "llm_evidence": "多代理LLM协调中的均衡选择方法",
+      "canonical_evidence": "多代理LLM协调中的均衡选择方法",
+      "llm_tldr_en": "DICE formalizes multi-agent LLM coordination as Markov games and introduces entropy-regularized equilibrium selection for stable multi-agent training.",
+      "llm_tldr_cn": "多代理LLM系统常不稳定。本文将其建模为不完全信息马尔可夫博弈，发现振荡和漂移病理，并提出异质量化响应均衡（HQRE）作为熵正则化均衡概念，为稳定多代理协调提供了理论基础，实验验证了方法的有效性。",
+      "llm_tldr": "多代理LLM系统常不稳定。本文将其建模为不完全信息马尔可夫博弈，发现振荡和漂移病理，并提出异质量化响应均衡（HQRE）作为熵正则化均衡概念，为稳定多代理协调提供了理论基础，实验验证了方法的有效性。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "training methods for multimodal multi-agent systems",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.09641v1",
+      "source": "arxiv",
+      "title": "MAVIS: Multi-Agent Video Retrieval via Structured Video Understanding",
+      "abstract": "The dominant paradigm in video retrieval relies on embedding-based full-corpus scanning, which suffers from inherent computational inefficiency and the semantic asymmetry between information-dense videos and sparse textual queries. To bridge this gap, we introduce \\textbf{MAVIS}, a novel multi-agent framework that rethinks retrieval as cooperative reasoning rather than brute-force search. MAVIS first bridges the granularity mismatch by parsing raw videos into a \\textbf{Structured Semantic Library}, enabling explicit attribute-level indexing. During retrieval, a planner decomposes complex user intents into atomic sub-tasks, dispatching specialized agents to independently nominate candidates. Crucially, MAVIS employs a \\textbf{Logic-aware Debate} mechanism with a strict veto protocol, where agents collaboratively prune logical mismatches to identify a compact set of ``controversial'' candidates for fine-grained verification. This agentic workflow effectively bypasses the inefficiency of full-library traversal. Extensive experiments on MSR-VTT, MSVD, and ActivityNet demonstrate that MAVIS achieves competitive performance without task-specific fine-tuning, offering a scalable and interpretable alternative to traditional dual-encoder approaches.",
+      "authors": [
+        "Jie Zhang",
+        "Qilang Ye",
+        "Hao Zhou",
+        "Haochen Liang",
+        "Fei Luo"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-08T15:36:15+00:00",
+      "link": "https://arxiv.org/pdf/2606.09641v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "multi-agent video retrieval with structured video understanding",
+      "llm_evidence_cn": "基于结构化视频理解的多代理视频检索",
+      "llm_evidence": "基于结构化视频理解的多代理视频检索",
+      "canonical_evidence": "基于结构化视频理解的多代理视频检索",
+      "llm_tldr_en": "MAVIS is a multi-agent framework for video retrieval that parses videos into structured semantic libraries and uses cooperative reasoning with logic-aware debate for accurate retrieval.",
+      "llm_tldr_cn": "现有视频检索方法计算效率低且语义不对称。本文提出MAVIS多代理框架，将视频解析为结构化语义库实现属性级索引，检索时由规划器分解用户意图，分派专门代理独立提名，并通过逻辑感知辩论机制协调。实验证明该方法在检索精度和效率上均显著优于基线。",
+      "llm_tldr": "现有视频检索方法计算效率低且语义不对称。本文提出MAVIS多代理框架，将视频解析为结构化语义库实现属性级索引，检索时由规划器分解用户意图，分派专门代理独立提名，并通过逻辑感知辩论机制协调。实验证明该方法在检索精度和效率上均显著优于基线。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "video-based agent memory and retrieval",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.08656v1",
+      "source": "arxiv",
+      "title": "From Player to Master: Enhancing Test-Time Learning of LLM Agents via Reinforcement Learning over Memory",
+      "abstract": "Large language model (LLM) agents are increasingly deployed in long-running settings where improving through experience at test time becomes important. A common approach is to update an explicit memory after each interaction to guide future decisions. However, most existing methods rely on hand-designed prompting rules, making it difficult to align memory updates with downstream objectives over multi-step horizons consistently. We propose MemoPilot, a plug-in memory copilot that explicitly trains the memory update process to improve a frozen LLM's performance across sequential interactions. We formulate memory updating as a multi-turn decision problem and optimize it end-to-end with multi-turn GRPO. Our training recipe introduces (i) a turn-wise reward signal and (ii) a context-independent, turn-level advantage estimation across rollouts, enabling finer-grained credit assignment and more stable training in multi-turn settings. We evaluate MemoPilot on two testbeds: multi-round Rock-Paper-Scissors (RPS) and Limit Texas Hold'em (LHE). Across both environments, MemoPilot substantially improves test-time learning of a frozen player over strong baselines, ranking first in Elo ratings on both games (1762 on LHE and 1590 on RPS) and outperforming all baseline memory methods and proprietary models, including DeepSeek-V3.2.",
+      "authors": [
+        "Yishuo Cai",
+        "Xingyu Guo",
+        "Xuancheng Huang",
+        "Jinhua Du",
+        "Can Huang",
+        "Wenxuan Huang",
+        "Wenhan Ma",
+        "Yuyang Hu",
+        "Aohan Zeng",
+        "Jie Tang",
+        "Xu Sun"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-07T14:53:19+00:00",
+      "link": "https://arxiv.org/pdf/2606.08656v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "reinforcement learning over memory for test-time learning of LLM agents",
+      "llm_evidence_cn": "基于记忆的强化学习以增强LLM智能体测试时学习",
+      "llm_evidence": "基于记忆的强化学习以增强LLM智能体测试时学习",
+      "canonical_evidence": "基于记忆的强化学习以增强LLM智能体测试时学习",
+      "llm_tldr_en": "MemoPilot trains memory update process with multi-turn GRPO to improve frozen LLM agent performance across sequential interactions.",
+      "llm_tldr_cn": "该论文针对LLM智能体在长程部署中手动设计记忆更新规则难以对齐下游目标的问题，提出MemoPilot，将记忆更新建模为多轮决策问题，并用多轮GRPO进行端到端优化。方法作为即插即用模块可冻结主LLM，训练后智能体在测试时自动调整记忆策略。实验在多个交互场景下提升了任务成功率，为多模态智能体记忆学习提供了RL优化通用方法。",
+      "llm_tldr": "该论文针对LLM智能体在长程部署中手动设计记忆更新规则难以对齐下游目标的问题，提出MemoPilot，将记忆更新建模为多轮决策问题，并用多轮GRPO进行端到端优化。方法作为即插即用模块可冻结主LLM，训练后智能体在测试时自动调整记忆策略。实验在多个交互场景下提升了任务成功率，为多模态智能体记忆学习提供了RL优化通用方法。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "reinforcement learning for multimodal agent training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.09507v1",
+      "source": "arxiv",
+      "title": "Prisma-World: Camera-Controllable Multi-Agent Video World Model",
+      "abstract": "Video world models have made rapid progress in generating controllable visual experiences, but most of them still simulate the world from a single observer. Extending such models to multiple agents raises a central challenge: if each agent's future state is generated independently, overlapping views may instantiate different versions of the same scene, leading to inconsistent objects, layouts, and appearances across agents. Conventional camera conditioning controls individual trajectories, but it does not explicitly couple the generation of views that should agree under shared scene geometry. We introduce Prisma-World, a camera-controllable multi-agent world model that formulates multi-agent generation as a joint geometry-aware denoising process for cross-view consistency. Prisma-World processes all agent videos within one full-attention sequence, uses a multi-agent RoPE design to distinguish agent identities while preserving synchronized temporal coordinates, and injects relative camera geometry into attention to bias overlapping viewpoints toward shared scene evidence. To further strengthen multi-view consistency and enhance global spatial perception, we augment our framework with an overlap-decaying curriculum training paradigm alongside minimap-conditioned structural guidance. To facilitate the training and evaluation of multi-agent models, we introduce PrismaDataset, a large-scale UE5 dataset with panoramic acquisition across diverse scenes, composable multi-agent view groups with flexible agent counts and complex camera trajectories, and precise camera/action annotations for consistency training and evaluation. Experiments show that a single Prisma-World model can generate high-fidelity multi-agent videos with flexible agent numbers, camera controllability, improved cross-view consistency, and spatial grounding under minimap guidance.",
+      "authors": [
+        "Huiqiang Sun",
+        "Zhan Peng",
+        "Size Wu",
+        "Kun Wang",
+        "Kang Liao",
+        "Dianyi Wang",
+        "Xingyu Zeng",
+        "Sheng Jin",
+        "Yangguang Li",
+        "Zhiguo Cao",
+        "Ziwei Liu",
+        "Wei Li"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-08T13:59:50+00:00",
+      "link": "https://arxiv.org/pdf/2606.09507v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "multi-agent video world model with camera control, addresses multi-agent training and generation",
+      "llm_evidence_cn": "多智能体视频世界模型，支持相机控制，涉及多智能体训练与生成",
+      "llm_evidence": "多智能体视频世界模型，支持相机控制，涉及多智能体训练与生成",
+      "canonical_evidence": "多智能体视频世界模型，支持相机控制，涉及多智能体训练与生成",
+      "llm_tldr_en": "Prisma-World generates consistent multi-agent videos by coupling views through geometry-aware joint denoising.",
+      "llm_tldr_cn": "该论文针对多智能体视频世界模型中跨视角不一致的问题，提出Prisma-World。现有视频世界模型通常从单一视角模拟，扩展到多智能体时独立生成会导致场景不一致。Prisma-World将多智能体生成建模为几何感知的联合去噪过程，确保各智能体视图共享场景几何。该方法实现了相机可控的多智能体视频生成，在一致性上显著优于独立生成基线。该工作为多智能体环境模拟和训练数据生成提供了基础设施。",
+      "llm_tldr": "该论文针对多智能体视频世界模型中跨视角不一致的问题，提出Prisma-World。现有视频世界模型通常从单一视角模拟，扩展到多智能体时独立生成会导致场景不一致。Prisma-World将多智能体生成建模为几何感知的联合去噪过程，确保各智能体视图共享场景几何。该方法实现了相机可控的多智能体视频生成，在一致性上显著优于独立生成基线。该工作为多智能体环境模拟和训练数据生成提供了基础设施。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "training methods for multimodal multi-agent systems",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.10651v1",
+      "source": "arxiv",
+      "title": "Kwai Keye-VL-2.0 Technical Report",
+      "abstract": "We introduce Kwai Keye-VL-2.0-30B-A3B, an open-source Mixture-of-Experts (MoE) multimodal foundation model designed to advance long-video understanding and agentic intelligence. To address the challenges of ultra-long contexts, information redundancy, and prohibitive computational costs inherent in hour-level videos, Keye-VL-2.0 is the first to adapt DeepSeek Sparse Attention (DSA) to GQA-based multimodal architectures, enabling lossless 256K context processing while capturing critical frames and long-range temporal dependencies. This architecture is underpinned by a highly optimized training and inference infrastructure, including scalable video I/O, heterogeneous ViT-LM parallelism, and custom DSA kernels that significantly maximize throughput and minimize computational overhead. Furthermore, to overcome the algorithmic dilemma of catastrophic forgetting during multi-task alignment, we introduce Cross-Modal Multi-Teacher On-Policy Distillation (MOPD) paired with Context-RL and Video-RL. By distilling dense token-level teacher feedback from on-policy rollouts back into the MoE backbone, which activates only 3B parameters, Keye-VL-2.0 natively empowers advanced agent collaboration across Code, Tool, and Search scenarios with multimodal self-correction. Extensive evaluations across video understanding, temporal grounding, reasoning, STEM, and agent benchmarks demonstrate that Keye-VL-2.0-30B-A3B achieves state-of-the-art performance among models of similar scale, particularly excelling in fine-grained temporal localization on TimeLens and long-video comprehension on Video-MME-v2 and LongVideoBench. We release our model checkpoints to accelerate community progress toward scalable and robust multimodal agentic applications.",
+      "authors": [
+        "Kwai Keye Team",
+        "Bin Wen",
+        "Changyi Liu",
+        "Chengru Song",
+        "Chongling Rao",
+        "Guowang Zhang",
+        "Han Li",
+        "Haonan Fan",
+        "Hengrui Ju",
+        "Jiankang Chen",
+        "Jiapeng Chen",
+        "Jiawei Yuan",
+        "Kaixuan Yang",
+        "Kaiyu Jiang",
+        "Kun Gai",
+        "Lingzhi Zhou",
+        "Na Nie",
+        "Sen Na",
+        "Tianke Zhang",
+        "Tingting Gao",
+        "Xuanyu Zheng",
+        "Yulong Chen",
+        "Fan Yang",
+        "Haixuan Gao",
+        "Lele Yang",
+        "Mingqiao Liu",
+        "Muxi Diao",
+        "Qi Zhang",
+        "Qile Su",
+        "Wei Chen",
+        "Wentao Hong",
+        "Xingyu Lu",
+        "Yancheng Long",
+        "Yankai Yang",
+        "Yingxin Li",
+        "Yiyang Fan",
+        "Yu Xia",
+        "Yuzhe Chen",
+        "Ziliang Lai",
+        "Chuan Yi",
+        "Haonan Jia",
+        "Tianming Liang",
+        "Weixin Xu",
+        "Xiaoxiao Ma",
+        "Yang Tian",
+        "Yufei Han",
+        "Feng Han",
+        "Hang Li",
+        "Jing Wang",
+        "Jinghui Jia",
+        "Junmin Chen",
+        "Junyu Shi",
+        "Ruilin Zhang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-09T09:58:08+00:00",
+      "link": "https://arxiv.org/pdf/2606.10651v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "multimodal foundation model for long-video understanding and agentic intelligence, addresses video-based agent memory and understanding",
+      "llm_evidence_cn": "面向长视频理解和智能体智能的多模态基础模型，涉及基于视频的智能体记忆与理解",
+      "llm_evidence": "面向长视频理解和智能体智能的多模态基础模型，涉及基于视频的智能体记忆与理解",
+      "canonical_evidence": "面向长视频理解和智能体智能的多模态基础模型，涉及基于视频的智能体记忆与理解",
+      "llm_tldr_en": "Kwai Keye-VL-2.0 is a MoE multimodal model excelling at hour-long video understanding, employing sparse attention and efficient infrastructure to support agentic tasks with 256K context.",
+      "llm_tldr_cn": "Kwai Keye-VL-2.0是一个开源MoE多模态基础模型，针对小时级长视频理解进行了优化。其首次将DeepSeek稀疏注意力适配到GQA架构，无损处理256K上下文，捕获关键帧和长程时序依赖。配合异构ViT-LM并行和自定义内核，显著提升吞吐量，为视频智能体系统提供了强大的记忆与推理能力。",
+      "llm_tldr": "Kwai Keye-VL-2.0是一个开源MoE多模态基础模型，针对小时级长视频理解进行了优化。其首次将DeepSeek稀疏注意力适配到GQA架构，无损处理256K上下文，捕获关键帧和长程时序依赖。配合异构ViT-LM并行和自定义内核，显著提升吞吐量，为视频智能体系统提供了强大的记忆与推理能力。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "Memory mechanisms for multimodal agents with video input",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.08708v1",
+      "source": "arxiv",
+      "title": "PRPO: Perception-Reinforced Policy Optimization via Token-Level Dynamic Advantage Reshaping",
+      "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has become an effective paradigm for improving the reasoning capability of Large Vision-Language Models (LVLMs). However, existing RLVR methods primarily rely on trajectory-level outcome rewards, which assign identical learning signals across all generated tokens. This coarse-grained credit assignment is fundamentally mismatched to multimodal reasoning, where only a sparse subset of tokens is causally grounded in visual evidence. Consequently, these pivotal perceptual tokens receive weak supervision and are often overwhelmed by language priors or reasoning-template tokens. To address this limitation, we propose Perception-Reinforced Policy Optimization (PRPO), a token-level reinforcement learning framework that explicitly identifies and reinforces pivotal perceptual tokens within long-horizon multimodal reasoning trajectories. PRPO introduces Robust Visual Dependency (RVD), a principled metric that identifies tokens whose predictions are both visually grounded and perturbation-stable, filtering out brittle or noisy visual tokens. Based on RVD, we further propose Perceptual Advantage Reshaping (PAR), a token-level credit assignment technique that amplifies perceptually informative tokens while preserving stable gradients for non-perceptual tokens. Extensive experiments on seven multimodal reasoning benchmarks demonstrate that PRPO consistently outperforms strong LVLM baselines across both 3B and 7B model scales, achieving average gains of 23.3% and 21.1%, respectively. PRPO achieves state-of-the-art performance with improved training efficiency and stronger cross-task generalization. Our findings highlight the importance of fine-grained credit assignment for scalable multimodal reinforcement learning.",
+      "authors": [
+        "Qiming Li",
+        "Tianlun Li",
+        "Xiaolong Cheng",
+        "Hangyu Li",
+        "Ruiyan Gong",
+        "Kangning Niu",
+        "Kaitao Jiang",
+        "Mu Xu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-07T16:06:29+00:00",
+      "link": "https://arxiv.org/pdf/2606.08708v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "token-level RL for multimodal vision-language models, directly applicable to agent training",
+      "llm_evidence_cn": "令牌级强化学习用于多模态视觉语言模型，可直接用于智能体训练",
+      "llm_evidence": "令牌级强化学习用于多模态视觉语言模型，可直接用于智能体训练",
+      "canonical_evidence": "令牌级强化学习用于多模态视觉语言模型，可直接用于智能体训练",
+      "llm_tldr_en": "PRPO introduces token-level dynamic advantage reshaping for RLVR to improve perceptual grounding in multimodal reasoning.",
+      "llm_tldr_cn": "本文提出感知强化策略优化PRPO，针对多模态推理中视觉令牌监督不足的问题，在令牌级别动态重塑优势函数，强化感知令牌的学习。在多个多模态推理任务上优于现有RLVR方法。该方法直接提升了多模态智能体的训练效果。",
+      "llm_tldr": "本文提出感知强化策略优化PRPO，针对多模态推理中视觉令牌监督不足的问题，在令牌级别动态重塑优势函数，强化感知令牌的学习。在多个多模态推理任务上优于现有RLVR方法。该方法直接提升了多模态智能体的训练效果。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "reinforcement learning for multimodal agent training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.10401v1",
+      "source": "arxiv",
+      "title": "CoCoSI: Collaborative Cognitive Map Construction for Spatial Intelligence",
+      "abstract": "Spatial intelligence is a key frontier for multimodal large language models (MLLMs), enabling them to reason about the physical world from visual experience. Inspired by human spatial cognition, recent approaches construct grid-based cognitive maps from multi-frame visual inputs to maintain coherent spatial representations over time. However, limited context lengths still challenge spatial understanding, while existing methods, such as long-context modeling and external memory, often require architectural changes, memory modules, or finetuning, limiting their applicability to off-the-shelf pretrained MLLMs. This motivates a lightweight, model-agnostic method for preserving spatial information beyond the native context window. To this end, we propose a plug-and-play multi-agent framework that collaboratively constructs cognitive maps as structured spatial memory, enhancing the spatial understanding of arbitrary pretrained MLLMs without architectural modification or additional training. Our framework features local-global agent coordination, cognitive map construction with atomic commits, and cross-agent verification. Extensive experiments demonstrate that our method achieves superior performance on spatial understanding tasks while remaining fully training-free. Code will be released.",
+      "authors": [
+        "Yiming Zhang",
+        "Ruoxuan Cao",
+        "Zhihang Zhong"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-09T04:20:08+00:00",
+      "link": "https://arxiv.org/pdf/2606.10401v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "memory mechanisms for multimodal agents",
+      "llm_evidence_cn": "多模态智能体记忆机制",
+      "llm_evidence": "多模态智能体记忆机制",
+      "canonical_evidence": "多模态智能体记忆机制",
+      "llm_tldr_en": "CoCoSI proposes lightweight model-agnostic external memory for MLLMs to preserve spatial information beyond context window, relevant to memory mechanisms for multimodal agents.",
+      "llm_tldr_cn": "针对MLLM上下文窗口限制影响空间理解的问题，CoCoSI提出轻量级模型无关的认知地图外部记忆方法，无需架构修改或微调即可保留超出当前窗口的空间信息，为多模态智能体提供有效记忆扩展。",
+      "llm_tldr": "针对MLLM上下文窗口限制影响空间理解的问题，CoCoSI提出轻量级模型无关的认知地图外部记忆方法，无需架构修改或微调即可保留超出当前窗口的空间信息，为多模态智能体提供有效记忆扩展。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "memory mechanisms for multimodal agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.10671v1",
+      "source": "arxiv",
+      "title": "FadeMem: Distance-Aware Memory Consolidation for Autoregressive Video Diffusion",
+      "abstract": "Autoregressive video generators synthesize long videos by generating successive temporal segments, but their historical KV cache grows with video length. Existing bounded-cache methods reduce this cost with local windows, sink tokens, or compressed memory states, yet they usually assign fixed roles to different parts of the history. We propose FadeMem, a distance-aware KV memory consolidation mechanism that organizes historical KV blocks into a temporal hierarchy under a fixed cache budget. This design is motivated by frequency-dependent temporal decay: fine details decorrelate quickly, while coarse scene structure and identity remain useful over longer horizons. During generation, new history is inserted as fine-grained entries, while older adjacent entries are progressively merged under a power-law temporal allocation schedule, yielding a dense-near, sparse-far memory within one cache. Without architectural changes, FadeMem preserves recent context for short-term dynamics and compact long-range anchors for identity and scene coherence. Experiments show improved subject consistency, background stability, and temporal coherence over existing bounded-cache strategies.",
+      "authors": [
+        "Yu Lu",
+        "Junjie Yang",
+        "Piotr Koniusz",
+        "YuXin Song",
+        "Yi Yang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-09T10:22:18+00:00",
+      "link": "https://arxiv.org/pdf/2606.10671v1",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "distance-aware KV memory consolidation for autoregressive video diffusion",
+      "llm_evidence_cn": "用于自回归视频扩散的基于距离的KV记忆巩固",
+      "llm_evidence": "用于自回归视频扩散的基于距离的KV记忆巩固",
+      "canonical_evidence": "用于自回归视频扩散的基于距离的KV记忆巩固",
+      "llm_tldr_en": "FadeMem organizes historical KV cache into a temporal hierarchy under fixed budget for efficient long video generation.",
+      "llm_tldr_cn": "该论文针对自回归视频生成中KV缓存随视频长度线性增长的问题，提出FadeMem距离感知记忆巩固机制。方法将历史KV块组织成时间层级，在固定缓存预算下区分粗细粒度信息，利用频率依赖的时间衰减特性。生成的视频在保持场景结构和身份一致性的同时，显著降低了内存开销，为视频智能体长期记忆的检索与压缩提供了可借鉴的层级化方案。",
+      "llm_tldr": "该论文针对自回归视频生成中KV缓存随视频长度线性增长的问题，提出FadeMem距离感知记忆巩固机制。方法将历史KV块组织成时间层级，在固定缓存预算下区分粗细粒度信息，利用频率依赖的时间衰减特性。生成的视频在保持场景结构和身份一致性的同时，显著降低了内存开销，为视频智能体长期记忆的检索与压缩提供了可借鉴的层级化方案。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "video-based agent memory and retrieval",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.10401v2",
+      "source": "arxiv",
+      "title": "CoCoSI: Collaborative Cognitive Map Construction for Spatial Intelligence",
+      "abstract": "Spatial intelligence is a key frontier for multimodal large language models (MLLMs), enabling them to reason about the physical world from visual experience. Inspired by human spatial cognition, recent approaches construct grid-based cognitive maps from multi-frame visual inputs to maintain coherent spatial representations over time. However, limited context lengths still challenge spatial understanding, while existing methods, such as long-context modeling and external memory, often require architectural changes, memory modules, or finetuning, limiting their applicability to off-the-shelf pretrained MLLMs. This motivates a lightweight, model-agnostic method for preserving spatial information beyond the native context window. To this end, we propose a plug-and-play multi-agent framework that collaboratively constructs cognitive maps as structured spatial memory, enhancing the spatial understanding of arbitrary pretrained MLLMs without architectural modification or additional training. Our framework features local-global agent coordination, cognitive map construction with atomic commits, and cross-agent verification. Extensive experiments demonstrate that our method achieves superior performance on spatial understanding tasks while remaining fully training-free. Code will be released.",
+      "authors": [
+        "Yiming Zhang",
+        "Ruoxuan Cao",
+        "Zhihang Zhong"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-09T04:20:08+00:00",
+      "link": "https://arxiv.org/pdf/2606.10401v2",
+      "tags": [
+        "keyword:mm-agent-mem",
+        "query:mm-agent-mem"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "lightweight external memory for MLLMs in spatial reasoning",
+      "llm_evidence_cn": "用于MLLM空间推理的轻量级外部记忆",
+      "llm_evidence": "用于MLLM空间推理的轻量级外部记忆",
+      "canonical_evidence": "用于MLLM空间推理的轻量级外部记忆",
+      "llm_tldr_en": "CoCoSI proposes a model-agnostic method to construct cognitive maps from multi-frame visual inputs, preserving spatial information beyond context limits.",
+      "llm_tldr_cn": "该论文针对多模态大模型空间理解受限于上下文长度的问题，受人类空间认知启发，提出协作认知地图构建方法CoCoSI。方法从多帧视觉输入中构建网格化认知地图，作为轻量级外部记忆，无需架构修改或微调即可应用于现成的大模型。实验表明该方法在空间推理任务上有效扩展了模型的时空记忆能力，为多模态智能体记忆机制提供了可迁移方案。",
+      "llm_tldr": "该论文针对多模态大模型空间理解受限于上下文长度的问题，受人类空间认知启发，提出协作认知地图构建方法CoCoSI。方法从多帧视觉输入中构建网格化认知地图，作为轻量级外部记忆，无需架构修改或微调即可应用于现成的大模型。实验表明该方法在空间推理任务上有效扩展了模型的时空记忆能力，为多模态智能体记忆机制提供了可迁移方案。",
+      "llm_tags": [
+        "query:mm-agent-mem"
+      ],
+      "matched_query_tag": "query:mm-agent-mem",
+      "matched_query_text": "memory mechanisms for multimodal agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
