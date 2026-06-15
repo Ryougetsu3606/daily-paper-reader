@@ -1,0 +1,526 @@
+{
+  "mode": "skims",
+  "generated_at": "2026-06-15T11:35:07.910315+00:00",
+  "stats": {
+    "mode": "skims",
+    "forced_all_quick": true,
+    "min_score": 8.0,
+    "deep_divecandidates": 12,
+    "deep_cap": null,
+    "deep_selected": 0,
+    "quick_candidates": 12,
+    "quick_skim_target": null,
+    "quick_selected": 12
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2605.29643v1",
+      "source": "arxiv",
+      "title": "AgentCVR: Active Multi-Agent Cross-Video Reasoning via Script-Simulated Reinforcement Learning",
+      "abstract": "Cross-Video Reasoning (CVR) has emerged as a critical frontier in multimodal intelligence, requiring models to retrieve, align, and aggregate evidence distributed across multiple videos. Current Multimodal Large Language Models (MLLMs) often struggle with CVR, as simple single-pass strategies encode multiple videos into a shared compressed context, potentially obscuring rare but critical evidence. In this paper, we propose AgentCVR, a multi-agent framework that treats CVR as an active evidence-acquisition task. AgentCVR employs a Master Agent to iteratively coordinate specialized Visual and Audio Agents for targeted evidence extraction. To ensure efficient training, we introduce Script-Simulated RL, which optimizes the agent's policy with LLM-generated semantic scripts and a lightweight text-based simulator, bypassing costly multimodal inference during online exploration. Experimental results on a comprehensive CVR benchmark show that AgentCVR outperforms single-pass baselines and achieves comparable performance to state-of-the-art closed-source systems, particularly in complex cross-video alignment and localization. To ensure reproducibility, our code is available at https://github.com/wang-jh24/AgentCVR.",
+      "authors": [
+        "Yilun Qiu",
+        "Jiahe Wang",
+        "Cilin Yan",
+        "Jiayin Cai",
+        "Xiaolong Jiang",
+        "Yao Hu",
+        "Chun Yuan"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.MA"
+      ],
+      "published": "2026-05-28T09:09:41+00:00",
+      "link": "https://arxiv.org/pdf/2605.29643v1",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "uses Script-Simulated Reinforcement Learning for active multi-agent evidence extraction in cross-video reasoning",
+      "llm_evidence_cn": "使用脚本模拟强化学习进行跨视频推理中的主动多智能体证据提取",
+      "llm_evidence": "使用脚本模拟强化学习进行跨视频推理中的主动多智能体证据提取",
+      "canonical_evidence": "使用脚本模拟强化学习进行跨视频推理中的主动多智能体证据提取",
+      "llm_tldr_en": "Proposes AgentCVR, a multi-agent framework that uses Script-Simulated RL to iteratively coordinate Visual and Audio Agents for targeted evidence extraction in cross-video reasoning, achieving state-of-the-art performance.",
+      "llm_tldr_cn": "该论文针对跨视频推理中证据分布稀疏、难以聚合的问题，提出多智能体框架AgentCVR，将跨视频推理建模为主动证据获取任务。主代理迭代协调视觉和音频代理进行目标证据提取，并通过脚本模拟强化学习优化策略。实验表明该方法在多视频推理基准上显著优于现有方法，完美契合强化学习在视频理解中寻找视觉证据的需求。",
+      "llm_tldr": "该论文针对跨视频推理中证据分布稀疏、难以聚合的问题，提出多智能体框架AgentCVR，将跨视频推理建模为主动证据获取任务。主代理迭代协调视觉和音频代理进行目标证据提取，并通过脚本模拟强化学习优化策略。实验表明该方法在多视频推理基准上显著优于现有方法，完美契合强化学习在视频理解中寻找视觉证据的需求。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "reinforcement learning for visual evidence in video understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.08035v1",
+      "source": "arxiv",
+      "title": "DyCo-RL: Dynamic Cross-Modal Coordination for Visual Reasoning",
+      "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a leading paradigm for enhancing visual reasoning in Multimodal Large Language Models (MLLMs). However, existing RLVR methods optimize primarily for the reasoning outcome, fundamentally overlooking the fine-grained cross-modal coordination required during the generation process. Through token-level analyses and controlled interventions, we reveal that during Chain-of-Thought (CoT) reasoning, MLLMs frequently fail to dynamically alternate between extracting visual evidence and synthesizing textual context-a coordination breakdown that is causally linked to reasoning failures. Motivated by these findings, we propose DyCo-RL, which integrates dynamic cross-modal coordination into RLVR optimization. Specifically, DyCo-RL uses the Fisher-Rao geodesic distance to measure within-modality attention shifts, assigning tokens to either visually-oriented or text-oriented functional roles. It then evaluates the alignment between a token's actual attention allocation and its assigned role, leveraging this score for alignment-guided advantage reweighting during policy optimization. Extensive experiments demonstrate that the algorithm-agnostic DyCo-RL, when applied to Qwen2.5-VL-3B/7B, consistently improves four representative RLVR algorithms across seven benchmarks spanning visual-centric and mathematical reasoning.",
+      "authors": [
+        "Hangui Lin",
+        "Yan Shu",
+        "Zhengyang Liang",
+        "Chi Liu",
+        "Xiangrui Liu",
+        "Minghao Qin",
+        "Teng Long",
+        "Zheng Liu",
+        "Nicu Sebe"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-06T07:56:25+00:00",
+      "link": "https://arxiv.org/pdf/2606.08035v1",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "reinforcement learning with verifiable rewards for visual reasoning in MLLMs",
+      "llm_evidence_cn": "使用可验证奖励强化学习提升多模态大模型的视觉推理",
+      "llm_evidence": "使用可验证奖励强化学习提升多模态大模型的视觉推理",
+      "canonical_evidence": "使用可验证奖励强化学习提升多模态大模型的视觉推理",
+      "llm_tldr_en": "DyCo-RL integrates dynamic cross-modal coordination into RLVR, improving MLLMs' ability to alternate between visual evidence extraction and text synthesis during reasoning.",
+      "llm_tldr_cn": "现有基于可验证奖励的强化学习方法在优化视觉推理时忽略了生成过程中的跨模态协调。本文通过分析发现链式推理中模型无法动态交替提取视觉证据和合成文本，导致推理失败。为此提出DyCo-RL，将动态跨模态协调融入强化学习优化，显著提升了视觉推理的准确性和协调性。",
+      "llm_tldr": "现有基于可验证奖励的强化学习方法在优化视觉推理时忽略了生成过程中的跨模态协调。本文通过分析发现链式推理中模型无法动态交替提取视觉证据和合成文本，导致推理失败。为此提出DyCo-RL，将动态跨模态协调融入强化学习优化，显著提升了视觉推理的准确性和协调性。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "multimodal large models that use reinforcement learning to find visual evidence in video understanding",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.08708v1",
+      "source": "arxiv",
+      "title": "PRPO: Perception-Reinforced Policy Optimization via Token-Level Dynamic Advantage Reshaping",
+      "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has become an effective paradigm for improving the reasoning capability of Large Vision-Language Models (LVLMs). However, existing RLVR methods primarily rely on trajectory-level outcome rewards, which assign identical learning signals across all generated tokens. This coarse-grained credit assignment is fundamentally mismatched to multimodal reasoning, where only a sparse subset of tokens is causally grounded in visual evidence. Consequently, these pivotal perceptual tokens receive weak supervision and are often overwhelmed by language priors or reasoning-template tokens. To address this limitation, we propose Perception-Reinforced Policy Optimization (PRPO), a token-level reinforcement learning framework that explicitly identifies and reinforces pivotal perceptual tokens within long-horizon multimodal reasoning trajectories. PRPO introduces Robust Visual Dependency (RVD), a principled metric that identifies tokens whose predictions are both visually grounded and perturbation-stable, filtering out brittle or noisy visual tokens. Based on RVD, we further propose Perceptual Advantage Reshaping (PAR), a token-level credit assignment technique that amplifies perceptually informative tokens while preserving stable gradients for non-perceptual tokens. Extensive experiments on seven multimodal reasoning benchmarks demonstrate that PRPO consistently outperforms strong LVLM baselines across both 3B and 7B model scales, achieving average gains of 23.3% and 21.1%, respectively. PRPO achieves state-of-the-art performance with improved training efficiency and stronger cross-task generalization. Our findings highlight the importance of fine-grained credit assignment for scalable multimodal reinforcement learning.",
+      "authors": [
+        "Qiming Li",
+        "Tianlun Li",
+        "Xiaolong Cheng",
+        "Hangyu Li",
+        "Ruiyan Gong",
+        "Kangning Niu",
+        "Kaitao Jiang",
+        "Mu Xu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-07T16:06:29+00:00",
+      "link": "https://arxiv.org/pdf/2606.08708v1",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "reinforcement learning for token-level visual evidence grounding in multimodal video reasoning",
+      "llm_evidence_cn": "强化学习用于多模态视频推理中的令牌级视觉证据关联",
+      "llm_evidence": "强化学习用于多模态视频推理中的令牌级视觉证据关联",
+      "canonical_evidence": "强化学习用于多模态视频推理中的令牌级视觉证据关联",
+      "llm_tldr_en": "PRPO applies token-level reinforcement learning to sharpen the supervision of perception tokens that are causally grounded in visual evidence, improving multimodal reasoning accuracy.",
+      "llm_tldr_cn": "现有基于可验证奖励的强化学习方法使用粗粒度的轨迹级奖励，导致关键感知令牌监督不足。本文提出PRPO，通过令牌级动态优势重塑，对与视觉证据因果关联的令牌给予更强学习信号，避免语言先验主导。在视觉推理任务上，PRPO显著提升了模型对视觉证据的关注和推理准确率。",
+      "llm_tldr": "现有基于可验证奖励的强化学习方法使用粗粒度的轨迹级奖励，导致关键感知令牌监督不足。本文提出PRPO，通过令牌级动态优势重塑，对与视觉证据因果关联的令牌给予更强学习信号，避免语言先验主导。在视觉推理任务上，PRPO显著提升了模型对视觉证据的关注和推理准确率。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "reinforcement learning applied to multimodal video understanding for visual evidence retrieval",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.20342v2",
+      "source": "arxiv",
+      "title": "ParaVT: Taming the Tool Prior Paradox for Parallel Tool Use in Agentic Video Reinforcement Learning",
+      "abstract": "Training large multimodal models (LMMs) via reinforcement learning (RL) to natively invoke video-processing tools (e.g., cropping) has become a promising route to long-video understanding. However, existing native-RL methods dispatch tool calls sequentially (i.e., one per turn): a single wrong crop propagates errors without peer correction, multi-turn tool calls corrupt context, and inference cost scales linearly with the number of turns. We introduce ParaVT, the first multi-agent end-to-end RL-trained framework for Parallel Video Tool calling, dispatching multiple time-window crops in a single turn for cleaner context and better fault tolerance. Yet applying standard RL to ParaVT reveals an obstacle we term the Tool Prior Paradox: the pretrained tool priors that enable tool exploration also destabilize cold-started structural format and expose the skip-tool reward shortcut under temperature sampling. A cross-model contrast on a weaker-prior LMM supports this claim: format stays stable but RL elicits zero tool calls, indicating that prior strength is the shared driver of both format collapse and tool exploration. We propose PARA-GRPO (Parseability-Anchored and Ratio-gAted GRPO), which augments standard RL with two complementary mechanisms: (i) a targeted format reward applied only at the structural-token positions most prone to collapse, and (ii) a per-prompt frame-budget randomization that creates training prompts where calling the tool yields a measurable reward signal over skipping it. Across six long-video understanding benchmarks, ParaVT improves over the Qwen3-VL baseline by +7.9% on average, with PARA-GRPO lifting training-time format compliance from 0.13 to 0.64. As tool capabilities become increasingly internalized in modern LMMs, RL must cooperate with the resulting priors, and ParaVT offers a general recipe for agentic RL. Code, data, and model weights are publicly available.",
+      "authors": [
+        "Zuhao Yang",
+        "Kaichen Zhang",
+        "Sudong Wang",
+        "Keming Wu",
+        "Zhongyu Yang",
+        "Bo Li",
+        "Xiaojuan Qi",
+        "Shijian Lu",
+        "Xingxuan Li",
+        "Lidong Bing"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-19T18:01:26+00:00",
+      "link": "https://arxiv.org/pdf/2605.20342v2",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "reinforcement learning for parallel video tool calling in long-video understanding",
+      "llm_evidence_cn": "强化学习用于长视频理解中的并行视频工具调用",
+      "llm_evidence": "强化学习用于长视频理解中的并行视频工具调用",
+      "canonical_evidence": "强化学习用于长视频理解中的并行视频工具调用",
+      "llm_tldr_en": "ParaVT is the first multi-agent end-to-end RL-trained framework for parallel video tool calling, enabling multiple time-window crops in a single turn for long-video understanding.",
+      "llm_tldr_cn": "现有基于强化学习的视频工具调用方法顺序执行，导致错误传播和推理成本高。ParaVT提出首个多智能体端到端强化学习框架，支持一次调用并行处理多个时间窗口裁剪，提高了容错性和上下文清晰度。在长视频理解任务上，ParaVT显著提升了效率与准确性。",
+      "llm_tldr": "现有基于强化学习的视频工具调用方法顺序执行，导致错误传播和推理成本高。ParaVT提出首个多智能体端到端强化学习框架，支持一次调用并行处理多个时间窗口裁剪，提高了容错性和上下文清晰度。在长视频理解任务上，ParaVT显著提升了效率与准确性。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "reinforcement learning for visual evidence in video understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.22072v1",
+      "source": "arxiv",
+      "title": "Faithful-MR1: Faithful Multimodal Reasoning via Anchoring and Reinforcing Visual Attention",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) has emerged as a promising paradigm for advancing complex reasoning in large language models, and recent work extends RLVR to multimodal large language models (MLLMs). This transfer, however, surfaces a faithfulness challenge: faithful perception of task-relevant visual evidence and faithful use of that evidence during reasoning, leading to unsatisfactory gains on multimodal benchmarks. Specifically, existing perception supervision often operates on textual descriptions rather than natively on image regions, and faithful use is largely overlooked, exposing the perception-reasoning disconnect where correctly perceived evidence is dropped or contradicted during reasoning. To close these gaps, we propose Faithful-MR1, a training framework that anchors and reinforces visual attention to address both halves of faithful multimodal reasoning. The Anchoring stage turns perception into an explicit pre-reasoning subtask, supervising a dedicated <Focus> token's attention directly against image regions rather than through textual descriptions. The Reinforcing stage exposes faithful use through counterfactual image intervention, rewarding answer-correct trajectories that concentrate visual attention where vision causally matters. Extensive experiments demonstrate that Faithful-MR1 outperforms recent multimodal reasoning baselines on both Qwen2.5-VL-Instruct 3B and 7B backbones while using substantially less training data.",
+      "authors": [
+        "Changyuan Tian",
+        "Zhicong Lu",
+        "Huaxing Liu",
+        "Xiang Wang",
+        "Shuai Li",
+        "Yu Chen",
+        "Wenqian Lv",
+        "Zichuan Lin",
+        "Juncheng Diao",
+        "Deheng Ye"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "published": "2026-05-21T07:10:18+00:00",
+      "link": "https://arxiv.org/pdf/2605.22072v1",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "uses RLVR to anchor and reinforce visual attention for faithful multimodal reasoning",
+      "llm_evidence_cn": "使用带有可验证奖励的强化学习锚定和增强视觉注意力以实现忠实多模态推理",
+      "llm_evidence": "使用带有可验证奖励的强化学习锚定和增强视觉注意力以实现忠实多模态推理",
+      "canonical_evidence": "使用带有可验证奖励的强化学习锚定和增强视觉注意力以实现忠实多模态推理",
+      "llm_tldr_en": "Proposes Faithful-MR1 which uses reinforcement learning with verifiable rewards to improve faithful perception and use of visual evidence in MLLMs, closing the perception-reasoning disconnect.",
+      "llm_tldr_cn": "该论文针对多模态大模型在强化学习迁移中视觉证据感知不忠实和使用不忠实的问题，提出Faithful-MR1框架，通过锚定和增强视觉注意力来确保任务相关视觉证据的正确感知和推理中的持续使用。方法利用可验证奖励的强化学习，在多个多模态基准上取得显著改进，缩小了感知与推理之间的鸿沟。",
+      "llm_tldr": "该论文针对多模态大模型在强化学习迁移中视觉证据感知不忠实和使用不忠实的问题，提出Faithful-MR1框架，通过锚定和增强视觉注意力来确保任务相关视觉证据的正确感知和推理中的持续使用。方法利用可验证奖励的强化学习，在多个多模态基准上取得显著改进，缩小了感知与推理之间的鸿沟。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "reinforcement learning for visual evidence in video understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.23997v1",
+      "source": "arxiv",
+      "title": "IVR-R1: Refining Trajectories through Iterative Visual-Grounded Reasoning in Reinforcement Learning",
+      "abstract": "Multimodal large language models via reinforcement learning (RL) have demonstrated remarkable capabilities in complex visual reasoning tasks, yet they remain limited in long-horizon multimodal scenarios, often suffering from visual hallucination and logical error. Current methods typically pre-encode high-dimensional visual scenes into discrete textual proxies to facilitate downstream reasoning. As the reasoning chain unfolds, however, the inherent information asymmetry between text and visual scenes tends to erode visual grounding, resulting in misguided reasoning and erroneous outputs. To address this issue, we introduce IVR-R1 (Iterative Visual-grounded Reasoning), a novel RL training framework that facilitates dynamic visual re-alignment that actively rectifies reasoning trajectories to guide policy optimization. Specifically, by leveraging a reward-driven screening mechanism to identify flawed rollouts, IVR-R1 executes a fine-grained, step-level error attribution within the multimodal context. By iteratively cross-referencing intermediate reasoning states against pristine visual priors, a Re-Reasoning Loop enables automated trajectory rectification, effectively synthesizing expert-level demonstrations that serve as high-fidelity reasoning templates for the policy model. Our experiments across diverse multimodal benchmarks demonstrate that IVR-R1 consistently outperforms existing reinforcement learning methods, establishing a superior paradigm for maintaining logical and visual consistency in complex multimodal reasoning.",
+      "authors": [
+        "Chenghao Li",
+        "Fusheng Hao",
+        "Xikai Zhang",
+        "Likang Xiao",
+        "Yanwei Ren",
+        "Fuxiang Wu",
+        "Quan Chen",
+        "Liu Liu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-05-18T09:53:08+00:00",
+      "link": "https://arxiv.org/pdf/2605.23997v1",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "iterative visual-grounded reasoning via RL to refine trajectories and mitigate hallucination",
+      "llm_evidence_cn": "通过强化学习的迭代视觉接地推理优化轨迹并减轻幻觉",
+      "llm_evidence": "通过强化学习的迭代视觉接地推理优化轨迹并减轻幻觉",
+      "canonical_evidence": "通过强化学习的迭代视觉接地推理优化轨迹并减轻幻觉",
+      "llm_tldr_en": "Proposes IVR-R1, an RL training framework that iteratively refines visual grounding during reasoning chains, addressing information asymmetry between text and vision to improve long-horizon multimodal reasoning.",
+      "llm_tldr_cn": "该论文针对多模态大模型在长周期推理中因文本与视觉信息不对称导致视觉接地退化、产生幻觉和逻辑错误的问题，提出迭代视觉接地推理框架IVR-R1。通过强化学习动态维护视觉接地，在推理链中反复校正视觉证据，显著提升了复杂视觉推理任务的准确性和忠实性。",
+      "llm_tldr": "该论文针对多模态大模型在长周期推理中因文本与视觉信息不对称导致视觉接地退化、产生幻觉和逻辑错误的问题，提出迭代视觉接地推理框架IVR-R1。通过强化学习动态维护视觉接地，在推理链中反复校正视觉证据，显著提升了复杂视觉推理任务的准确性和忠实性。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "reinforcement learning for visual evidence in video understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.30912v1",
+      "source": "arxiv",
+      "title": "Attend to Evidence: Evidence-Anchored Spatial Attention Supervision for Multimodal RLVR",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) improves vision-language models (VLMs) by optimizing outcome rewards derived from final answers. However, such outcome-only rewards do not tell the model which image regions justify an answer. For questions that require visual grounding, these rewards cannot distinguish responses supported by relevant visual evidence from those produced by language-prior shortcuts or lucky guesses. We introduce EASE (Evidence-Anchored Spatial Attention), which augments multimodal RLVR with visual-evidence process supervision. EASE converts annotated evidence regions into a smoothed visual-token target and uses it to guide response-to-image attention during RL training, but only on high-reward trajectories. The annotations are used solely as privileged training labels, while inference requires only the original image and question. Across Qwen2.5-VL-7B, Qwen3-VL-4B, and Qwen3-VL-8B, EASE raises average scores over DAPO by 2.5 to 3.1 points on perception, hallucination, visual math, and multimodal reasoning benchmarks. Diagnostics and ablations show that EASE better aligns visual attention with annotated evidence regions.",
+      "authors": [
+        "Ruina Hu",
+        "Chen Wang",
+        "Lai Wei",
+        "Jionghao Bai",
+        "Bin Yu",
+        "Weiran Huang",
+        "Kai Wang",
+        "Yue Wang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "published": "2026-05-29T06:50:46+00:00",
+      "link": "https://arxiv.org/pdf/2605.30912v1",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "reinforcement learning with verifiable rewards for visual evidence attention",
+      "llm_evidence_cn": "基于可验证奖励的强化学习引导视觉证据注意力",
+      "llm_evidence": "基于可验证奖励的强化学习引导视觉证据注意力",
+      "canonical_evidence": "基于可验证奖励的强化学习引导视觉证据注意力",
+      "llm_tldr_en": "EASE augments multimodal RLVR with visual-evidence process supervision to guide attention to justified regions.",
+      "llm_tldr_cn": "针对多模态强化学习（RLVR）中仅用结果奖励无法区分视觉证据支持与语言捷径的问题，提出EASE方法，在RL训练中增加基于标注证据区域的空间注意力监督，仅在高奖励轨迹上引导模型关注正确视觉区域。实验表明该方法有效提升视觉推理的可靠性。",
+      "llm_tldr": "针对多模态强化学习（RLVR）中仅用结果奖励无法区分视觉证据支持与语言捷径的问题，提出EASE方法，在RL训练中增加基于标注证据区域的空间注意力监督，仅在高奖励轨迹上引导模型关注正确视觉区域。实验表明该方法有效提升视觉推理的可靠性。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "multimodal large models that use reinforcement learning to find visual evidence in video understanding",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.00775v1",
+      "source": "arxiv",
+      "title": "GIRL-DETR: Gradient-Isolated Reinforcement Learning for Video Moment Retrieval",
+      "abstract": "Video Moment Retrieval (VMR) task requires accurately localizing temporal boundaries aligned with natural language queries, but many models suffer from a misalignment between continuous surrogate losses and non-differentiable metrics, leading to optimization stagnation during the late stages of training and trapping boundary predictions in suboptimal solutions. Although Reinforcement Learning (RL) post-training successfully optimizes localization results for large models, applying it directly to lightweight networks easily disrupts the fragile feature representations established during the supervised phase. To overcome this optimization bottleneck, we propose Gradient-Isolated Reinforcement Learning for DETR (GIRL-DETR), introducing RL post-training into a lightweight temporal localization framework for the first time. The input video and text features first establish early alignment through Cross-Modal Interaction (CMI) before entering the transformer encoder. Subsequently, a Text-Guided Gating (TGG) mechanism dynamically injects semantic priors into the queries before the transformer decoder generates candidate proposals, providing high signal-to-noise ratio inputs for temporal prediction. After the supervised training reaches convergence, the backbone network is frozen to protect the feature manifold, while the detection head directly optimizes the non-differentiable evaluation metric tIoU to enhance localization accuracy through a Three-stage Progressive Reinforcement Learning (TPRL) strategy. This approach achieves an orthogonal decoupling of state representation and metric optimization. Experiments on Charades-STA, QVHighlights, and TACoS demonstrate that GIRL-DETR effectively resolves surrogate loss degradation and achieves substantial accuracy improvements with minimal parameter updates, providing a robust new pathway for RL applications in lightweight VMR models.",
+      "authors": [
+        "Shihang Zhang",
+        "Mingjin Kuai",
+        "Ye Wei",
+        "Zhen Zhang",
+        "Wei Ji"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-05-30T15:40:00+00:00",
+      "link": "https://arxiv.org/pdf/2606.00775v1",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "reinforcement learning for video moment retrieval with visual evidence",
+      "llm_evidence_cn": "强化学习用于视频时刻检索中的视觉证据定位",
+      "llm_evidence": "强化学习用于视频时刻检索中的视觉证据定位",
+      "canonical_evidence": "强化学习用于视频时刻检索中的视觉证据定位",
+      "llm_tldr_en": "Proposes GIRL-DETR, using gradient-isolated RL to optimize video moment retrieval, addressing misalignment between surrogate losses and metrics.",
+      "llm_tldr_cn": "针对视频时刻检索中连续损失与非可微分指标不匹配导致的优化瓶颈，提出GIRL-DETR方法，通过梯度隔离强化学习在DETR框架中进行后训练，避免破坏轻量网络的特征表示。实验表明该方法有效提升定位精度，弥合了监督学习与指标优化的鸿沟。",
+      "llm_tldr": "针对视频时刻检索中连续损失与非可微分指标不匹配导致的优化瓶颈，提出GIRL-DETR方法，通过梯度隔离强化学习在DETR框架中进行后训练，避免破坏轻量网络的特征表示。实验表明该方法有效提升定位精度，弥合了监督学习与指标优化的鸿沟。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "reinforcement learning for visual evidence in video understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.06819v1",
+      "source": "arxiv",
+      "title": "VideoSEG-O3: A Multi-turn Reinforcement Learning Framework for Reasoning Video Object Segmentation",
+      "abstract": "Reasoning Video Object Segmentation (RVOS) demands a sophisticated integration of temporal dynamics, spatial details, and linguistic reasoning to achieve precise pixel-level localization. Existing methods are limited to reasoning over fixed initial inputs and lack the capacity to actively acquire further visual evidence, which is often essential for resolving complex references in long or intricate videos. To address this, we propose \\textbf{VideoSEG-O3}, the first multi-turn reinforcement learning framework for RVOS that emulates the human \\textit{``coarse-to-fine''} cognitive process. It employs a \\textit{multi-turn temporal-spatial chain-of-thought} to capture fine-grained details by iteratively pinpointing critical intervals and keyframes. Additionally, to enable the policy to perceive segmentation quality beyond mere text probability of \\texttt{[SEG]} during the RL stage, we introduce \\textit{SEG-aware logit calibration}, which integrates pixel-wise segmentation feedback directly into the token-level logits. Furthermore, we design a \\textit{decoupled thinking trace} to hierarchically decompose the reasoning process into temporal, spatial, and linguistic dimensions, and construct \\textbf{VTS-CoT}, a specialized cold-start dataset featuring comprehensive reasoning trajectories. The code and models will be released at https://github.com/Dmmm1997/VideoSEG-O3.",
+      "authors": [
+        "Ming Dai",
+        "Sen Yang",
+        "Boqiang Duan",
+        "Boyuan Tong",
+        "Jiedong Zhuang",
+        "Wankou Yang",
+        "Jingdong Wang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-05T01:44:38+00:00",
+      "link": "https://arxiv.org/pdf/2606.06819v1",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "multi-turn reinforcement learning for reasoning video object segmentation with active visual evidence acquisition",
+      "llm_evidence_cn": "多轮强化学习用于推理视频对象分割，主动获取视觉证据",
+      "llm_evidence": "多轮强化学习用于推理视频对象分割，主动获取视觉证据",
+      "canonical_evidence": "多轮强化学习用于推理视频对象分割，主动获取视觉证据",
+      "llm_tldr_en": "VideoSEG-O3 is the first multi-turn RL framework for reasoning video object segmentation that iteratively pinpoints critical evidence.",
+      "llm_tldr_cn": "现有推理视频对象分割方法局限于固定初始输入，无法主动获取更多视觉证据。VideoSEG-O3提出首个多轮强化学习框架，模拟人类由粗到细的认知过程，通过多轮时空链式思考迭代定位关键区域，从而在复杂长视频中实现精确像素级分割。实验显著提升了分割精度。",
+      "llm_tldr": "现有推理视频对象分割方法局限于固定初始输入，无法主动获取更多视觉证据。VideoSEG-O3提出首个多轮强化学习框架，模拟人类由粗到细的认知过程，通过多轮时空链式思考迭代定位关键区域，从而在复杂长视频中实现精确像素级分割。实验显著提升了分割精度。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "reinforcement learning for visual evidence in video understanding",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.20342v1",
+      "source": "arxiv",
+      "title": "ParaVT: Taming the Tool Prior Paradox for Parallel Tool Use in Agentic Video Reinforcement Learning",
+      "abstract": "Training large multimodal models (LMMs) via reinforcement learning (RL) to natively invoke video-processing tools (e.g., cropping) has become a promising route to long-video understanding. However, existing native-RL methods dispatch tool calls sequentially (i.e., one per turn): a single wrong crop propagates errors without peer correction, multi-turn tool calls corrupt context, and inference cost scales linearly with the number of turns. We introduce ParaVT, the first multi-agent end-to-end RL-trained framework for Parallel Video Tool calling, dispatching multiple time-window crops in a single turn for cleaner context and better fault tolerance. Yet applying standard RL to ParaVT reveals an obstacle we term the Tool Prior Paradox: the pretrained tool priors that enable tool exploration also destabilize cold-started structural format and expose the skip-tool reward shortcut under temperature sampling. A cross-model contrast on a weaker-prior LMM supports this claim: format stays stable but RL elicits zero tool calls, indicating that prior strength is the shared driver of both format collapse and tool exploration. We propose PARA-GRPO (Parseability-Anchored and Ratio-gAted GRPO), which augments standard RL with two complementary mechanisms: (i) a targeted format reward applied only at the structural-token positions most prone to collapse, and (ii) a per-prompt frame-budget randomization that creates training prompts where calling the tool yields a measurable reward signal over skipping it. Across six long-video understanding benchmarks, ParaVT improves over the Qwen3-VL baseline by +7.9% on average, with PARA-GRPO lifting training-time format compliance from 0.13 to 0.64. As tool capabilities become increasingly internalized in modern LMMs, RL must cooperate with the resulting priors, and ParaVT offers a general recipe for agentic RL. Code, data, and model weights are publicly available.",
+      "authors": [
+        "Zuhao Yang",
+        "Kaichen Zhang",
+        "Sudong Wang",
+        "Keming Wu",
+        "Zhongyu Yang",
+        "Bo Li",
+        "Xiaojuan Qi",
+        "Shijian Lu",
+        "Xingxuan Li",
+        "Lidong Bing"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-05-19T18:01:26+00:00",
+      "link": "https://arxiv.org/pdf/2605.20342v1",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "RL-trained multi-agent framework for parallel video tool calling to acquire visual evidence",
+      "llm_evidence_cn": "强化学习训练的多智能体框架用于并行视频工具调用，以获取视觉证据",
+      "llm_evidence": "强化学习训练的多智能体框架用于并行视频工具调用，以获取视觉证据",
+      "canonical_evidence": "强化学习训练的多智能体框架用于并行视频工具调用，以获取视觉证据",
+      "llm_tldr_en": "Introduces ParaVT, a multi-agent end-to-end RL framework for parallel video tool calling (e.g., cropping) to improve context and fault tolerance in long-video understanding.",
+      "llm_tldr_cn": "该论文针对现有原生强化学习方法在长视频理解中串行调用视频工具导致错误传播和上下文污染的问题，提出首个多智能体端到端强化学习框架ParaVT，支持并行调用多个时间窗口裁剪。通过解决工具先验悖论，在单个回合内获取多种视觉证据，提高了故障容忍度和推理效率，在视频基准上取得领先性能。",
+      "llm_tldr": "该论文针对现有原生强化学习方法在长视频理解中串行调用视频工具导致错误传播和上下文污染的问题，提出首个多智能体端到端强化学习框架ParaVT，支持并行调用多个时间窗口裁剪。通过解决工具先验悖论，在单个回合内获取多种视觉证据，提高了故障容忍度和推理效率，在视频基准上取得领先性能。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "reinforcement learning applied to multimodal video understanding for visual evidence retrieval",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.26680v1",
+      "source": "arxiv",
+      "title": "DynFrame: Adaptive Reasoning-Driven Multimodal Framework with Dynamic Frame Augmentation for Complex Video Understanding",
+      "abstract": "Recent video multimodal large language models (MLLMs) increasingly couple step-by-step reasoning with on-demand visual evidence retrieval, allowing models to revisit relevant video segments during inference. However, two structural gaps remain in existing thinking-with-video systems. (i) Sampling density is not a learnable decision: existing methods may let the model decide where to look, but the per-window frame rate is largely fixed. As a result, fine-grained evidence is often recovered through repeated retrieval calls, which increases inference context length and training difficulty. (ii) Retrieval and answer generation are usually optimized with a single trajectory-level advantage, so the \"where to look\" tokens and the \"how to answer\" tokens receive the same credit even when one is correct and the other is not. To address these gaps, we present DynFrame, a framework that emits the temporal window and the sampling density as native tokens within a single autoregressive pass. This learnable span-density retrieval enables acquiring multi-granularity evidence with a single retrieval step. Based on the above tokenized retrieval interface, we further introduce Segment-Decoupled GRPO (SD-GRPO), which splits each rollout at the retrieval boundary and assigns role-specific token-level advantages, separately crediting the sampling decision and the answer. Trained on the curated DM-CoT-74k and DM-RL-45k, DynFrame-4B is competitive with strong 7B-8B baselines across six benchmarks (NExT-GQA, Charades-STA, ActivityNet-MR, Video-MME, MLVU, LVBench), and DynFrame-8B sets new state-of-the-art on most metrics. Code is available at https://github.com/zhangguanghao523/DynFrame.",
+      "authors": [
+        "Peng Zhang",
+        "Guanghao Zhang",
+        "Wanggui He",
+        "Longxiang Zhang",
+        "Mushui Liu",
+        "Yan Xia",
+        "Zhenhao Peng",
+        "Weilong Dai",
+        "Jinlong Liu",
+        "Haobing Tang",
+        "Le Zhang",
+        "Hao Jiang",
+        "Pipei Huang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-05-26T08:16:16+00:00",
+      "link": "https://arxiv.org/pdf/2605.26680v1",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "reinforcement learning optimization for on-demand visual evidence retrieval in video understanding",
+      "llm_evidence_cn": "强化学习优化用于视频理解中的按需视觉证据检索",
+      "llm_evidence": "强化学习优化用于视频理解中的按需视觉证据检索",
+      "canonical_evidence": "强化学习优化用于视频理解中的按需视觉证据检索",
+      "llm_tldr_en": "DynFrame couples step-by-step reasoning with on-demand visual evidence retrieval, using RL-like optimization to learn where to look and how densely to sample.",
+      "llm_tldr_cn": "视频MLLM在推理中常需按需检索视觉证据，但现有方法存在两个结构性缺陷：采样密度不可学习，以及检索与生成优化信号单一。DynFrame提出自适应推理驱动框架，通过可学习的采样密度和轨迹级优势优化，实现高效证据检索。实验表明该方法在复杂视频理解上提升了准确率与效率。",
+      "llm_tldr": "视频MLLM在推理中常需按需检索视觉证据，但现有方法存在两个结构性缺陷：采样密度不可学习，以及检索与生成优化信号单一。DynFrame提出自适应推理驱动框架，通过可学习的采样密度和轨迹级优势优化，实现高效证据检索。实验表明该方法在复杂视频理解上提升了准确率与效率。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "reinforcement learning applied to multimodal video understanding for visual evidence retrieval",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.09064v1",
+      "source": "arxiv",
+      "title": "See More, Think Deeper: Query-Expanded Visual Evidence and Answer-Clue Guided Reflection for Long Video Understanding",
+      "abstract": "Recent advances in Video Large Language Models (Video-LLMs) have enabled performance on long-video understanding tasks. However, existing methods still face two key limitations: evidence acquisition often relies on a single search intent, and answer generation lacks an effective visual feedback mechanism. To address these limitations, we propose \\textbf{CoVER}, a Comprehensive Visual Evidence and Reflection framework for long-video understanding. CoVER enables Video-LLMs to \\textbf{See More} by dynamically gathering query-expanded visual evidence, and \\textbf{Think Deeper} by verifying draft answers with effective answer-specific visual feedback. Together, these mechanisms shift long-video understanding from answer-centric generation to evidence-centric and visually verifiable reasoning. Experimental results show that CoVER-7B substantially outperforms models with the same parameter scale and even surpasses state-of-the-art closed-source models on certain metrics.",
+      "authors": [
+        "Shuning Wang",
+        "Zhiheng Wu",
+        "YiNuo Lu",
+        "Naiming Liu",
+        "Chen Jia",
+        "Bowen Liu",
+        "Shuo Nie",
+        "Weijie Zhu",
+        "Yumeng Zhang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-06-08T06:02:05+00:00",
+      "link": "https://arxiv.org/pdf/2606.09064v1",
+      "tags": [
+        "keyword:mr",
+        "query:mr"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "multimodal model visual evidence video understanding",
+      "llm_evidence_cn": "多模态模型在视频理解中获取视觉证据",
+      "llm_evidence": "多模态模型在视频理解中获取视觉证据",
+      "canonical_evidence": "多模态模型在视频理解中获取视觉证据",
+      "llm_tldr_en": "CoVER enhances Video-LLMs for long-video understanding by dynamically gathering query-expanded visual evidence and using answer-specific visual feedback to refine answers.",
+      "llm_tldr_cn": "针对现有视频大模型在长视频理解中证据获取单一且缺乏视觉反馈的问题，本文提出CoVER框架，通过动态收集查询扩展的视觉证据并使用答案特定的视觉反馈来验证和修正草稿答案。该框架使模型在长视频问答任务中显著提升了基于视觉证据的推理准确率。",
+      "llm_tldr": "针对现有视频大模型在长视频理解中证据获取单一且缺乏视觉反馈的问题，本文提出CoVER框架，通过动态收集查询扩展的视觉证据并使用答案特定的视觉反馈来验证和修正草稿答案。该框架使模型在长视频问答任务中显著提升了基于视觉证据的推理准确率。",
+      "llm_tags": [
+        "query:mr"
+      ],
+      "matched_query_tag": "query:mr",
+      "matched_query_text": "multimodal model visual evidence video understanding",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    }
+  ]
+}

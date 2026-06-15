@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-14T20:49:40.848542+00:00",
-  "updated_date": "20260614",
+  "generated_at": "2026-06-15T11:35:07.911659+00:00",
+  "updated_date": "20260517-20260615",
   "carryover_days": 9,
   "tag_states": {
     "mm-agent-mem": {
@@ -396,6 +396,11 @@
           "carry_days": 1
         }
       ]
+    },
+    "mr": {
+      "updated_date": "20260517-20260615",
+      "carryover_days": 9,
+      "items": []
     }
   }
 }
