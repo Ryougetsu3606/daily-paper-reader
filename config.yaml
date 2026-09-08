@@ -57,6 +57,56 @@ subscriptions:
           note: ''
       updated_at: '2026-06-15T11:30:06.258Z'
       paused: true
+    - tag: ego-embodied
+      description: >-
+        请帮我查找有关egocentric vision(image/video)在embodied intelligence(具身智能，含VLA和policy learning等，含manipulation，
+        locomotion, navigation等各种应用）相关的文章
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: embodied intelligence
+          keyword_cn: 具身智能
+          query: embodied intelligence and embodiment in AI systems
+        - keyword: egocentric vision
+          keyword_cn: 第一视角视觉
+          query: egocentric vision understanding for embodied intelligence
+        - keyword: vision language action model
+          keyword_cn: 视觉-语言-动作模型
+          query: vision language action model for robot control and manipulation
+        - keyword: policy learning
+          keyword_cn: 策略学习
+          query: policy learning from egocentric perception for robot control
+        - keyword: robot manipulation
+          keyword_cn: 机器人操纵
+          query: egocentric vision for robotic manipulation task learning
+        - keyword: locomotion policy
+          keyword_cn: 移动策略
+          query: locomotion policy learning in embodied agents with first person view
+      intent_queries:
+        - query: Paper about egocentric videos for embodied intelligence
+          query_cn: ''
+          enabled: true
+          source: manual
+          note: ''
+        - query: >-
+            How does egocentric vision benefit embodied intelligence tasks like manipulation, locomotion, and
+            navigation?
+          query_cn: 第一视角视觉如何有益于操纵、移动和导航等具身智能任务？
+          enabled: true
+          source: manual
+          note: ''
+        - query: What is the role of first person perception in vision language action models for robot policy learning?
+          query_cn: 第一人称感知在面向机器人策略学习的视觉语言动作模型中起什么作用？
+          enabled: true
+          source: manual
+          note: ''
+        - query: Which learning methods leverage egocentric video data to improve embodied agent control?
+          query_cn: 哪些学习方法利用第一视角视频数据来改进具身智能体的控制？
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-09-08T13:28:49.340Z'
 source_backends:
   arxiv:
     papers_table: arxiv_papers
