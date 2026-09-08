@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T22:34:06.221708+00:00",
-  "updated_date": "20260907",
+  "generated_at": "2026-09-08T13:43:13.952077+00:00",
+  "updated_date": "20260810-20260908",
   "carryover_days": 9,
   "tag_states": {
     "mm-agent-mem": {
@@ -399,6 +399,11 @@
     },
     "mr": {
       "updated_date": "20260517-20260615",
+      "carryover_days": 9,
+      "items": []
+    },
+    "ego-embodied": {
+      "updated_date": "20260810-20260908",
       "carryover_days": 9,
       "items": []
     }
