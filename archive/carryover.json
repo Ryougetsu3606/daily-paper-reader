@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T22:48:34.721932+00:00",
-  "updated_date": "20260908",
+  "generated_at": "2026-09-09T21:48:45.236257+00:00",
+  "updated_date": "20260909",
   "carryover_days": 9,
   "tag_states": {
     "mm-agent-mem": {
@@ -403,48 +403,9 @@
       "items": []
     },
     "ego-embodied": {
-      "updated_date": "20260908",
+      "updated_date": "20260909",
       "carryover_days": 9,
       "items": [
-        {
-          "id": "2609.02341v1",
-          "source": "arxiv",
-          "title": "Towards Zero-Shot Transfer Across Embodiments For Driving VLAs",
-          "abstract": "Vision-Language-Action models (VLAs) have shown strong potential in autonomous driving by leveraging multimodal pretraining for instruction following, visual reasoning, and scene-level generalization. In robotic manipulation, scaling VLA fine-tuning across multiple robot setups--especially when unifying representations across embodiments--has been shown to improve in-dataset performance and cross-embodiment generalization; in autonomous driving, however, VLAs remain largely trained on individual datasets and are rarely evaluated for zero-shot transfer to unseen datasets and camera rigs; furthermore naively adding more datasets to the training data does not necessarily lead to better performance within seen embodiments. To address these problems, we study multi-dataset training for the driving task and BEV-Forcing, an auxiliary objective that transfers ground-plane object-layout information from a specialized Bird's-Eye-View model into the VLA backbone. By encouraging the model to represent object position through a shared BEV spatial interface, we show that an auxiliary task such as BEV-Forcing can improve both in-distribution and out-of-distribution performance when training on a small number of camera rigs. As the number of training embodiments increases, however, the benefits of the auxiliary task are reduced; we present this as evidence that new techniques in the literature may see their benefits diminish when simply scaling up training diversity, which motivates presenting results taking into account data scaling.",
-          "authors": [
-            "Caio Azevedo",
-            "Stefano Sabatini",
-            "Sascha Hornauer",
-            "Fabien Moutarde"
-          ],
-          "primary_category": "cs.CV",
-          "categories": [
-            "cs.CV"
-          ],
-          "published": "2026-09-02T09:17:54+00:00",
-          "link": "https://arxiv.org/pdf/2609.02341v1",
-          "tags": [
-            "keyword:ego-embodied",
-            "query:ego-embodied"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "Cross-embodiment zero-shot transfer study for vision-language-action models in driving",
-          "llm_evidence_cn": "驾驶场景下视觉-语言-动作模型的跨平台零样本迁移研究",
-          "llm_evidence": "驾驶场景下视觉-语言-动作模型的跨平台零样本迁移研究",
-          "canonical_evidence": "驾驶场景下视觉-语言-动作模型的跨平台零样本迁移研究",
-          "llm_tldr_en": "Studies zero-shot cross-embodiment and cross-dataset transfer for driving VLAs, analyzing multi-dataset fine-tuning and representation unification to improve generalization beyond seen camera rigs.",
-          "llm_tldr_cn": "VLA在自动驾驶中展现强大的指令跟随和场景泛化能力，但从单个数据集训练到未见过的数据集和相机装置的零样本迁移极少被系统研究，且简单加入多数据集未必提升已有平台效果。本文面向驾驶VLA研究多实施例的训练与表征统一问题，把机器人操控里跨平台微调的经验带到驾驶领域。作者分析多种数据集和相机布局对迁移能力的影响，并提出训练策略，使驾驶VLA在未见过的配置上也能保持较好的指令跟随性能。这一工作补上了VLA从单一平台到多平台泛化的研究空白。",
-          "llm_tldr": "VLA在自动驾驶中展现强大的指令跟随和场景泛化能力，但从单个数据集训练到未见过的数据集和相机装置的零样本迁移极少被系统研究，且简单加入多数据集未必提升已有平台效果。本文面向驾驶VLA研究多实施例的训练与表征统一问题，把机器人操控里跨平台微调的经验带到驾驶领域。作者分析多种数据集和相机布局对迁移能力的影响，并提出训练策略，使驾驶VLA在未见过的配置上也能保持较好的指令跟随性能。这一工作补上了VLA从单一平台到多平台泛化的研究空白。",
-          "llm_tags": [
-            "query:ego-embodied"
-          ],
-          "matched_query_tag": "query:ego-embodied",
-          "matched_query_text": "vision language action model for robot control and manipulation",
-          "matched_requirement_id": "req-3",
-          "selection_source": "carryover_cache",
-          "paper_id": "2609.02341v1",
-          "carry_days": 1
-        },
         {
           "id": "2609.04070v1",
           "source": "arxiv",
@@ -487,47 +448,7 @@
           "matched_requirement_id": "req-3",
           "selection_source": "carryover_cache",
           "paper_id": "2609.04070v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2609.05266v1",
-          "source": "arxiv",
-          "title": "TacPAC: Tactile Prediction and Real-Time Action Correction in World-Action Models for Contact-Rich Manipulation",
-          "abstract": "World-action models guide action generation with predicted future observations, but vision-centric predictions miss the local contact cues that decide contact-rich manipulation. However, naively predicting future tactile observations as additional views recovers only a third of the achievable gain in our experiments. This gap reflects a timing mismatch: predictions precede execution, while tactile feedback arrives during it. We introduce TacPAC, which turns tactile prediction into real-time action correction. Once the base model has planned an action chunk, TacPAC caches the predicted contact that plan was conditioned on together with the plan's own representation, and a tactile expert reads each newly observed tactile image against that cache to correct the actions not yet executed. Feedback is thus interpreted against what the plan anticipated rather than in isolation, and one correction is a single pass over that cache, $20.7\\times$ cheaper than regenerating the chunk. On five real-robot tasks spanning precision insertion, fragile-object handling, object reorientation, and long-horizon manipulation, TacPAC leads every task and raises the average from 22% for its vision-only base model to 64%. Code is available at https://github.com/LogosRoboticsGroup/TacPAC.",
-          "authors": [
-            "Zipei Ma",
-            "Xiaofei Wei",
-            "Junzhe Jiang",
-            "Shunlin Lu",
-            "Li Zhang"
-          ],
-          "primary_category": "cs.RO",
-          "categories": [
-            "cs.RO"
-          ],
-          "published": "2026-09-04T15:24:58+00:00",
-          "link": "https://arxiv.org/pdf/2609.05266v1",
-          "tags": [
-            "keyword:ego-embodied",
-            "query:ego-embodied"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "Tactile world-action model with real-time action correction for contact-rich robot manipulation, central to embodied decision making",
-          "llm_evidence_cn": "面向接触丰富操作的世界-动作模型与实时触觉修正，属于具身智能机器人操作核心技术",
-          "llm_evidence": "面向接触丰富操作的世界-动作模型与实时触觉修正，属于具身智能机器人操作核心技术",
-          "canonical_evidence": "面向接触丰富操作的世界-动作模型与实时触觉修正，属于具身智能机器人操作核心技术",
-          "llm_tldr_en": "TacPAC adds real-time tactile-based action correction to world-action models for contact-rich manipulation, caching predicted contact and plan representations and letting a tactile expert revise actions during execution.",
-          "llm_tldr_cn": "接触丰富的机器人操作需要世界模型预测未来观测，但仅靠视觉预测会丢失局部接触线索，且预测发生在执行前而触觉反馈在执行中产生。TacPAC将触觉预测转化为实时动作修正：基础模型规划动作块后，缓存对应预测接触状态与计划表示，由触觉专家根据实时观测修正动作。该方法解决了预测与反馈的时间错配，能够更充分地利用触觉线索提升接触密集操作的可靠性。",
-          "llm_tldr": "接触丰富的机器人操作需要世界模型预测未来观测，但仅靠视觉预测会丢失局部接触线索，且预测发生在执行前而触觉反馈在执行中产生。TacPAC将触觉预测转化为实时动作修正：基础模型规划动作块后，缓存对应预测接触状态与计划表示，由触觉专家根据实时观测修正动作。该方法解决了预测与反馈的时间错配，能够更充分地利用触觉线索提升接触密集操作的可靠性。",
-          "llm_tags": [
-            "query:ego-embodied"
-          ],
-          "matched_query_tag": "query:ego-embodied",
-          "matched_query_text": "embodied intelligence and embodiment in AI systems",
-          "matched_requirement_id": "req-1",
-          "selection_source": "carryover_cache",
-          "paper_id": "2609.05266v1",
-          "carry_days": 1
+          "carry_days": 2
         },
         {
           "id": "2609.05260v1",
@@ -550,60 +471,21 @@
             "query:ego-embodied"
           ],
           "llm_score": 8.0,
-          "llm_evidence_en": "Real-robot benchmark for language-conditioned embodied reasoning evaluating decision invariance and sensitivity of robot action models under instruction changes",
-          "llm_evidence_cn": "真机器人语言条件具身推理基准，评估指令微小变化下动作的保持与更新，直接关切语言条件下的机器人控制",
-          "llm_evidence": "真机器人语言条件具身推理基准，评估指令微小变化下动作的保持与更新，直接关切语言条件下的机器人控制",
-          "canonical_evidence": "真机器人语言条件具身推理基准，评估指令微小变化下动作的保持与更新，直接关切语言条件下的机器人控制",
-          "llm_tldr_en": "A real-robot benchmark that pairs task-preserving and task-changing instruction modifications to test decision invariance and sensitivity under multi-constraint reasoning and real-RGB grounding for language-conditioned manipulation.",
-          "llm_tldr_cn": "可靠的语言条件机器人系统应在任务不变时保持动作、任务改变时更新动作，但现有评价缺少对决策不变性和敏感性的显式考察。作者提出One Word, Different Action真机器人基准，通过任务保持型和任务改变型指令对以及多约束、真实RGB场景，共同评估指令变化下的行为一致性。实验显示现代模型在单约束指令变化上接近饱和，但在多约束推理时性能明显下降。该基准为开发鲁棒的语言条件具身操作提供了细粒度测试。",
-          "llm_tldr": "可靠的语言条件机器人系统应在任务不变时保持动作、任务改变时更新动作，但现有评价缺少对决策不变性和敏感性的显式考察。作者提出One Word, Different Action真机器人基准，通过任务保持型和任务改变型指令对以及多约束、真实RGB场景，共同评估指令变化下的行为一致性。实验显示现代模型在单约束指令变化上接近饱和，但在多约束推理时性能明显下降。该基准为开发鲁棒的语言条件具身操作提供了细粒度测试。",
+          "llm_evidence_en": "Real-robot benchmark for language-conditioned embodied reasoning evaluating instruction-driven decision changes",
+          "llm_evidence_cn": "真实机器人语言条件具身推理基准，评测任务变化时决策是否应改变",
+          "llm_evidence": "真实机器人语言条件具身推理基准，评测任务变化时决策是否应改变",
+          "canonical_evidence": "真实机器人语言条件具身推理基准，评测任务变化时决策是否应改变",
+          "llm_tldr_en": "A real-robot benchmark for language-conditioned embodied reasoning uses task-preserving versus task-changing instruction pairs to jointly measure decision invariance and sensitivity, revealing degradation when multiple task constraints must be combined into an executable action.",
+          "llm_tldr_cn": "可靠的语言条件具身系统应当任务不变时保持原有动作、任务变化时正确改变动作，但现有评测很少在真实可执行决策上同时检验这两点。该文提出一词之差不同动作的真实机器人基准，采用保留任务与改变任务的成对自然语言指令，在物理决策状态上联合评估决策不变性与决策敏感性，并加入多约束推理和真实RGB接地。结果显示单约束指令变化上模型接近饱和，但需要整合多个任务约束时多个模型出现明显性能下降。该基准为语言条件具身操作的语义鲁棒性研究提供了更细粒度测试。",
+          "llm_tldr": "可靠的语言条件具身系统应当任务不变时保持原有动作、任务变化时正确改变动作，但现有评测很少在真实可执行决策上同时检验这两点。该文提出一词之差不同动作的真实机器人基准，采用保留任务与改变任务的成对自然语言指令，在物理决策状态上联合评估决策不变性与决策敏感性，并加入多约束推理和真实RGB接地。结果显示单约束指令变化上模型接近饱和，但需要整合多个任务约束时多个模型出现明显性能下降。该基准为语言条件具身操作的语义鲁棒性研究提供了更细粒度测试。",
           "llm_tags": [
             "query:ego-embodied"
           ],
           "matched_query_tag": "query:ego-embodied",
-          "matched_query_text": "vision language action model for robot control and manipulation",
-          "matched_requirement_id": "req-3",
+          "matched_query_text": "embodied intelligence and embodiment in AI systems",
+          "matched_requirement_id": "req-1",
           "selection_source": "carryover_cache",
           "paper_id": "2609.05260v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2609.02531v1",
-          "source": "arxiv",
-          "title": "Spatially Aware World Action Model via Geometric Latent Diffusion",
-          "abstract": "World Action Models (WAMs) leverage the capabilities of large-scale pretrained video diffusion models to jointly predict future observations and actions, inheriting rich visual and physical priors from internet-scale video. This has made them a promising paradigm for robot policy learning, yet the prevailing models operate exclusively on RGB observations and do not leverage 3D information. To bridge this gap, we introduce a Spatially Aware World Action Model (SA-WAM), which repurposes a pretrained video model for joint action, RGB, and depth prediction, enabling 3D-aware world modeling and action prediction within a single diffusion backbone. We use a nonlinear encoding that maps the unbounded depth signal into the bounded input domain expected by the frozen VAE tokenizer. This allows us to reuse the tokenizer without 3D-specific fine-tuning, incorporating geometric information without sacrificing the pretrained priors. SA-WAM achieves state-of-the-art results on the RoboCasa and LIBERO-Plus benchmarks, while simultaneously improving future-state predictions. Furthermore, SA-WAM outperforms strong baselines in real-world evaluation using a UR5 robotic arm, with strong gains in randomized environments. We analyze the correlation between world model prediction quality and rollout success, providing insights into WAM performance and avenues for its improvement.",
-          "authors": [
-            "Javier Alejandro Lopetegui Gonzalez",
-            "Paul Pacaud",
-            "Cordelia Schmid"
-          ],
-          "primary_category": "cs.CV",
-          "categories": [
-            "cs.CV",
-            "cs.RO"
-          ],
-          "published": "2026-09-02T12:42:37+00:00",
-          "link": "https://arxiv.org/pdf/2609.02531v1",
-          "tags": [
-            "keyword:ego-embodied",
-            "query:ego-embodied"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "world action model jointly predicting future RGB, depth and actions from pretrained video diffusion for robot policy learning",
-          "llm_evidence_cn": "利用预训练视频扩散模型联合预测未来RGB、深度与动作的世界动作模型，用于机器人策略学习",
-          "llm_evidence": "利用预训练视频扩散模型联合预测未来RGB、深度与动作的世界动作模型，用于机器人策略学习",
-          "canonical_evidence": "利用预训练视频扩散模型联合预测未来RGB、深度与动作的世界动作模型，用于机器人策略学习",
-          "llm_tldr_en": "SA-WAM reuses a frozen pretrained video diffusion backbone to jointly predict future RGB, depth, and actions through geometric latent diffusion, adding 3D spatial awareness to world action models for robot policy learning.",
-          "llm_tldr_cn": "世界动作模型用大规模视频预训练扩散模型联合预测未来观测和动作，但现有模型只用RGB、忽略三维信息。SA-WAM在同一个扩散骨干中联合预测动作、RGB和深度，用非线性编码把无界深度信号映射到预训练模型期望的输入范围，并融合几何潜扩散。这使得策略学习能从互联网视频获得视觉和物理先验，同时获得三维空间感知。该模型为空间感知的具身策略提供了一个可扩展范式。",
-          "llm_tldr": "世界动作模型用大规模视频预训练扩散模型联合预测未来观测和动作，但现有模型只用RGB、忽略三维信息。SA-WAM在同一个扩散骨干中联合预测动作、RGB和深度，用非线性编码把无界深度信号映射到预训练模型期望的输入范围，并融合几何潜扩散。这使得策略学习能从互联网视频获得视觉和物理先验，同时获得三维空间感知。该模型为空间感知的具身策略提供了一个可扩展范式。",
-          "llm_tags": [
-            "query:ego-embodied"
-          ],
-          "matched_query_tag": "query:ego-embodied",
-          "matched_query_text": "vision language action model for robot control and manipulation",
-          "matched_requirement_id": "req-3",
-          "selection_source": "carryover_cache",
-          "paper_id": "2609.02531v1",
           "carry_days": 1
         },
         {
@@ -647,48 +529,37 @@
           "matched_requirement_id": "req-3",
           "selection_source": "carryover_cache",
           "paper_id": "2609.05178v1",
-          "carry_days": 1
+          "carry_days": 2
         },
         {
-          "id": "2609.01404v1",
+          "id": "2609.08638v1",
           "source": "arxiv",
-          "title": "Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching",
-          "abstract": "Multimodal Large Language Models (MLLMs) are strong perceivers of images and video. We ask how far that reach extends into acting: dropping an MLLM directly into a drone's control loop, with its entire action space declared solely in the prompt. Recent systems approach this setting but increasingly narrow the model's decision-making. We widen it back. We introduce DroneCATS-Agent, an architecture where the MLLM is a swappable component, and DroneCATS, a benchmark treating the model as the independent variable. Beyond merely flying toward a pixel, our agent entrusts the model to yaw and search, deliberate when unsure, and self-declare arrival---all without fine-tuning or function-calling schemas. Evaluating frontier and open models across four core capabilities---approaching a visible target, tracking a moving one, searching outside the initial view, and commanding a multi-drone fleet---reveals that even the simplest embodied settings are far from solved. Crucially, to identify what breaks first at the edge, our roster scales down to 2B parameters. The findings expose a stark paradox: it is not the flying that fails. Small open models often navigate into the success radius more reliably than frontier models, yet lose the episode by declaring arrival prematurely or not at all. Multi-drone commanding amplifies this divide, with small models failing by blindly copying a single coordinate across distinct views. Viewed as vision-language-action agents, the models' spatial perception holds up, but their action protocol does not. What separates a deployable edge model from a frontier model is not navigation, but the discipline to sustain a declared protocol and emit the correct terminating action. The open problem is closing this gap at onboard compute costs---yielding a fast model that plans persistently and knows exactly when it is done---and DroneCATS is built to measure that distance.",
+          "title": "CASD: Chunk-Aligned Semantic Distillation for Multi-StageRobot Manipulation",
+          "abstract": "An action chunk can span several stages of a manipulation task, yet a label for its first step describes only the current stage. We introduce Chunk-Aligned Semantic Distillation (CASD), which derives semantic targets for entire action chunks. An offline vision--language model segments demonstrations into described stages. Their occupancy within each action chunk determines a weighted semantic target, including transitions between stages. A CASD generator learns to predict this target from the current observation, robot state, and task instruction. We then freeze the generator and train a policy conditioned on its predictions. The semantic branch runs once per policy query, without online VLM calls or reasoning-trace decoding. Teacher matching on annotated LIBERO training episodes is above chance for both single-stage and boundary-crossing chunks. We evaluate three Fast-WAM variants and a DreamZero integration across four benchmarks, including distribution shifts on LIBERO-Plus. Compared with published references, IDM+CASD reaches 98.9\\% versus 98.0\\% average success on LIBERO, while Uncond falls below its reference. Joint+CASD reaches 93.0\\% versus 90.6\\% on RoboTwin 2.0, and DreamZero+CASD reaches a 47.9\\% four-category MolmoSpaces manipulation average versus 40.7\\%. Performance varies across backbone integrations.",
           "authors": [
-            "Jaewoo Park",
-            "Minyoung Lee",
-            "Sukmin Seo",
-            "Moonbin Yim",
-            "Hyunwook Yoon",
-            "Dohoon Ryu",
-            "Daehee Kim",
-            "Myungseo Song",
-            "Jihyuk Byun",
-            "Seunggyu Chang",
-            "Taeho Kil",
-            "Jiseob Kim",
-            "Bado Lee",
-            "Geewook Kim"
+            "Tinghe Ding",
+            "Jiahao Li",
+            "He Wang"
           ],
           "primary_category": "cs.RO",
           "categories": [
             "cs.RO",
             "cs.AI"
           ],
-          "published": "2026-09-01T15:27:43+00:00",
-          "link": "https://arxiv.org/pdf/2609.01404v1",
+          "published": "2026-09-08T12:07:52+00:00",
+          "link": "https://arxiv.org/pdf/2609.08638v1",
           "tags": [
             "keyword:ego-embodied",
             "query:ego-embodied"
           ],
           "llm_score": 8.0,
-          "llm_evidence_en": "Vision-language-action agents for embodied drone control using multimodal LLMs in the control loop",
-          "llm_evidence_cn": "多模态LLM直接用于无人机控制回路的视觉-语言-行动智能体",
-          "llm_evidence": "多模态LLM直接用于无人机控制回路的视觉-语言-行动智能体",
-          "canonical_evidence": "多模态LLM直接用于无人机控制回路的视觉-语言-行动智能体",
-          "llm_tldr_en": "Systematically evaluates MLLMs as generalist vision-language-action agents for drone commanding, approaching, tracking and searching, with full action space declared in the prompt and no fine-tuning.",
-          "llm_tldr_cn": "让多模态大模型进入无人机闭环控制已有尝试，但许多系统会削弱模型的自主决策。作者设计可更换模型组件的DroneCATS-Agent和测试基准DroneCATS，在提示中完整声明动作空间，使模型无需微调或函数调用即可自行偏航、搜索、在不确定时思考并宣布到达。该工作把模型视为自变量，在指挥、接近、跟踪、搜索任务中衡量MLLM的VLA能力，为通用具身无人机智能体的设计评估提供了新基准。",
-          "llm_tldr": "让多模态大模型进入无人机闭环控制已有尝试，但许多系统会削弱模型的自主决策。作者设计可更换模型组件的DroneCATS-Agent和测试基准DroneCATS，在提示中完整声明动作空间，使模型无需微调或函数调用即可自行偏航、搜索、在不确定时思考并宣布到达。该工作把模型视为自变量，在指挥、接近、跟踪、搜索任务中衡量MLLM的VLA能力，为通用具身无人机智能体的设计评估提供了新基准。",
+          "llm_evidence_en": "Semantic distillation for multi-stage robot manipulation policies",
+          "llm_evidence_cn": "面向多阶段机器人操作的分块语义蒸馏",
+          "llm_evidence": "面向多阶段机器人操作的分块语义蒸馏",
+          "canonical_evidence": "面向多阶段机器人操作的分块语义蒸馏",
+          "llm_tldr_en": "CASD uses an offline VLM to segment demonstrations and derive semantic targets for entire action chunks, letting policies capture multi-stage transitions without online VLM calls or reasoning traces.",
+          "llm_tldr_cn": "多阶段操作中一个动作块可能跨越多个阶段，而现有标签只描述其第一步所在阶段。CASD利用离线视觉语言模型将演示切分为描述性的阶段，再根据各阶段在动作块中的占比生成加权语义目标，包含阶段过渡信息。策略在冻结的生成器监督下学习，每次策略查询只需运行一次语义分支，无需在线VLM调用。该方法为多阶段机器人操作提供了更准确且低成本的语义监督。",
+          "llm_tldr": "多阶段操作中一个动作块可能跨越多个阶段，而现有标签只描述其第一步所在阶段。CASD利用离线视觉语言模型将演示切分为描述性的阶段，再根据各阶段在动作块中的占比生成加权语义目标，包含阶段过渡信息。策略在冻结的生成器监督下学习，每次策略查询只需运行一次语义分支，无需在线VLM调用。该方法为多阶段机器人操作提供了更准确且低成本的语义监督。",
           "llm_tags": [
             "query:ego-embodied"
           ],
@@ -696,7 +567,412 @@
           "matched_query_text": "vision language action model for robot control and manipulation",
           "matched_requirement_id": "req-3",
           "selection_source": "carryover_cache",
-          "paper_id": "2609.01404v1",
+          "paper_id": "2609.08638v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2609.08602v1",
+          "source": "arxiv",
+          "title": "CLAMP: Constrained Decoding for Vision-Language Embodied Planning",
+          "abstract": "Embodied planning increasingly relies on vision-language models (VLMs) to translate instructions and visual observations into executable action sequences. However, fluent plans are not always executable. A VLM may refer to objects that are not visually observed, select actions whose required affordances are unavailable, or violate syntax and action constraints. We introduce CLAMP, a multimodal constraint-grounding framework that turns scene evidence into decoding-time constraints for a frozen VLM planner. CLAMP uses the initial observation to restrict object references to those supported by the scene, while a provided symbolic action model specifies state transitions and goals. During decoding, hard masks eliminate invalid next-token candidates, while a Hidden Markov Model (HMM)-based world-state lookahead module reweights the probabilities of the remaining feasible candidates based on action preconditions and goal reachability. This allows the planner to retain the VLM's language prior while preventing visually unsupported, unsafe, or infeasible candidates from entering the plan. For unseen tasks and environments, CLAMP adapts the HMM at test time using label-free continuations sampled from the frozen VLM. Experiments on VLABench, SafeAgentBench, and TaPA show that scene-grounded constraints improve object grounding and safety, while most remaining failures stem from perception errors or misaligned constraint specifications.",
+          "authors": [
+            "Tianyi Ma",
+            "Parisa Kordjamshidi"
+          ],
+          "primary_category": "cs.AI",
+          "categories": [
+            "cs.AI"
+          ],
+          "published": "2026-09-08T11:38:09+00:00",
+          "link": "https://arxiv.org/pdf/2609.08602v1",
+          "tags": [
+            "keyword:ego-embodied",
+            "query:ego-embodied"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Vision-language embodied planning constrained by scene evidence via decoding-time masks and action model",
+          "llm_evidence_cn": "使用解码约束和动作模型将场景证据接入视觉语言具身规划",
+          "llm_evidence": "使用解码约束和动作模型将场景证据接入视觉语言具身规划",
+          "canonical_evidence": "使用解码约束和动作模型将场景证据接入视觉语言具身规划",
+          "llm_tldr_en": "CLAMP constrains decoding of a frozen VLM planner using initial scene evidence and a symbolic action model. Hard masks remove invalid object references and next-token candidates, producing executable action sequences rather than fluent but infeasible embodied plans.",
+          "llm_tldr_cn": "具身规划中的VLM虽然能生成流畅计划，却可能引用未观测物体或选择无可用性的动作，导致输出不可执行。CLAMP借助初始观测将场景证据转化为解码时约束，用硬掩码排除无效物体与动作token，并由符号动作模型负责状态转移与目标，在不微调VLM的情况下使冻结规划器产出可执行的行动序列。",
+          "llm_tldr": "具身规划中的VLM虽然能生成流畅计划，却可能引用未观测物体或选择无可用性的动作，导致输出不可执行。CLAMP借助初始观测将场景证据转化为解码时约束，用硬掩码排除无效物体与动作token，并由符号动作模型负责状态转移与目标，在不微调VLM的情况下使冻结规划器产出可执行的行动序列。",
+          "llm_tags": [
+            "query:ego-embodied"
+          ],
+          "matched_query_tag": "query:ego-embodied",
+          "matched_query_text": "vision language action model for robot control and manipulation",
+          "matched_requirement_id": "req-3",
+          "selection_source": "carryover_cache",
+          "paper_id": "2609.08602v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2609.04277v1",
+          "source": "arxiv",
+          "title": "FailureSpot: Label-Efficient Timestamp-Level Failure Detection for Vision-Language-Action Models",
+          "abstract": "Vision-language-action (VLA) policies have shown strong potential for general-purpose robotic manipulation, but they can still fail unpredictably during long-horizon execution, making reliable failure detection essential for safe deployment. Existing methods either rely on visual models that typically detect failures only after erroneous actions have occurred, or use lightweight proactive detectors trained on VLA internal representations. However, these proactive methods are often supervised with trajectory-level labels, causing normal pre-failure behavior in unsuccessful trajectories to be incorrectly labeled as failure. This supervision mismatch introduces label noise and limits both trajectory-level detection accuracy and precise timestamp-level failure localization. In this work, we study fine-grained timestamp-level VLA failure detection while addressing the cost of dense annotation. We propose a data-efficient framework that first leverages unlabeled VLA action chunks to construct action-derived weak supervision signals, capturing abnormal patterns such as inconsistent consecutive chunks, frozen or idle actions, and aggressive random motions. We then use active learning to select only the most uncertain trajectories for timestamp-level annotation and fine-tune the detector with these informative labels. Experiments across multiple VLA policies show that our method improves both timestamp-level and trajectory-level failure detection performance.",
+          "authors": [
+            "Jie Ma",
+            "Zongxi Liu",
+            "Yi Zhu"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO",
+            "cs.CV"
+          ],
+          "published": "2026-09-03T00:04:06+00:00",
+          "link": "https://arxiv.org/pdf/2609.04277v1",
+          "tags": [
+            "keyword:ego-embodied",
+            "query:ego-embodied"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Label-efficient timestamp-level failure detection for VLA policies in robot manipulation",
+          "llm_evidence_cn": "面向VLA操作策略的低标注时间戳级故障检测，提升安全部署可靠性",
+          "llm_evidence": "面向VLA操作策略的低标注时间戳级故障检测，提升安全部署可靠性",
+          "canonical_evidence": "面向VLA操作策略的低标注时间戳级故障检测，提升安全部署可靠性",
+          "llm_tldr_en": "FailureSpot provides label-efficient timestamp-level failure detection for VLA policies, addressing trajectory-level supervision mismatch that mislabels pre-failure behavior and improving detection accuracy for safe robot manipulation.",
+          "llm_tldr_cn": "VLA策略具备通用机器人操作潜力，但在长时程执行中仍可能不可预知地失败，因此可靠的故障检测很重要。现有主动检测器通常使用轨迹级标签，把失败轨迹中失败前正常行为也标成失败，造成标签噪声并限制检测精度。FailureSpot提出面向VLA内部表示的低标注时间戳级故障检测，修正这类监督不匹配。该机制能够在更细粒度上识别即将发生的故障并同时提高轨迹级检测准确性，为VLA安全部署提供支撑。",
+          "llm_tldr": "VLA策略具备通用机器人操作潜力，但在长时程执行中仍可能不可预知地失败，因此可靠的故障检测很重要。现有主动检测器通常使用轨迹级标签，把失败轨迹中失败前正常行为也标成失败，造成标签噪声并限制检测精度。FailureSpot提出面向VLA内部表示的低标注时间戳级故障检测，修正这类监督不匹配。该机制能够在更细粒度上识别即将发生的故障并同时提高轨迹级检测准确性，为VLA安全部署提供支撑。",
+          "llm_tags": [
+            "query:ego-embodied"
+          ],
+          "matched_query_tag": "query:ego-embodied",
+          "matched_query_text": "vision language action model for robot control and manipulation",
+          "matched_requirement_id": "req-3",
+          "selection_source": "carryover_cache",
+          "paper_id": "2609.04277v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2609.05985v1",
+          "source": "arxiv",
+          "title": "A Brain-inspired Hierarchical Framework for Zero-Shot Robot Task Reasoning and Execution",
+          "abstract": "Robots that follow open-ended language instructions need to connect semantic intent to visual scene understanding, geometric feasibility, object states, and physical interaction conditions. End-to-end Vision-Language-Action policies have improved cross-task generalization, but they typically map visual and language inputs directly to robot actions, leaving limited explicit structure for long-horizon decomposition, physical verification, and recovery. We present \\method, a zero-shot hierarchical framework functionally inspired by the division of roles in the human brain, comprising visual perception and state inference, language grounding and action-sequence generation from a shared atomic action library, cost-based plan selection, and real-robot execution and verification. The framework grounds commands in explicit object states, composes reusable atomic actions into task-conditioned sequences, ranks alternative sequences by execution cost, and verifies intermediate physical outcomes from refreshed observations. In the evaluation, \\method{} completes 10/10 clean board trials, 10/10 pick-and-place trials, and 4/5 pyramid stacking trials for both the flat and irregular initial-layout conditions; the corresponding mean task progress is $99.03\\%$, $100.00\\%$, and $96.67\\%$ respectively. Across all evaluated conditions, \\method{} achieves higher success rates than ReKep, Dream2Flow, and $π_{0.5}$ benchmarks, demonstrating the effectiveness of combining explicit object-state reasoning, compositional atomic actions, cost-based plan selection, and closed-loop execution verification.",
+          "authors": [
+            "Guangming Wang",
+            "Pengfei Ye",
+            "Qizhen Ying",
+            "Yixiong Jing",
+            "Yuxiang Ma",
+            "Haonan Chen",
+            "Haibing Wu",
+            "Olaf Wysocki",
+            "Molong Duan",
+            "Brian Sheil"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO"
+          ],
+          "published": "2026-09-05T08:59:04+00:00",
+          "link": "https://arxiv.org/pdf/2609.05985v1",
+          "tags": [
+            "keyword:ego-embodied",
+            "query:ego-embodied"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Zero-shot hierarchical framework for robot task reasoning and execution that explicitly targets limitations of end-to-end vision-language-action policies.",
+          "llm_evidence_cn": "面向零样本语言指令机器人执行的分层框架，直接针对VLA策略在长程任务上的不足。",
+          "llm_evidence": "面向零样本语言指令机器人执行的分层框架，直接针对VLA策略在长程任务上的不足。",
+          "canonical_evidence": "面向零样本语言指令机器人执行的分层框架，直接针对VLA策略在长程任务上的不足。",
+          "llm_tldr_en": "Proposes a zero-shot hierarchical, brain-inspired framework combining visual state inference, language grounding, atomic action sequences, and cost-based plan selection, addressing long-horizon decomposition limitations of end-to-end VLA policies.",
+          "llm_tldr_cn": "端到端视觉-语言-动作（VLA）策略虽然提升了跨任务泛化，但对长时程任务分解、物理验证与失败恢复缺乏显式结构。本文提出受脑功能分工启发的零样本分层框架，包含视觉感知与状态推断、基于原子动作库的语言接地动作序列生成，以及代价驱动的规划选择。该框架使机器人能在开放语言指令下逐步验证物理可行性，提高长时程任务执行与恢复能力。",
+          "llm_tldr": "端到端视觉-语言-动作（VLA）策略虽然提升了跨任务泛化，但对长时程任务分解、物理验证与失败恢复缺乏显式结构。本文提出受脑功能分工启发的零样本分层框架，包含视觉感知与状态推断、基于原子动作库的语言接地动作序列生成，以及代价驱动的规划选择。该框架使机器人能在开放语言指令下逐步验证物理可行性，提高长时程任务执行与恢复能力。",
+          "llm_tags": [
+            "query:ego-embodied"
+          ],
+          "matched_query_tag": "query:ego-embodied",
+          "matched_query_text": "vision language action model for robot control and manipulation",
+          "matched_requirement_id": "req-3",
+          "selection_source": "carryover_cache",
+          "paper_id": "2609.05985v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2609.08041v1",
+          "source": "arxiv",
+          "title": "MamMA: A Mamba-Based Pedestrian Trajectory Prediction Algorithm Considering Occupancy Map and Pedestrian Awareness States",
+          "abstract": "Many pedestrian trajectory prediction algorithms have been proposed to improve the safety of navigation for mobile robots working in human-robot coexistence environments. Some pedestrian trajectory prediction algorithms extract information about obstacles near pedestrians from top-down view images to improve the accuracy of trajectory prediction. However, mobile robots typically create local occupancy maps using LiDAR, rather than top-down view images. Meanwhile, the vision sensors on board robots provide egocentric view images, which contain fine-grained behavioral information about the pedestrians near the robot. To better use the information collected by LiDAR and on-board vision sensors, we propose MamMA, a Mamba-based pedestrian trajectory prediction algorithm considering occupancy maps and pedestrian awareness states. MamMA divides the occupancy map by patches and extracts obstacle features from each patch to create map features. Pedestrian awareness states are divided and considered, as some studies show that awareness states affect the perception and speed of pedestrians. Furthermore, a Mamba-based model is proposed to predict the future trajectories of pedestrians based on different types of features. Experiments on the STCrowd, SiT, JRDB, ETH, and UCY datasets show that MamMA achieves better average displacement error and final displacement error than the state-of-the-art algorithms.",
+          "authors": [
+            "Juncen Long",
+            "Xiaofeng Jin",
+            "Gianluca Bardaro",
+            "Simone Mentasti",
+            "Matteo Matteucci"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "published": "2026-09-07T22:56:48+00:00",
+          "link": "https://arxiv.org/pdf/2609.08041v1",
+          "tags": [
+            "keyword:ego-embodied",
+            "query:ego-embodied"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Uses egocentric view images from robot sensors for pedestrian trajectory prediction in safe mobile robot navigation.",
+          "llm_evidence_cn": "利用机器人传感器第一视角图像进行行人轨迹预测以提升导航安全",
+          "llm_evidence": "利用机器人传感器第一视角图像进行行人轨迹预测以提升导航安全",
+          "canonical_evidence": "利用机器人传感器第一视角图像进行行人轨迹预测以提升导航安全",
+          "llm_tldr_en": "MamMA uses on-board LiDAR local occupancy and egocentric view images together with a Mamba model to predict pedestrian trajectories, exploiting fine-grained behavioral cues for safer mobile robot navigation.",
+          "llm_tldr_cn": "针对移动机器人通常只有LiDAR局部占据图而非俯视图、且车载视觉传感器提供富含行人细粒度行为信息的第一视角图像的问题，该文提出MamMA行人轨迹预测算法。基于Mamba的模型融合占据栅格图与自车第一视角图像，捕捉行人感知状态以提升轨迹预测精度。该工作展示了第一视角感知在机器人导航安全问题中的价值，为具身导航提供更贴近实际传感器的感知方案。",
+          "llm_tldr": "针对移动机器人通常只有LiDAR局部占据图而非俯视图、且车载视觉传感器提供富含行人细粒度行为信息的第一视角图像的问题，该文提出MamMA行人轨迹预测算法。基于Mamba的模型融合占据栅格图与自车第一视角图像，捕捉行人感知状态以提升轨迹预测精度。该工作展示了第一视角感知在机器人导航安全问题中的价值，为具身导航提供更贴近实际传感器的感知方案。",
+          "llm_tags": [
+            "query:ego-embodied"
+          ],
+          "matched_query_tag": "query:ego-embodied",
+          "matched_query_text": "How does egocentric vision benefit embodied intelligence tasks like manipulation, locomotion, and navigation?",
+          "matched_requirement_id": "req-8",
+          "selection_source": "carryover_cache",
+          "paper_id": "2609.08041v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2609.05834v1",
+          "source": "arxiv",
+          "title": "Learning Counterfactual World Models for Embodied Reasoning under Partial Observability",
+          "abstract": "World models promise a general route to embodied intelligence: learn predictive dynamics once, then reason, plan, and act with them. Increasingly, the representations beneath such models are pretrained on large-scale video, interaction, and multimodal corpora, which raises a question prediction quality alone cannot answer: when is a learned representation actually actionable? We identify a failure mode we call counterfactual collapse: a model predicts visually plausible futures while failing to distinguish interventions with different behavioral consequences. This arises whenever a representation is optimized for perceptual similarity rather than intervention structure, which is precisely the objective under which most large-scale pretrained encoders are learned. We introduce Counterfactual Latent World Models (CLWM), which combine a recurrent belief-state encoder, action-conditioned latent dynamics, and a contrastive counterfactual objective that separates futures induced by distinct interventions even when their observations look alike. Across occluded manipulation, aliased navigation, and long-horizon manipulation, CLWM improves planning success over the strongest baseline (65.1% $\\to$ 74.6% on Occluded Push and 67.3% $\\to$ 78.9% on Aliased Maze) and reduces exploitative planning failures (18.4% $\\to$ 9.7% on Deferred Kitchen), with ablations attributing the gains to hard counterfactual negatives, especially perceptual-alias negatives. Finally, our counterfactual separability metric, which tracks planning success across the five baseline model classes ($r \\ge 0.94$), is representation-agnostic: given intervention-outcome labels, it can audit any encoder, pretrained or trained from scratch, before a planner trusts it. We do not yet measure it on large-scale pretrained encoders. Here we establish the metric and its relationship to planning success for world models trained from scratch.",
+          "authors": [
+            "Todd Y. Zhou",
+            "Daniel Zhang"
+          ],
+          "primary_category": "cs.AI",
+          "categories": [
+            "cs.AI"
+          ],
+          "published": "2026-09-05T02:56:47+00:00",
+          "link": "https://arxiv.org/pdf/2609.05834v1",
+          "tags": [
+            "keyword:ego-embodied",
+            "query:ego-embodied"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Counterfactual world models for embodied reasoning and actionable representation learning.",
+          "llm_evidence_cn": "面向具身推理的反事实世界模型与可行动表征",
+          "llm_evidence": "面向具身推理的反事实世界模型与可行动表征",
+          "canonical_evidence": "面向具身推理的反事实世界模型与可行动表征",
+          "llm_tldr_en": "This paper identifies counterfactual collapse in world models and learns representations that distinguish interventions with different behavioral consequences, improving actionable embodied reasoning under partial observability.",
+          "llm_tldr_cn": "针对预测质量良好但不可行动的世界模型表征问题，该文提出反事实世界模型学习，用于具身推理。研究发现仅按感知相似度优化的大规模预训练表征会陷入反事实崩溃，即模型能预测视觉上合理的未来却无法区分行为后果不同的人工干预。通过学习干预结构而非纯感知相似度，使世界模型在部分可观测条件下具备对行为差异的判别能力，从而提升具身智能体的规划与决策可靠性。",
+          "llm_tldr": "针对预测质量良好但不可行动的世界模型表征问题，该文提出反事实世界模型学习，用于具身推理。研究发现仅按感知相似度优化的大规模预训练表征会陷入反事实崩溃，即模型能预测视觉上合理的未来却无法区分行为后果不同的人工干预。通过学习干预结构而非纯感知相似度，使世界模型在部分可观测条件下具备对行为差异的判别能力，从而提升具身智能体的规划与决策可靠性。",
+          "llm_tags": [
+            "query:ego-embodied"
+          ],
+          "matched_query_tag": "query:ego-embodied",
+          "matched_query_text": "embodied intelligence and embodiment in AI systems",
+          "matched_requirement_id": "req-1",
+          "selection_source": "carryover_cache",
+          "paper_id": "2609.05834v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2609.05588v1",
+          "source": "arxiv",
+          "title": "GE-Act 2.0: Pretraining and Scaling a World-Action Model for Robotic Manipulation",
+          "abstract": "World-action models (WAM) predict future states to guide robot actions, enabling learning from both action-free video and action-labeled interaction. Most inherit pretrained video generators, leaving WAM pretraining and scaling underexplored. We introduce Genie Envisioner Act 2.0 (GE-Act 2.0), a world-action model whose trainable generative and action components are all initialized from scratch on manipulation data. It combines a control-oriented autoencoder (CoAE), a single-step visual planner (SVP), and an inverse dynamics model (IDM). CoAE retains action- and instruction-relevant information under aggressive compression, while SVP produces a complete future state in one differentiable pass, so visual planning and inverse dynamics can be pretrained separately on complementary data. The components are then jointly trained with knowledge-aligned selective optimization (KASO), which reduces mismatched supervision by selecting only predicted futures judged behaviorally compatible with the recorded action. We evaluate pretrained checkpoints directly, without per-task fine-tuning, on 100 tasks across 20 manipulation skill groups with held-out scenes, backgrounds, lighting, and object instances. Scaling co-training data from 300 to 30,000 hours raises success from 17.1% to 44.1% on G1-OP and from 13.4% to 31.1% on G2-90D; despite comprising less than 2% of the co-training data, G2-90D improves by 17.7 points, suggesting cross-embodiment transfer. Gains span 19/20 and 18/20 skill groups, and skill-specific coverage strongly correlates with zero-shot out-of-distribution (OOD) success (Pearson r=0.80; Spearman rho=0.85). Under the same protocol, the model grounds object, color, shape, and position references in at least 90% of trials and follows explicit instructions even when they conflict with an already-committed behavior or a conventional scene association.",
+          "authors": [
+            "AgiBot Research Team",
+            "Renhang Liu",
+            "Wenzhi Zhao",
+            "Zhuo Yang",
+            "Liliang Chen",
+            "Pengfei Zhou",
+            "Shengcong Chen",
+            "Guanghui Ren",
+            "Youlun Peng",
+            "Rongjun Jin",
+            "Nan Wang",
+            "Sukai Wang",
+            "Xindong He",
+            "Jinyuan Feng",
+            "Ziyu Xiong",
+            "Linqing Zhong",
+            "Yifei Wei",
+            "Feng Han",
+            "Long Zhang",
+            "Da Huang",
+            "Nanshu Zhao",
+            "Chenghao Yin",
+            "Mo Wu",
+            "Zhaodong Yan",
+            "Kongtao Hu",
+            "Yuxiang Yan",
+            "Aogelijiang Niyazi",
+            "Yu Fang",
+            "Jia Zeng",
+            "Lizhu Meng",
+            "Daizhen Lv",
+            "Haoyu Cao",
+            "Zhiwen Hou",
+            "Lianjin Ye",
+            "Yuehan Niu",
+            "Zhikai Cai",
+            "Xuan Hu",
+            "Hui Min",
+            "Xiongfeng Cai",
+            "Yue Liao",
+            "Jing Wu",
+            "Soujanya Poria",
+            "Ye Li",
+            "Sanping Zhou",
+            "Maoqing Yao"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO",
+            "cs.CV"
+          ],
+          "published": "2026-09-04T17:16:48+00:00",
+          "link": "https://arxiv.org/pdf/2609.05588v1",
+          "tags": [
+            "keyword:ego-embodied",
+            "query:ego-embodied"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "World-action model with generative and action components for robot manipulation; a VLA-family robotic control model using future-state visual planning",
+          "llm_evidence_cn": "提出面向机器人操作的预训练世界行动模型GE-Act 2.0，结合视觉规划与逆动力学，是具身VLA策略控制类工作",
+          "llm_evidence": "提出面向机器人操作的预训练世界行动模型GE-Act 2.0，结合视觉规划与逆动力学，是具身VLA策略控制类工作",
+          "canonical_evidence": "提出面向机器人操作的预训练世界行动模型GE-Act 2.0，结合视觉规划与逆动力学，是具身VLA策略控制类工作",
+          "llm_tldr_en": "Presents GE-Act 2.0, a world-action model initialized and scaled on manipulation data, combining action-aware autoencoder, single-step visual planner, and inverse dynamics for future-state guided robot control.",
+          "llm_tldr_cn": "世界行动模型通过预测未来状态来引导机器人动作，但目前大多直接继承预训练视频生成器，其预训练与扩展问题尚未深入。该文提出GE-Act 2.0，在机器人操作数据上从头初始化生成与动作模块，并用控制导向自编码器、单步视觉规划器和逆动力学模型结合进行训练。该模型可在强压缩下保留动作与指令相关信息，并一次可微分地生成完整未来状态，使视觉规划与逆动力学可用，为机器人操作策略学习提供了可扩展的预训练范式。",
+          "llm_tldr": "世界行动模型通过预测未来状态来引导机器人动作，但目前大多直接继承预训练视频生成器，其预训练与扩展问题尚未深入。该文提出GE-Act 2.0，在机器人操作数据上从头初始化生成与动作模块，并用控制导向自编码器、单步视觉规划器和逆动力学模型结合进行训练。该模型可在强压缩下保留动作与指令相关信息，并一次可微分地生成完整未来状态，使视觉规划与逆动力学可用，为机器人操作策略学习提供了可扩展的预训练范式。",
+          "llm_tags": [
+            "query:ego-embodied"
+          ],
+          "matched_query_tag": "query:ego-embodied",
+          "matched_query_text": "vision language action model for robot control and manipulation",
+          "matched_requirement_id": "req-3",
+          "selection_source": "carryover_cache",
+          "paper_id": "2609.05588v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2609.08636v1",
+          "source": "arxiv",
+          "title": "From Where to How: Continuous 4D Interaction Forecasting from Egocentric Video",
+          "abstract": "Egocentric 4D interaction forecasting aims to anticipate both where future interactions will occur in 3D and how the human body will move to realize them, providing an important capability for assistive robotics and human-computer interaction. Existing methods struggle to translate semantic understanding into precise continuous 3D localization and to balance motion diversity with structural consistency in pose forecasting. More fundamentally, these tasks are often modeled separately, leaving the continuous geometric and temporal correspondence between interaction locations and body motion insufficiently captured. To address these challenges, we introduce Coherent4D, a large-scale egocentric dataset for continuous 4D interaction forecasting, comprising approximately 233K samples across three domains. Each sample pairs a sequence of future 3D interaction locations with corresponding full-body poses, aligned in time and expressed in a shared coordinate system. We also provide evaluation metrics in continuous space. Building on this formulation, we propose HIGFlow, a Hand Interaction Guided Residual Flow framework that models forecasting as a cascaded where-to-how process. HIGFlow first forecasts continuous future interaction locations by combining semantic grounding with short-horizon visual dynamics, and then uses the predicted location sequence to condition a deterministic motion anchor and residual Flow Matching for diverse yet structurally consistent full-body motion forecasting. Extensive experiments across all three domains demonstrate consistent improvements over representative baselines on both location and pose forecasting, while ablations validate the contributions of the proposed components. The project page is available at https://corrineqiu.github.io/from-where-to-how/.",
+          "authors": [
+            "Qiaohui Chu",
+            "Haoyu Zhang",
+            "Meng Liu",
+            "Haoxiang Shi",
+            "Dongmei Jiang",
+            "Liqiang Nie"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV",
+            "cs.AI"
+          ],
+          "published": "2026-09-08T12:06:23+00:00",
+          "link": "https://arxiv.org/pdf/2609.08636v1",
+          "tags": [
+            "keyword:ego-embodied",
+            "query:ego-embodied"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "egocentric video-based 4D interaction forecasting linking 3D interaction location and body motion for embodied robotics",
+          "llm_evidence_cn": "基于第一视角视频的连续4D交互预测，联合估计3D交互位置与人体动作",
+          "llm_evidence": "基于第一视角视频的连续4D交互预测，联合估计3D交互位置与人体动作",
+          "canonical_evidence": "基于第一视角视频的连续4D交互预测，联合估计3D交互位置与人体动作",
+          "llm_tldr_en": "Introduces continuous 4D interaction forecasting from egocentric video, jointly predicting where interactions occur in 3D and how the body moves to realize them. Proposes Coherent4D, a large-scale egocentric dataset that captures geometric and temporal correspondence between interaction locations and body motion for assistive robotics.",
+          "llm_tldr_cn": "现有第一视角交互预测往往将位置预测与人体动作预测分开建模，难以捕捉两者的连续几何与时间对应关系。论文提出连续4D交互预测任务并发布大规模第一视角数据集Coherent4D，联合推断未来交互发生的三维位置与相应身体动作。该方法能够更好地刻画位置与动作之间的连续一致关系，为辅助机器人和人机交互系统提供前瞻性理解能力。",
+          "llm_tldr": "现有第一视角交互预测往往将位置预测与人体动作预测分开建模，难以捕捉两者的连续几何与时间对应关系。论文提出连续4D交互预测任务并发布大规模第一视角数据集Coherent4D，联合推断未来交互发生的三维位置与相应身体动作。该方法能够更好地刻画位置与动作之间的连续一致关系，为辅助机器人和人机交互系统提供前瞻性理解能力。",
+          "llm_tags": [
+            "query:ego-embodied"
+          ],
+          "matched_query_tag": "query:ego-embodied",
+          "matched_query_text": "egocentric vision understanding for embodied intelligence",
+          "matched_requirement_id": "req-2",
+          "selection_source": "carryover_cache",
+          "paper_id": "2609.08636v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2609.06302v1",
+          "source": "arxiv",
+          "title": "CST-WM: A Causally Structured World Model for Embodied Visual Tracking",
+          "abstract": "Embodied visual tracking requires a robot not only to react to the current view, but to choose actions that preserve or recover future evidence of a moving target under ego-motion, occlusion, and distractors. It is therefore a predictive decision problem over future target observability and apparent scale. A central difficulty is a task-specific form of causal hallucination: in action-conditioned prediction, a model can exploit the strong correlation between robot control and target-related observations by hallucinating a direct causal effect from the current action to target evidence, rather than letting action influence that evidence only through robot motion and the resulting observation change. The shortcut yields plausible futures with the wrong semantics for tracking-oriented planning and re-acquisition. We propose CST-WM, a causally structured world model that decomposes the latent state into target-evidence, robot, and observation branches and factorizes the transition so that direct action injection into the target-evidence branch is blocked, while action remains available to robot motion and observation updates. Combined with rollout-based model-predictive control, CST-WM supports both stable following and temporary target re-acquisition in one planning framework. On EVT-Bench and Habitat 3.0, covering standard tracking, target-loss recovery, and cross-dataset transfer, it improves following quality, distance-range control, safety, and re-acquisition over reactive and world-model baselines; offline diagnostics show better multi-step rollout fidelity, stronger planning-value consistency, and substantially reduced direct action leakage. For embodied visual tracking, future prediction alone is not enough: the predictive structure itself must align with how target evidence enters planning.",
+          "authors": [
+            "Junyi Hu",
+            "Shuaihang Yuan",
+            "Yi Fang"
+          ],
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "published": "2026-09-05T23:24:32+00:00",
+          "link": "https://arxiv.org/pdf/2609.06302v1",
+          "tags": [
+            "keyword:ego-embodied",
+            "query:ego-embodied"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Causally structured world model for action-conditioned embodied visual tracking under ego-motion",
+          "llm_evidence_cn": "从当前视野选择动作进行具身视觉跟踪，动作条件预测中抑制因果捷径的自我中心策略建模",
+          "llm_evidence": "从当前视野选择动作进行具身视觉跟踪，动作条件预测中抑制因果捷径的自我中心策略建模",
+          "canonical_evidence": "从当前视野选择动作进行具身视觉跟踪，动作条件预测中抑制因果捷径的自我中心策略建模",
+          "llm_tldr_en": "Embodied visual tracking requires future-aware action selection. CST-WM models the causal chain from robot motion to target observability, preventing hallucinated shortcuts in action-conditioned world prediction.",
+          "llm_tldr_cn": "具身视觉跟踪要求机器人不仅要响应当前视野，还要选择能保持未来目标可见性的动作，因此本质是带预测的决策问题。CST-WM提出因果结构世界模型，避免模型在动作条件预测中把动作直接导致目标观测幻觉当成因果捷径，而是让动作通过机器人运动和观测变化间接影响目标证据。模型显式建模机器人运动、遮挡和干扰下的目标尺度与可见性，从而获得更合理的未来预测。实验结果表明该因果结构建模可提升具身跟踪中的动作选择质量，为自我中心感知下的机器人控制提供基础组件。",
+          "llm_tldr": "具身视觉跟踪要求机器人不仅要响应当前视野，还要选择能保持未来目标可见性的动作，因此本质是带预测的决策问题。CST-WM提出因果结构世界模型，避免模型在动作条件预测中把动作直接导致目标观测幻觉当成因果捷径，而是让动作通过机器人运动和观测变化间接影响目标证据。模型显式建模机器人运动、遮挡和干扰下的目标尺度与可见性，从而获得更合理的未来预测。实验结果表明该因果结构建模可提升具身跟踪中的动作选择质量，为自我中心感知下的机器人控制提供基础组件。",
+          "llm_tags": [
+            "query:ego-embodied"
+          ],
+          "matched_query_tag": "query:ego-embodied",
+          "matched_query_text": "policy learning from egocentric perception for robot control",
+          "matched_requirement_id": "req-4",
+          "selection_source": "carryover_cache",
+          "paper_id": "2609.06302v1",
+          "carry_days": 1
+        },
+        {
+          "id": "2609.08444v1",
+          "source": "arxiv",
+          "title": "Safe Task Planning with Long-Term Graph Memory for Embodied Agents",
+          "abstract": "Large language models (LLMs) and vision-language models (VLMs) have significantly advanced zero-shot task planning for embodied agents. However, most LLM- and VLM-driven methods struggle to generate safe high-level actions due to a lack of physical risk awareness, particularly under partial observability, where hazards lie outside the immediate field of view. To address this challenge, we propose a novel safe task-planning framework, SafeMem, which constructs and maintains a long-term semantic graph memory of the open and dynamic environment. Based on egocentric observations, the proposed framework incrementally accumulates knowledge about surrounding objects and their relationships with a graph. Then, an LLM-based risk predictor evaluates candidate actions using the graph memory, triggering a conservatism-modulated replanning loop with explanations for detected hazards. Extensive experiments on the IS-Bench benchmark and a real-world robot platform demonstrate that the SafeMem framework substantially improves safe success rates compared to state-of-the-art VLM-driven task planners. Video results are available on our webpage: https://sites.google.com/view/safemem.",
+          "authors": [
+            "Siyuan Li",
+            "Taiyan Lang",
+            "Aoqi Yan",
+            "Jia Yu",
+            "Feifan Liu",
+            "Yihan Du",
+            "Yu Zheng",
+            "Xun Wang",
+            "Peng Liu"
+          ],
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO"
+          ],
+          "published": "2026-09-08T08:49:50+00:00",
+          "link": "https://arxiv.org/pdf/2609.08444v1",
+          "tags": [
+            "keyword:ego-embodied",
+            "query:ego-embodied"
+          ],
+          "llm_score": 8.0,
+          "llm_evidence_en": "Long-term semantic graph memory built from egocentric observations for safe embodied task planning",
+          "llm_evidence_cn": "基于自我中心观察增量构建长期语义图记忆，用于具身智能体安全任务规划",
+          "llm_evidence": "基于自我中心观察增量构建长期语义图记忆，用于具身智能体安全任务规划",
+          "canonical_evidence": "基于自我中心观察增量构建长期语义图记忆，用于具身智能体安全任务规划",
+          "llm_tldr_en": "SafeMem builds a long-term semantic graph memory from egocentric observations and uses an LLM risk predictor to choose safe high-level actions for embodied agents under partial observability.",
+          "llm_tldr_cn": "大语言模型驱动的任务规划往往缺少物理风险意识，在部分可观察环境中危险可能位于当前视野之外。论文提出SafeMem框架，基于具身智能体的自我中心观察，在开放动态环境中增量构建和更新长期语义图记忆，记录周围物体及其关系。规划过程中LLM风险预测器利用图记忆评估候选动作，从而选择更安全的高层行动。方法将环境经验记忆与风险推理结合，提升了具身任务规划在未知场景下的安全性。",
+          "llm_tldr": "大语言模型驱动的任务规划往往缺少物理风险意识，在部分可观察环境中危险可能位于当前视野之外。论文提出SafeMem框架，基于具身智能体的自我中心观察，在开放动态环境中增量构建和更新长期语义图记忆，记录周围物体及其关系。规划过程中LLM风险预测器利用图记忆评估候选动作，从而选择更安全的高层行动。方法将环境经验记忆与风险推理结合，提升了具身任务规划在未知场景下的安全性。",
+          "llm_tags": [
+            "query:ego-embodied"
+          ],
+          "matched_query_tag": "query:ego-embodied",
+          "matched_query_text": "egocentric vision understanding for embodied intelligence",
+          "matched_requirement_id": "req-2",
+          "selection_source": "carryover_cache",
+          "paper_id": "2609.08444v1",
           "carry_days": 1
         }
       ]
